@@ -21,27 +21,28 @@ async def answer_question(query: UserRequest) -> UserResponse:
         "Content-Type": "application/json",
     }
     payload = {"q": query.question}
-    print("The API key is:", SERPER_API_KEY)
 
     async with httpx.AsyncClient() as client:
         try:
             response = await client.post(SERPER_URL, json=payload, headers=headers)
             response.raise_for_status()
             search_data = response.json()
-            context_data = []
-            for result in search_data:
-                url = result.get("link")
-                title = result.get("title")
 
-                page_res = await client.get(url)
+            work_data = search_data.get("organic", [])[:5]
+            context_data = []
+            for data in work_data:
+                title = data.get("title", [])
+                url_link = data.get("link", [])
+
+                page_res = await client.get(url_link)
                 if page_res.status_code == 200:
                     clean_text = trafilatura.extract(page_res.text)
 
                     if clean_text:
                         context_data.append(
-                            {"title": title, "url": url, "text": clean_text[:2000]}
+                            {"title": title, "url": url_link, "text": clean_text}
                         )
-            return {"results": context_data}
+            return {"contexts": context_data}
         except httpx.HTTPStatusError as exc:
             raise HTTPException(
                 status_code=exc.response.status_code, detail="Serper API error"
