@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app: FastAPI = FastAPI()
 
-@app.get("/")
-def get_health():
+
+@app.get("/")  # type: ignore[misc]
+def get_health() -> dict[str, str]:
     return {"status": "working"}
-
