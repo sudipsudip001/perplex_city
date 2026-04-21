@@ -42,6 +42,7 @@ disallow_untyped_defs = true
 disallow_incomplete_defs = true
 check_untyped_defs = true
 disallow_untyped_decorators = true
+plugins = ["pydantic.mypy"]
 
 [tool.bandit]
 exclude_dirs = ["tests", "venv", ".venv"]
