@@ -28,20 +28,20 @@ async def answer_question(query: UserRequest) -> UserResponse:
             response = await client.post(SERPER_URL, json=payload, headers=headers)
             response.raise_for_status()
             search_data = response.json()
+            context_data = []
+            for result in search_data:
+                url = result.get("link")
+                title = result.get("title")
 
-            urls = [result["link"] for result in search_data.get("organic", [])[:5]]
-            print("Extracted URLs from the site you mentioned.")
-
-            contexts = []
-            for url in urls:
                 page_res = await client.get(url)
                 if page_res.status_code == 200:
-                    downloaded = page_res.text
-                    content = trafilatura.extract(downloaded)
-                    if content:
-                        contexts.append(content)
-            print("Extracted contents from .")
-            return {"contexts": contexts}
+                    clean_text = trafilatura.extract(page_res.text)
+
+                    if clean_text:
+                        context_data.append(
+                            {"title": title, "url": url, "text": clean_text[:2000]}
+                        )
+            return {"results": context_data}
         except httpx.HTTPStatusError as exc:
             raise HTTPException(
                 status_code=exc.response.status_code, detail="Serper API error"
