@@ -4,8 +4,11 @@ import httpx
 import trafilatura
 from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException
+from langchain_core.documents import Document
 from models.request import UserRequest
 from models.response import UserResponse
+from pipeline.chunker import Chunker
+from pipeline.embedder import Embedder
 
 load_dotenv()
 SERPER_API_KEY = os.getenv("SERPER_API_KEY")
@@ -42,7 +45,38 @@ async def answer_question(query: UserRequest) -> UserResponse:
                         context_data.append(
                             {"title": title, "url": url_link, "text": clean_text}
                         )
-            return {"contexts": context_data}
+            # CONVERSION TO DOCUMENT FORMAT
+            final_contexts = []
+            for item in context_data:
+                doc = Document(
+                    page_content=item["text"],
+                    metadata={
+                        "title": item["title"],
+                        "url": item["url"],
+                    },
+                )
+                final_contexts.append(doc)
+
+            # RECURSIVE CHUNKING
+            chunker = Chunker(
+                docs=final_contexts,
+                chunk_size=400,
+                chunk_overlap=40,
+                embedder_model="thenlper/gte-small",
+            )
+            chunk_data = chunker.chunk_document()
+
+            # CREATING VECTOR DATABASE
+            embedding_model = Embedder(
+                chunks=chunk_data,
+                embedder_model="thenlper/gte-small",
+            )
+            vector_db = embedding_model.vector_database()
+
+            # RETRIEVING THE MOST SIMILAR DOCUMENTS
+            print("===> Retrieving initial documents...")
+            loaded_docs = vector_db.similarity_search(query=query.question, k=3)
+            return loaded_docs
         except httpx.HTTPStatusError as exc:
             raise HTTPException(
                 status_code=exc.response.status_code, detail="Serper API error"
