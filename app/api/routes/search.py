@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException
 from langchain_core.documents import Document
 from models.request import UserRequest
-from models.response import UserResponse
+from models.response import Context, UserResponse
 from pipeline.chunker import Chunker
+from pipeline.deduplicator import Deduplicator
 from pipeline.embedder import Embedder
 
 load_dotenv()
@@ -32,10 +33,20 @@ async def answer_question(query: UserRequest) -> UserResponse:
             search_data = response.json()
 
             work_data = search_data.get("organic", [])[:5]
+
+            # ADD URL NORMALIZATION AND DEDUPLICAITON STEP (keep only the values that have original urls)
+            deduplicator = Deduplicator()
+
+            list_urls = [i.get("link") for i in work_data]
+            urls_to_keep = deduplicator.deduplicate(list_urls)
+
             context_data = []
             for data in work_data:
-                title = data.get("title", [])
-                url_link = data.get("link", [])
+                if data.get("link") not in urls_to_keep:
+                    continue
+
+                title = data.get("title", "")
+                url_link = data.get("link")
 
                 page_res = await client.get(url_link)
                 if page_res.status_code == 200:
@@ -45,6 +56,7 @@ async def answer_question(query: UserRequest) -> UserResponse:
                         context_data.append(
                             {"title": title, "url": url_link, "text": clean_text}
                         )
+
             # CONVERSION TO DOCUMENT FORMAT
             final_contexts = []
             for item in context_data:
@@ -76,7 +88,15 @@ async def answer_question(query: UserRequest) -> UserResponse:
             # RETRIEVING THE MOST SIMILAR DOCUMENTS
             print("===> Retrieving initial documents...")
             loaded_docs = vector_db.similarity_search(query=query.question, k=3)
-            return loaded_docs
+            context_list = [
+                Context(
+                    title=doc.metadata.get("title", "No title found"),
+                    url=doc.metadata.get("url", "#"),
+                    text=doc.page_content,
+                )
+                for doc in loaded_docs
+            ]
+            return UserResponse(contexts=context_list)
         except httpx.HTTPStatusError as exc:
             raise HTTPException(
                 status_code=exc.response.status_code, detail="Serper API error"
