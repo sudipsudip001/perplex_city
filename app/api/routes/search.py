@@ -1,4 +1,7 @@
+import asyncio
+import logging
 import os
+from typing import Any
 
 import httpx
 import trafilatura
@@ -10,6 +13,12 @@ from models.response import Context, UserResponse
 from pipeline.chunker import Chunker
 from pipeline.deduplicator import Deduplicator
 from pipeline.embedder import Embedder
+from pipeline.query_expander import QueryExpander
+
+logging.basicConfig(
+    level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(name)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 SERPER_API_KEY = os.getenv("SERPER_API_KEY")
@@ -20,56 +29,83 @@ router = APIRouter()
 
 @router.post("/question")  # type: ignore[misc]
 async def answer_question(query: UserRequest) -> UserResponse:
-    headers = {
-        "X-API-KEY": SERPER_API_KEY,
-        "Content-Type": "application/json",
-    }
-    payload = {"q": query.question}
+    try:
+        # --- Query Expansion ---
+        query_expander = QueryExpander(model="gemini-2.5-flash-lite")
+        queries_string = query_expander.expanded_queries(query.question)
 
-    async with httpx.AsyncClient() as client:
-        try:
-            response = await client.post(SERPER_URL, json=payload, headers=headers)
-            response.raise_for_status()
-            search_data = response.json()
+        headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
 
-            work_data = search_data.get("organic", [])[:5]
+        async with httpx.AsyncClient() as client:
+            # --- Serper Search ---
+            search_tasks = [
+                client.post(SERPER_URL, json={"q": q}, headers=headers)
+                for q in queries_string
+            ]
+            search_responses = await asyncio.gather(*search_tasks)
 
-            # ADD URL NORMALIZATION AND DEDUPLICAITON STEP (keep only the values that have original urls)
+            # --- Collecting Results ---
+            all_work_data = []
+            for _, resp in enumerate(search_responses):
+                resp.raise_for_status()
+                results = resp.json().get("organic", [])[:5]
+                all_work_data.extend(results)
+
+            # --- Deduplication ---
             deduplicator = Deduplicator()
-
-            list_urls = [i.get("link") for i in work_data]
+            list_urls = [i.get("link") for i in all_work_data]
             urls_to_keep = deduplicator.deduplicate(list_urls)
 
-            context_data = []
-            for data in work_data:
-                if data.get("link") not in urls_to_keep:
-                    continue
+            # --- Page Fetching ---
+            items_to_fetch = [d for d in all_work_data if d.get("link") in urls_to_keep]
 
-                title = data.get("title", "")
+            async def fetch_page(data: dict[str, Any]) -> dict[str, Any] | None:
                 url_link = data.get("link")
-
-                page_res = await client.get(url_link)
-                if page_res.status_code == 200:
-                    clean_text = trafilatura.extract(page_res.text)
-
-                    if clean_text:
-                        context_data.append(
-                            {"title": title, "url": url_link, "text": clean_text}
+                try:
+                    page_res = await client.get(url_link, timeout=10)
+                    if page_res.status_code == 200:
+                        clean_text = trafilatura.extract(page_res.text)
+                        if clean_text:
+                            logger.debug(
+                                "OK extracted text from %s (%d chars)",
+                                url_link,
+                                len(clean_text),
+                            )
+                            return {
+                                "title": data.get("title", ""),
+                                "url": url_link,
+                                "text": clean_text,
+                            }
+                        else:
+                            logger.warning(
+                                "trafilatura returned no text for %s", url_link
+                            )
+                    else:
+                        logger.warning(
+                            "Non-200 status %d for %s", page_res.status_code, url_link
                         )
+                except Exception as e:
+                    logger.error("Failed to fetch %s: %s", url_link, e)
+                return None
 
-            # CONVERSION TO DOCUMENT FORMAT
-            final_contexts = []
-            for item in context_data:
-                doc = Document(
-                    page_content=item["text"],
-                    metadata={
-                        "title": item["title"],
-                        "url": item["url"],
-                    },
+            page_results = await asyncio.gather(
+                *[fetch_page(d) for d in items_to_fetch]
+            )
+            context_data = [r for r in page_results if r is not None]
+
+            if not context_data:
+                raise HTTPException(
+                    status_code=500, detail="No page content could be extracted"
                 )
-                final_contexts.append(doc)
 
-            # RECURSIVE CHUNKING
+            # --- Chunking ---
+            final_contexts = [
+                Document(
+                    page_content=item["text"],
+                    metadata={"title": item["title"], "url": item["url"]},
+                )
+                for item in context_data
+            ]
             chunker = Chunker(
                 docs=final_contexts,
                 chunk_size=400,
@@ -78,16 +114,15 @@ async def answer_question(query: UserRequest) -> UserResponse:
             )
             chunk_data = chunker.chunk_document()
 
-            # CREATING VECTOR DATABASE
+            # --- Embedding + Vector DB ---
             embedding_model = Embedder(
-                chunks=chunk_data,
-                embedder_model="thenlper/gte-small",
+                chunks=chunk_data, embedder_model="thenlper/gte-small"
             )
             vector_db = embedding_model.vector_database()
 
-            # RETRIEVING THE MOST SIMILAR DOCUMENTS
-            print("===> Retrieving initial documents...")
+            # --- Retrieval ---
             loaded_docs = vector_db.similarity_search(query=query.question, k=3)
+
             context_list = [
                 Context(
                     title=doc.metadata.get("title", "No title found"),
@@ -97,9 +132,10 @@ async def answer_question(query: UserRequest) -> UserResponse:
                 for doc in loaded_docs
             ]
             return UserResponse(contexts=context_list)
-        except httpx.HTTPStatusError as exc:
-            raise HTTPException(
-                status_code=exc.response.status_code, detail="Serper API error"
-            ) from exc
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=str(e)) from e
+
+    except httpx.HTTPStatusError as exc:
+        raise HTTPException(
+            status_code=exc.response.status_code, detail="Serper API error"
+        ) from exc
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e)) from e
