@@ -22,3 +22,26 @@ later for passing data to Trafilatura.
     }
   ]
 }
+
+
+3. Latest response:
+
+{
+  "contexts": [
+    {
+      "title": "2026 Iran war | Explained, United States, Israel, Strait of ... - Britannica",
+      "url": "https://www.britannica.com/event/2026-Iran-war",
+      "text": "- Date:\n- February 28, 2026 - present\n- Location:\n- Iran\n- Iraq\n- Israel\n- Lebanon\n- Saudi Arabia\n- Participants:\n- Iran\n- Israel\n- United States\n- Houthi movement\nIn the aftermath of the 12-Day War, Iran’s currency entered a free fall, exacerbated by the imposition in September of new international sanctions. The economic spiral led to the outbreak of protests on December 28, 2025, which, at the encouragement of the United States, spread in January 2026 across Iran (see 2026 Iranian protests). Trump threatened U.S. intervention if Iranian security forces killed protesters. Nevertheless, on January 8 security forces unleashed a brutal crackdown, killing at least 30,000 people, according to officials in Iran’s Ministry of Health. In the weeks that followed, the United States undertook its largest military buildup in the Middle East since its 2003 invasion of Iraq."
+    },
+    {
+      "title": "The War Against Iran and Global Risks: “Tell Me How This Ends”",
+      "url": "https://gjia.georgetown.edu/conflict-security/the-war-against-iran-and-global-risks-tell-me-how-this-ends/",
+      "text": "The War Against Iran and Global Risks: “Tell Me How This Ends”\nThe 2026 U.S.–Israeli strikes against Iran, initiated under Operation Epic Fury, represent one of the most consequential military interventions in recent Middle Eastern history. This article examines the war’s multidimensional consequences across national, regional, and international arenas and finds that the structural constraints of such a conflict risk the intervention’s transforming into a strategic overextension for the U.S. To avoid such an outcome, the article argues against any escalatory action and recommends that U.S. policymakers prioritize diplomacy over prolonged war. In a conflict defined by uncertainty, the most prudent course for U.S. policymakers is to pursue strategies that carefully manage escalation and reduce the risks of a wider regional and global crisis. By combining multilateral engagement and strengthening regional security partnerships, the U.S. could minimize the risks of a long-term ground war and strategic overextension.\nThe 2026 U.S.–Israel war against Iran has challenged the fundamental realities that have dictated the last few decades of Middle Eastern history. It has disrupted Iran’s internal power dynamics and raised critical questions about regional stability, global energy security, and transnational terrorism. The beginning salvo, U.S.-Israeli joint strikes that took place on February 28, specifically targeted leadership, military installations, and missile production sites. Yet, despite President Trump’s outlining four clear military objectives for what was named “Operation Epic Fury,” those being preventing Iran from acquiring a nuclear weapon, destroying missile sites, degrading proxy networks, and annihilating its navy, the ultimate objective appears to be the systematic degradation of the Iranian government."
+    },
+    {
+      "title": "What's Next for the War in Iran? | Council on Foreign Relations",
+      "url": "https://www.cfr.org/articles/whats-next-for-the-war-in-iran",
+      "text": "What’s Next for the War in Iran?\nCFR President Michael Froman analyzes U.S. involvement in the latest war in the Middle East.\nWhat’s that famous line of Michael Corleone’s in The Godfather Part III about the mafia? “Just when I thought I was out, they pull me back in.”\nThat’s the Middle East. President Barack Obama sought to pivot to Asia from Iraq and Afghanistan (not Europe, as our insecure transatlantic allies feared). President Donald Trump recently announced that the Western Hemisphere is our top priority. But the Middle East always seems to have something else in mind.\nThe war in Iran has been well underway for a week. Iran’s former Supreme Leader Ayatollah Ali Khamenei and much of the regime’s leadership are dead, more than two thousand targets have been struck across the country, and per U.S. Central Command, the U.S. military has “struck or sunk” more than thirty Iranian ships. Iran has retaliated in full force, unlike its token attack against U.S. forces in Qatar after Operation Midnight Hammer, striking military, civilian, and infrastructure targets in eleven countries so far."
+    }
+  ]
+}

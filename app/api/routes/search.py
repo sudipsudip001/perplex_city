@@ -14,6 +14,7 @@ from pipeline.chunker import Chunker
 from pipeline.deduplicator import Deduplicator
 from pipeline.embedder import Embedder
 from pipeline.query_expander import QueryExpander
+from pipeline.reranker import Ranker
 
 logging.basicConfig(
     level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(name)s - %(message)s"
@@ -123,13 +124,21 @@ async def answer_question(query: UserRequest) -> UserResponse:
             # --- Retrieval ---
             loaded_docs = vector_db.similarity_search(query=query.question, k=3)
 
+            # RERANKING THE DOCUMENTS
+            ranker = Ranker("cross-encoder/ms-marco-MiniLM-L-6-v2")
+            reranked_docs = ranker.rerank(
+                query.question,
+                loaded_docs,
+                num_docs_final=3,
+            )
+
             context_list = [
                 Context(
                     title=doc.metadata.get("title", "No title found"),
                     url=doc.metadata.get("url", "#"),
                     text=doc.page_content,
                 )
-                for doc in loaded_docs
+                for doc in reranked_docs
             ]
             return UserResponse(contexts=context_list)
 
