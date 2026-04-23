@@ -7,5 +7,11 @@ class Context(BaseModel):
     text: str
 
 
-class UserResponse(BaseModel):
-    contexts: list[Context]
+class Detail(BaseModel):
+    title: str
+    url: str
+
+
+class GeneratedResponse(BaseModel):
+    answer: str
+    citations: dict[int, Detail]

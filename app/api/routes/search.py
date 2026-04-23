@@ -9,10 +9,11 @@ from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException
 from langchain_core.documents import Document
 from models.request import UserRequest
-from models.response import Context, UserResponse
+from models.response import Context, GeneratedResponse
 from pipeline.chunker import Chunker
 from pipeline.deduplicator import Deduplicator
 from pipeline.embedder import Embedder
+from pipeline.generator import Generator
 from pipeline.query_expander import QueryExpander
 from pipeline.reranker import Ranker
 
@@ -29,7 +30,7 @@ router = APIRouter()
 
 
 @router.post("/question")  # type: ignore[misc]
-async def answer_question(query: UserRequest) -> UserResponse:
+async def answer_question(query: UserRequest) -> GeneratedResponse:
     try:
         # --- Query Expansion ---
         query_expander = QueryExpander(model="gemini-2.5-flash-lite")
@@ -140,7 +141,15 @@ async def answer_question(query: UserRequest) -> UserResponse:
                 )
                 for doc in reranked_docs
             ]
-            return UserResponse(contexts=context_list)
+
+            # GENERATE THE ANSWER AND RESPOND BACK
+            generator = Generator()
+            answer = generator.generate_answer(
+                question=query.question,
+                context_list=context_list,
+            )
+
+            return GeneratedResponse(**answer)
 
     except httpx.HTTPStatusError as exc:
         raise HTTPException(

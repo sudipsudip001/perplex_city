@@ -45,3 +45,25 @@ later for passing data to Trafilatura.
     }
   ]
 }
+
+
+
+4. Final reply !!!!
+
+{
+  "answer": "The cause of the Gen Z uprising in Nepal is attributed to frustration over corruption, censorship, and unaccountable governance [1]. The movement was driven by a leaderless network of young students, coordinated through digital platforms, who were united by their desire for change [1]. Additionally, factors such as rapid political and economic change, neoliberal globalization, and rising inequalities have contributed to the unrest, particularly among the lower-income population groups [3]. The protests were not solely a reaction to a social media ban, as initially framed by Western media outlets, but rather a fundamental anti-corruption movement [2]. The involvement of the Nepali diaspora, who expressed solidarity and corrected the narrative in Western media, also highlights the complexity of the issue [2]. Overall, the Gen Z uprising in Nepal was a result of a combination of factors, including political, economic, and social grievances [1, 2, 3].\n\nReferences:\n[1] The 2025 Gen Z Uprising in Nepal: A Three-Part Analysis - https://hsph.harvard.edu/atrocity-prevention-lab/news/the-2025-gen-z-uprising-in-nepal-a-three-part-analysis/\n[2] Nepal's Gen Z Revolution and the Politics of Visibility - https://www.boell.de/en/2026/04/19/nepals-gen-z-revolution-and-politics-visibility\n[3] What factors contributed to Nepal's Gen Z-led protests that brought ... - https://www.birmingham.ac.uk/news/2025/what-factors-contributed-to-nepals-gen-z-led-protests-that-brought-down-a-government",
+  "citations": {
+    "1": {
+      "title": "The 2025 Gen Z Uprising in Nepal: A Three-Part Analysis",
+      "url": "https://hsph.harvard.edu/atrocity-prevention-lab/news/the-2025-gen-z-uprising-in-nepal-a-three-part-analysis/"
+    },
+    "2": {
+      "title": "Nepal's Gen Z Revolution and the Politics of Visibility",
+      "url": "https://www.boell.de/en/2026/04/19/nepals-gen-z-revolution-and-politics-visibility"
+    },
+    "3": {
+      "title": "What factors contributed to Nepal's Gen Z-led protests that brought ...",
+      "url": "https://www.birmingham.ac.uk/news/2025/what-factors-contributed-to-nepals-gen-z-led-protests-that-brought-down-a-government"
+    }
+  }
+}
