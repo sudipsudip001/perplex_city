@@ -6,16 +6,10 @@ from langchain_core.messages import SystemMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from langchain_groq import ChatGroq
-from models.response import GeneratedResponse
-from pydantic import BaseModel
+
+from app.models.response import Context, GeneratedResponse
 
 load_dotenv()
-
-
-class Context(BaseModel):
-    title: str
-    url: str
-    text: str
 
 
 class Generator:
@@ -75,7 +69,7 @@ Answer with inline citations:
 
     def _parse_citations(
         self, response: str, context_list: list[Context]
-    ) -> GeneratedResponse:
+    ) -> dict[int, Context]:
         cited_indices: set[int] = {
             int(i)
             for i in re.findall(r"\d+", " ".join(re.findall(r"\[[\d,\s]+\]", response)))
@@ -95,9 +89,9 @@ Answer with inline citations:
         response = chain.invoke({"context": formatted_context, "question": question})
         citations = self._parse_citations(response, context_list)
 
-        return {
-            "answer": response,
-            "citations": {
+        return GeneratedResponse(
+            answer=response,
+            citations={
                 i: {"title": ctx.title, "url": ctx.url} for i, ctx in citations.items()
             },
-        }
+        )

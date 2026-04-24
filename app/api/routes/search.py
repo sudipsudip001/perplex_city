@@ -1,17 +1,18 @@
 import asyncio
 import logging
-import os
 from typing import Any
 
 import httpx
 import trafilatura
 from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException
-from models.request import UserRequest
-from models.response import Context, GeneratedResponse
-from pipeline.deduplicator import Deduplicator
-from pipeline.generator import Generator
-from pipeline.query_expander import QueryExpander
+
+from app.models.request import UserRequest
+from app.models.response import Context, GeneratedResponse
+from app.pipeline.deduplicator import Deduplicator
+from app.pipeline.generator import Generator
+from app.pipeline.query_expander import QueryExpander
+from app.pipeline.web_search import WebSearch
 
 logging.basicConfig(
     level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(name)s - %(message)s"
@@ -19,8 +20,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 load_dotenv()
-SERPER_API_KEY = os.getenv("SERPER_API_KEY")
-SERPER_URL = "https://google.serper.dev/search"
 
 router = APIRouter()
 
@@ -32,26 +31,20 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
         query_expander = QueryExpander(model="gemini-2.5-flash-lite")
         queries_string = query_expander.expanded_queries(query.question)
 
-        headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
-
         async with httpx.AsyncClient() as client:
-            # --- Serper Search ---
-            search_tasks = [
-                client.post(SERPER_URL, json={"q": q}, headers=headers)
-                for q in queries_string
-            ]
-            search_responses = await asyncio.gather(*search_tasks)
-
-            # --- Collecting Results ---
-            all_work_data = []
-            for _, resp in enumerate(search_responses):
-                resp.raise_for_status()
-                results = resp.json().get("organic", [])[:5]
-                all_work_data.extend(results)
+            # --- Web Search for all URLs ---
+            searcher = WebSearch()
+            all_work_data = await searcher.search_urls(
+                queries_string=queries_string,
+            )
 
             # --- Deduplication ---
             deduplicator = Deduplicator()
-            list_urls = [i.get("link") for i in all_work_data]
+            list_urls = [
+                str(link)
+                for i in all_work_data
+                if i and (link := i.get("link")) is not None
+            ]
             urls_to_keep = deduplicator.deduplicate(list_urls)
 
             # --- Page Fetching ---
@@ -112,7 +105,7 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
                 context_list=context_list,
             )
 
-            return GeneratedResponse(**answer)
+            return answer
 
     except httpx.HTTPStatusError as exc:
         raise HTTPException(
