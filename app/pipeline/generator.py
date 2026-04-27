@@ -4,8 +4,9 @@ import os
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from models.response import Context, Detail, GeneratedResponse
 from pydantic import BaseModel
+
+from app.models.response import Context, Detail, GeneratedResponse
 
 load_dotenv()
 
