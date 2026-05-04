@@ -6,7 +6,7 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel
 
-from app.models.response import Context, Detail, GeneratedResponse
+from app.models.response import Detail, GeneratedResponse
 
 load_dotenv()
 
@@ -53,19 +53,19 @@ Answer with inline citations:
             - You MUST respond with ONLY a valid JSON object — no markdown, no explanation, nothing else.
         """
 
-    def _format_contexts(self, context_list: list[Context]) -> str:
+    def _format_contexts(self, context_list: list[dict[str, str]]) -> str:
         """Format contexts into a numbered block for the prompt."""
         blocks = []
         for i, ctx in enumerate(context_list, start=1):
             blocks.append(
-                f"[{i}] Title: {ctx.title}\n"
-                f"    URL: {ctx.url}\n"
-                f"    Content: {ctx.text}"
+                f"[{i}] Title: {ctx['title']}\n"
+                f"    URL: {ctx['url']}\n"
+                f"    Content: {ctx['text']}"
             )
         return "\n\n---\n\n".join(blocks)
 
     def generate_answer(
-        self, question: str, context_list: list[Context]
+        self, question: str, context_list: list[dict[str, str]]
     ) -> GeneratedResponse:
         formatted_context = self._format_contexts(context_list)
         user_prompt = f"Context:\n{formatted_context}\n\nQuestion: {question}"

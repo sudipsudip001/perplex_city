@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Who is the current Secretary-General of the United Nations?",
+    "reference_answer": "Ant\u00f3nio Guterres is the Secretary-General of the United Nations.",
+    "reference_contexts": [
+      {
+        "source": "United Nations (UN.org)",
+        "content": "The Secretary-General of the United Nations is Ant\u00f3nio Guterres, who assumed office on 1 January 2017."
+      },
+      {
+        "source": "UN Biography Page",
+        "content": "Ant\u00f3nio Guterres serves as the ninth Secretary-General of the United Nations."
+      },
+      {
+        "source": "Britannica",
+        "content": "Ant\u00f3nio Guterres, Portuguese politician and diplomat, has been UN Secretary-General since 2017."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "international affairs",
+      "freshness_required": true
+    }
+  }
+]
