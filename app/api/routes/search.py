@@ -31,7 +31,21 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
         query_expander = QueryExpander(model="gemini-2.5-flash-lite")
         queries_string = query_expander.expanded_queries(query.question)
 
-        async with httpx.AsyncClient() as client:
+        logger.debug(
+            "Type of queries_string: %s, value: %s",
+            type(queries_string),
+            queries_string,
+        )
+        logger.debug("Expanded queries: %s", queries_string)
+
+        async with httpx.AsyncClient(
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "en-US,en;q=0.9",
+            },
+            follow_redirects=True,
+        ) as client:
             # --- Web Search for all URLs ---
             searcher = WebSearch()
             all_work_data = await searcher.search_urls(
@@ -47,8 +61,14 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
             ]
             urls_to_keep = deduplicator.deduplicate(list_urls)
 
+            logger.debug("Raw search results: %s", all_work_data)
+            logger.debug("URLs found: %s", list_urls)
+            logger.debug("URLs after dedup: %s", urls_to_keep)
+
             # --- Page Fetching ---
             items_to_fetch = [d for d in all_work_data if d.get("link") in urls_to_keep]
+
+            logger.debug("Items to fetch: %s", len(items_to_fetch))
 
             async def fetch_page(data: dict[str, Any]) -> dict[str, Any] | None:
                 url_link = data.get("link")
@@ -77,12 +97,30 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
                         )
                 except Exception as e:
                     logger.error("Failed to fetch %s: %s", url_link, e)
+
+                snippet = data.get("body", "").strip()
+                if snippet:
+                    logger.debug("Using DDG snippet for %s", url_link)
+                    return {
+                        "title": data.get("title", ""),
+                        "url": url_link,
+                        "text": snippet,
+                    }
                 return None
 
             page_results = await asyncio.gather(
                 *[fetch_page(d) for d in items_to_fetch]
             )
             context_data = [r for r in page_results if r is not None]
+
+            logger.debug(
+                "Page results: %s",
+                [
+                    (r.get("url"), len(r.get("text", ""))) if r else None
+                    for r in page_results
+                ],
+            )
+            logger.debug("Context data count: %d", len(context_data))
 
             if not context_data:
                 raise HTTPException(
@@ -104,6 +142,8 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
                 question=query.question,
                 context_list=context_list,
             )
+
+            logger.debug("Generated answer: %s", answer)
 
             return answer
 

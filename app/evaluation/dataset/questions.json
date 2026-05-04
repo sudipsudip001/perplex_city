@@ -1,0 +1,2378 @@
+[
+  {
+    "question": "Who is the current Secretary-General of the United Nations?",
+    "reference_answer": "António Guterres is the Secretary-General of the United Nations.",
+    "reference_contexts": [
+      {
+        "source": "United Nations (UN.org)",
+        "content": "The Secretary-General of the United Nations is António Guterres, who assumed office on 1 January 2017."
+      },
+      {
+        "source": "UN Biography Page",
+        "content": "António Guterres serves as the ninth Secretary-General of the United Nations."
+      },
+      {
+        "source": "Britannica",
+        "content": "António Guterres, Portuguese politician and diplomat, has been UN Secretary-General since 2017."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "international affairs",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What is the capital city of Kazakhstan?",
+    "reference_answer": "The capital city of Kazakhstan is Astana.",
+    "reference_contexts": [
+      {
+        "source": "CIA World Factbook",
+        "content": "Capital: Astana (formerly Nur-Sultan)."
+      },
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "Astana, formerly known as Nur-Sultan, is the capital of Kazakhstan."
+      },
+      {
+        "source": "Government of Kazakhstan",
+        "content": "The city of Astana serves as the capital of the Republic of Kazakhstan."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "geography",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which company currently has the largest market capitalization in the world?",
+    "reference_answer": "NVIDIA Corporation has recently ranked as one of the companies with the highest global market capitalization, frequently alternating with Apple depending on market conditions.",
+    "reference_contexts": [
+      {
+        "source": "CompaniesMarketCap",
+        "content": "NVIDIA and Apple have both occupied the top position in global market capitalization rankings in recent periods."
+      },
+      {
+        "source": "Bloomberg Markets",
+        "content": "NVIDIA briefly surpassed Apple to become the most valuable public company amid AI-driven stock growth."
+      },
+      {
+        "source": "Reuters Business",
+        "content": "Market leadership by capitalization has shifted between major tech firms including Apple, Microsoft, and NVIDIA."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "business and finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who won the most recent FIFA Men's World Cup?",
+    "reference_answer": "Argentina won the most recent FIFA Men's World Cup in 2022.",
+    "reference_contexts": [
+      {
+        "source": "FIFA Official Website",
+        "content": "Argentina are the FIFA World Cup Qatar 2022 champions after defeating France in the final."
+      },
+      {
+        "source": "BBC Sport",
+        "content": "Argentina beat France on penalties to win the 2022 World Cup."
+      },
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "The 2022 World Cup was won by Argentina, captained by Lionel Messi."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "sports",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the main symptoms of dengue fever?",
+    "reference_answer": "Dengue fever commonly causes high fever, severe headache, pain behind the eyes, muscle and joint pain, rash, and mild bleeding.",
+    "reference_contexts": [
+      {
+        "source": "World Health Organization (WHO)",
+        "content": "Symptoms include high fever, severe headache, pain behind the eyes, muscle and joint pains, nausea, vomiting, swollen glands, and rash."
+      },
+      {
+        "source": "Centers for Disease Control and Prevention (CDC)",
+        "content": "Dengue symptoms include fever, severe headache, eye pain, muscle and joint pain, and rash."
+      },
+      {
+        "source": "Mayo Clinic",
+        "content": "Common symptoms include sudden high fever, severe headaches, pain behind the eyes, and joint and muscle pain."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "health and medicine",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which planet in our solar system has the most moons confirmed so far?",
+    "reference_answer": "Saturn currently has the most confirmed moons in our solar system.",
+    "reference_contexts": [
+      {
+        "source": "NASA Solar System Exploration",
+        "content": "Saturn is the planet with the most moons, with over 140 confirmed satellites."
+      },
+      {
+        "source": "International Astronomical Union (IAU)",
+        "content": "Saturn leads the solar system in number of confirmed moons."
+      },
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "Saturn has surpassed Jupiter in confirmed natural satellites."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "astronomy",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who wrote the novel 'One Hundred Years of Solitude'?",
+    "reference_answer": "Gabriel García Márquez wrote 'One Hundred Years of Solitude'.",
+    "reference_contexts": [
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "One Hundred Years of Solitude is a novel by Colombian author Gabriel García Márquez."
+      },
+      {
+        "source": "Nobel Prize Official Site",
+        "content": "Gabriel García Márquez, Nobel laureate in Literature, authored the novel One Hundred Years of Solitude."
+      },
+      {
+        "source": "Penguin Random House",
+        "content": "Gabriel García Márquez’s masterpiece One Hundred Years of Solitude is a landmark in magical realism."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "literature",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What is the latest version of Python currently available?",
+    "reference_answer": "The latest stable version of Python is Python 3.13.x (exact patch version may vary with updates).",
+    "reference_contexts": [
+      {
+        "source": "Python.org",
+        "content": "Python 3.13 is the latest major release series of Python."
+      },
+      {
+        "source": "PEP Release Schedule",
+        "content": "Python 3.13 introduced new performance improvements and language features."
+      },
+      {
+        "source": "GitHub Python Releases",
+        "content": "The Python 3.13 release line is actively maintained with periodic patch updates."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which country produces the most coffee in the world?",
+    "reference_answer": "Brazil is the largest coffee producer in the world.",
+    "reference_contexts": [
+      {
+        "source": "International Coffee Organization (ICO)",
+        "content": "Brazil remains the world’s largest producer of coffee, accounting for a significant share of global output."
+      },
+      {
+        "source": "USDA Agricultural Reports",
+        "content": "Brazil leads global coffee production followed by Vietnam and Colombia."
+      },
+      {
+        "source": "FAO (Food and Agriculture Organization)",
+        "content": "Brazil dominates global coffee exports and production volume."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "agriculture and trade",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Who is the current CEO of Microsoft?",
+    "reference_answer": "Satya Nadella is the CEO of Microsoft.",
+    "reference_contexts": [
+      {
+        "source": "Microsoft Official Website",
+        "content": "Satya Nadella serves as Chief Executive Officer of Microsoft."
+      },
+      {
+        "source": "Reuters",
+        "content": "Satya Nadella has been CEO of Microsoft since 2014."
+      },
+      {
+        "source": "Forbes",
+        "content": "Microsoft CEO Satya Nadella has led the company through major cloud and AI expansion."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "business and technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What is the chemical formula for baking soda?",
+    "reference_answer": "The chemical formula for baking soda is NaHCO₃.",
+    "reference_contexts": [
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "Sodium bicarbonate (NaHCO₃), commonly known as baking soda, is a white crystalline compound."
+      },
+      {
+        "source": "PubChem (NIH)",
+        "content": "Sodium bicarbonate has the molecular formula NaHCO₃."
+      },
+      {
+        "source": "Royal Society of Chemistry",
+        "content": "Baking soda is sodium hydrogen carbonate, NaHCO₃."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "chemistry",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which country has won the most Olympic gold medals in history?",
+    "reference_answer": "The United States has won the most Olympic gold medals in history.",
+    "reference_contexts": [
+      {
+        "source": "Olympics.com (IOC)",
+        "content": "The United States leads the all-time Olympic gold medal count."
+      },
+      {
+        "source": "BBC Sport",
+        "content": "The USA is the most successful nation in Olympic history by total gold medals."
+      },
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "The United States has historically topped the Olympic medal tables."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "sports history",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What is the current exchange rate between the US dollar and the euro?",
+    "reference_answer": "The USD to EUR exchange rate fluctuates daily, but is typically around 1 USD ≈ 0.90 EUR (subject to market changes).",
+    "reference_contexts": [
+      {
+        "source": "European Central Bank (ECB)",
+        "content": "Exchange rates between USD and EUR are updated daily and vary based on market conditions."
+      },
+      {
+        "source": "XE Currency",
+        "content": "USD/EUR rate fluctuates continuously in foreign exchange markets."
+      },
+      {
+        "source": "Investing.com",
+        "content": "The EUR/USD rate typically trades near parity or slightly below/above depending on market trends."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who directed the movie 'Oppenheimer'?",
+    "reference_answer": "Christopher Nolan directed the movie 'Oppenheimer'.",
+    "reference_contexts": [
+      {
+        "source": "IMDb",
+        "content": "Oppenheimer (2023) was directed by Christopher Nolan."
+      },
+      {
+        "source": "Universal Pictures",
+        "content": "Christopher Nolan is the director of Oppenheimer."
+      },
+      {
+        "source": "BBC Culture",
+        "content": "Christopher Nolan's Oppenheimer explores the life of J. Robert Oppenheimer."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "entertainment",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What is the tallest building in the world right now?",
+    "reference_answer": "The Burj Khalifa in Dubai is the tallest building in the world.",
+    "reference_contexts": [
+      {
+        "source": "Council on Tall Buildings and Urban Habitat (CTBUH)",
+        "content": "Burj Khalifa is currently the tallest building in the world at 828 meters."
+      },
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "Burj Khalifa in Dubai is the tallest structure ever built."
+      },
+      {
+        "source": "National Geographic",
+        "content": "Dubai's Burj Khalifa remains the tallest skyscraper globally."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "architecture",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which programming language is primarily used for iOS app development today?",
+    "reference_answer": "Swift is the primary programming language used for iOS app development.",
+    "reference_contexts": [
+      {
+        "source": "Apple Developer Documentation",
+        "content": "Swift is the preferred language for developing apps for iOS, macOS, watchOS, and tvOS."
+      },
+      {
+        "source": "Apple Inc.",
+        "content": "Swift is a powerful and intuitive programming language for Apple platforms."
+      },
+      {
+        "source": "Stack Overflow Developer Survey",
+        "content": "Swift is widely used for iOS development alongside Objective-C in legacy systems."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "software development",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What are the admission requirements for international students at the University of Toronto?",
+    "reference_answer": "International students generally need a recognized secondary/undergraduate qualification, English proficiency (e.g., IELTS/TOEFL), academic transcripts, and program-specific requirements.",
+    "reference_contexts": [
+      {
+        "source": "University of Toronto Admissions",
+        "content": "Applicants must submit academic records, proof of English proficiency, and program-specific prerequisites."
+      },
+      {
+        "source": "U of T International Student Guide",
+        "content": "English language requirements include IELTS or TOEFL depending on program level."
+      },
+      {
+        "source": "Study in Canada Government Portal",
+        "content": "International students must meet academic and language requirements set by Canadian universities."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "hard",
+      "domain": "education",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who currently holds the record for the most Grand Slam singles titles in men's tennis?",
+    "reference_answer": "Novak Djokovic holds the record for the most Grand Slam men's singles titles.",
+    "reference_contexts": [
+      {
+        "source": "ATP Tour Official Website",
+        "content": "Novak Djokovic holds the record for the most men's Grand Slam singles titles in tennis history."
+      },
+      {
+        "source": "BBC Sport Tennis",
+        "content": "Djokovic has surpassed previous records to become the all-time leader in men's Grand Slam titles."
+      },
+      {
+        "source": "ESPN Tennis",
+        "content": "Novak Djokovic leads the men's Grand Slam tally, overtaking Nadal and Federer."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "sports",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What is the official currency used in Switzerland?",
+    "reference_answer": "The official currency of Switzerland is the Swiss Franc (CHF).",
+    "reference_contexts": [
+      {
+        "source": "Swiss National Bank",
+        "content": "The Swiss franc is the official currency of Switzerland and Liechtenstein."
+      },
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "Switzerland uses the Swiss franc as its national currency."
+      },
+      {
+        "source": "CIA World Factbook",
+        "content": "Currency: Swiss franc (CHF)."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "economics and geography",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "When is the next total solar eclipse visible from North America?",
+    "reference_answer": "The next total solar eclipse visible from North America after 2024 is expected on August 23, 2044 (regional visibility varies).",
+    "reference_contexts": [
+      {
+        "source": "NASA Eclipse Website",
+        "content": "The next total solar eclipse visible in parts of North America will occur in 2044."
+      },
+      {
+        "source": "Time and Date",
+        "content": "A total solar eclipse will occur on August 23, 2044, visible in parts of North America."
+      },
+      {
+        "source": "Space.com",
+        "content": "After the 2024 eclipse, the next major North American total eclipse occurs in 2044."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "hard",
+      "domain": "astronomy",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which country has a higher GDP per capita today: the country where Toyota was founded or the country where Samsung is headquartered?",
+    "reference_answer": "South Korea (Samsung) generally has a higher GDP per capita than Japan (Toyota) in recent years.",
+    "reference_contexts": [
+      {
+        "source": "World Bank – GDP per capita data (Japan, South Korea)",
+        "content": "South Korea's GDP per capita has surpassed Japan's in nominal terms in recent years, reflecting strong export-driven growth and advanced technology sectors."
+      },
+      {
+        "source": "IMF World Economic Outlook",
+        "content": "Japan remains a high-income economy, but South Korea has experienced faster per-capita income growth over the last two decades."
+      },
+      {
+        "source": "Encyclopedia Britannica (Toyota, Samsung company profiles)",
+        "content": "Toyota is headquartered in Japan, while Samsung Electronics is headquartered in South Korea, both in highly developed economies."
+      }
+    ],
+    "metadata": {
+      "category": "comparative_multi_hop",
+      "difficulty": "medium",
+      "domain": "economics",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who is older: the current CEO of Microsoft or the current CEO of Apple, and by how many years?",
+    "reference_answer": "Tim Cook (Apple CEO) is older than Satya Nadella (Microsoft CEO) by about 5 years.",
+    "reference_contexts": [
+      {
+        "source": "Apple Leadership Profile",
+        "content": "Tim Cook was born in 1960 and became Apple CEO in 2011."
+      },
+      {
+        "source": "Microsoft Leadership Profile",
+        "content": "Satya Nadella was born in 1967 and became Microsoft CEO in 2014."
+      },
+      {
+        "source": "Forbes Executive Biographies",
+        "content": "Cook is older than Nadella, with a consistent age gap of roughly five to six years depending on current year."
+      }
+    ],
+    "metadata": {
+      "category": "entity_comparison",
+      "difficulty": "easy",
+      "domain": "business",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which city is farther north: the capital of Canada or the capital of Kazakhstan?",
+    "reference_answer": "Ottawa (Canada) is farther north than Astana (Kazakhstan).",
+    "reference_contexts": [
+      {
+        "source": "National Geographic Atlas",
+        "content": "Ottawa is located at approximately 45.4°N latitude."
+      },
+      {
+        "source": "Encyclopedia Britannica – Astana",
+        "content": "Astana (Nur-Sultan) lies at approximately 51.2°N latitude."
+      },
+      {
+        "source": "World Atlas Comparison Data",
+        "content": "Despite Kazakhstan's northern position, Astana is still south of several Canadian cities including Ottawa when considering latitude distribution."
+      }
+    ],
+    "metadata": {
+      "category": "geographic_reasoning",
+      "difficulty": "medium",
+      "domain": "geography",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Did the author of 'The Hobbit' live longer than the creator of Sherlock Holmes? By how many years?",
+    "reference_answer": "Arthur Conan Doyle lived slightly longer than J.R.R. Tolkien, by about 2 years.",
+    "reference_contexts": [
+      {
+        "source": "Oxford Dictionary of National Biography",
+        "content": "Arthur Conan Doyle lived from 1859 to 1930."
+      },
+      {
+        "source": "Encyclopedia Britannica – J.R.R. Tolkien",
+        "content": "J.R.R. Tolkien lived from 1892 to 1973."
+      },
+      {
+        "source": "Literary History Archives",
+        "content": "Both authors had long literary careers, with Tolkien outliving Conan Doyle by several decades but dying at age 81 vs 71 comparison context depending on interpretation period."
+      }
+    ],
+    "metadata": {
+      "category": "historical_comparison",
+      "difficulty": "medium",
+      "domain": "literature",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which company was founded first, NVIDIA or Amazon, and which one currently has the larger market capitalization?",
+    "reference_answer": "Amazon was founded earlier, but NVIDIA and Amazon have alternated in market capitalization leadership in recent years depending on stock performance.",
+    "reference_contexts": [
+      {
+        "source": "Company Histories – NVIDIA Official Site",
+        "content": "NVIDIA was founded in 1993."
+      },
+      {
+        "source": "Amazon Investor Relations",
+        "content": "Amazon was founded in 1994."
+      },
+      {
+        "source": "Financial Times Market Reports (2024–2025 summaries)",
+        "content": "NVIDIA’s market capitalization surged significantly due to AI demand, at times surpassing Amazon, though both companies frequently trade positions among the top global firms."
+      }
+    ],
+    "metadata": {
+      "category": "temporal_and_financial_comparison",
+      "difficulty": "medium",
+      "domain": "technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What is the time difference right now between Kathmandu and the city hosting the next Summer Olympics?",
+    "reference_answer": "Kathmandu is 12 hours and 45 minutes ahead of Los Angeles, the host city of the 2028 Summer Olympics.",
+    "reference_contexts": [
+      {
+        "source": "Timeanddate.com – Time zone converter",
+        "content": "Kathmandu operates on Nepal Time (UTC+5:45), while Los Angeles operates on Pacific Time (UTC-8 standard / UTC-7 daylight saving)."
+      },
+      {
+        "source": "IOC – Olympic Games 2028 Host City",
+        "content": "The 2028 Summer Olympics will be held in Los Angeles, United States."
+      },
+      {
+        "source": "US Naval Observatory Time Standards",
+        "content": "During daylight saving time, Los Angeles is UTC-7, making the time difference with Kathmandu 12 hours and 45 minutes."
+      }
+    ],
+    "metadata": {
+      "category": "time_and_event_reasoning",
+      "difficulty": "hard",
+      "domain": "world_events",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which planet discovered before 1900 has the shortest day, and how long is that day compared with Earth's?",
+    "reference_answer": "Jupiter has the shortest day, rotating in about 9 hours 56 minutes, much faster than Earth's 24-hour day.",
+    "reference_contexts": [
+      {
+        "source": "NASA Planetary Fact Sheet",
+        "content": "Jupiter has a rotation period of approximately 9 hours 55 minutes, the fastest of all major planets."
+      },
+      {
+        "source": "Encyclopedia Britannica – Jupiter",
+        "content": "Jupiter was known in antiquity and is the largest planet in the Solar System, with a rapid rotation causing a short day length."
+      },
+      {
+        "source": "NASA Solar System Exploration",
+        "content": "All major outer planets known before 1900 (Jupiter, Saturn, Uranus, Neptune) have longer or shorter rotation periods, with Jupiter being the shortest."
+      }
+    ],
+    "metadata": {
+      "category": "scientific_reasoning",
+      "difficulty": "hard",
+      "domain": "astronomy",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Among the current members of the G7, which country has the largest population and who is its current head of government?",
+    "reference_answer": "The United States has the largest population among G7 countries, and its head of government is President Donald Trump.",
+    "reference_contexts": [
+      {
+        "source": "World Bank Population Data",
+        "content": "The United States is the most populous G7 country, with over 330 million people."
+      },
+      {
+        "source": "Government of the United States – White House",
+        "content": "Donald J. Trump is serving as President of the United States as of the current administration."
+      },
+      {
+        "source": "Encyclopedia Britannica – G7",
+        "content": "The G7 consists of Canada, France, Germany, Italy, Japan, the United Kingdom, and the United States."
+      }
+    ],
+    "metadata": {
+      "category": "group_membership_reasoning",
+      "difficulty": "medium",
+      "domain": "politics",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which won more Grand Slam singles titles: Serena Williams or the player who won the most men's Grand Slam titles?",
+    "reference_answer": "Novak Djokovic has more Grand Slam singles titles (24) than Serena Williams (23).",
+    "reference_contexts": [
+      {
+        "source": "ATP Tour Official Records",
+        "content": "Novak Djokovic holds the record for the most men's singles Grand Slam titles with 24."
+      },
+      {
+        "source": "WTA Official Records",
+        "content": "Serena Williams won 23 Grand Slam singles titles during her career."
+      },
+      {
+        "source": "Encyclopedia Britannica – Tennis Records",
+        "content": "Djokovic surpassed previous records to become the most successful male Grand Slam singles player."
+      }
+    ],
+    "metadata": {
+      "category": "sports_comparison",
+      "difficulty": "medium",
+      "domain": "sports",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is Mount Kilimanjaro taller than the highest mountain in Europe, and by how much?",
+    "reference_answer": "Yes, Mount Kilimanjaro is taller than Mount Elbrus (Europe’s highest peak) by about 253 meters.",
+    "reference_contexts": [
+      {
+        "source": "Encyclopedia Britannica – Mount Kilimanjaro",
+        "content": "Mount Kilimanjaro has an elevation of 5,895 meters above sea level."
+      },
+      {
+        "source": "Encyclopedia Britannica – Mount Elbrus",
+        "content": "Mount Elbrus, the highest peak in Europe, has an elevation of 5,642 meters."
+      },
+      {
+        "source": "National Geographic – World Mountain Heights",
+        "content": "Kilimanjaro is the highest mountain in Africa and exceeds Europe’s highest peak in absolute elevation."
+      }
+    ],
+    "metadata": {
+      "category": "geographic_comparison",
+      "difficulty": "medium",
+      "domain": "geography",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which streaming service launched earlier, Netflix streaming or Spotify, and which currently has more subscribers worldwide?",
+    "reference_answer": "Netflix streaming launched earlier, while Spotify currently has more total subscribers globally (including free and premium users).",
+    "reference_contexts": [
+      {
+        "source": "Netflix Company History",
+        "content": "Netflix introduced its streaming service in 2007, transitioning from DVD rentals to online streaming."
+      },
+      {
+        "source": "Spotify Investor Relations",
+        "content": "Spotify launched in 2008 and has grown to hundreds of millions of users worldwide, including both free and paid tiers."
+      },
+      {
+        "source": "Statista Digital Media Reports",
+        "content": "Spotify has over 600 million monthly active users, while Netflix has fewer total subscribers but more paid-only subscriptions in its category."
+      }
+    ],
+    "metadata": {
+      "category": "timeline_and_market_comparison",
+      "difficulty": "hard",
+      "domain": "media_business",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who served longer in office: the first president of South Africa after apartheid or the first Black president of the United States?",
+    "reference_answer": "Nelson Mandela served a shorter term (5 years) than Barack Obama (8 years), so Obama served longer.",
+    "reference_contexts": [
+      {
+        "source": "South African Government Archives",
+        "content": "Nelson Mandela served as President of South Africa from 1994 to 1999."
+      },
+      {
+        "source": "White House Historical Records",
+        "content": "Barack Obama served as President of the United States from 2009 to 2017."
+      },
+      {
+        "source": "Encyclopedia Britannica – Mandela & Obama",
+        "content": "Mandela was South Africa’s first Black president post-apartheid, while Obama was the first Black president of the United States."
+      }
+    ],
+    "metadata": {
+      "category": "historical_political_comparison",
+      "difficulty": "medium",
+      "domain": "history_politics",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which is larger by area: the largest national park in the United States or the largest national park in Australia?",
+    "reference_answer": "The largest national park in Australia (Garig Gunak Barlu National Park region including adjacent protected areas contextually) is smaller than the largest U.S. national park, Wrangell–St. Elias National Park.",
+    "reference_contexts": [
+      {
+        "source": "US National Park Service",
+        "content": "Wrangell–St. Elias National Park in Alaska is the largest national park in the United States, covering over 13 million acres."
+      },
+      {
+        "source": "Parks Australia Official Data",
+        "content": "Australia’s largest national parks are significantly smaller in area compared to Alaska’s largest protected areas."
+      },
+      {
+        "source": "World Database on Protected Areas (UNEP-WCMC)",
+        "content": "Wrangell–St. Elias is one of the largest protected land areas in the world, exceeding most national parks globally."
+      }
+    ],
+    "metadata": {
+      "category": "cross_country_comparison",
+      "difficulty": "hard",
+      "domain": "environment",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "If I flew nonstop from Paris to the capital of Brazil, which is farther: that route or flying from Paris to Tokyo?",
+    "reference_answer": "Flying from Paris to Tokyo is farther than flying from Paris to Brasília.",
+    "reference_contexts": [
+      {
+        "source": "Great Circle Mapper",
+        "content": "Paris to Brasília is approximately 8,700 km."
+      },
+      {
+        "source": "Great Circle Distance Data",
+        "content": "Paris to Tokyo is approximately 9,700 km, making it a longer route."
+      },
+      {
+        "source": "Encyclopedia Britannica – Capitals",
+        "content": "Brasília is the capital of Brazil, while Tokyo is the capital of Japan."
+      }
+    ],
+    "metadata": {
+      "category": "distance_reasoning",
+      "difficulty": "hard",
+      "domain": "travel_geography",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which Nobel Prize category was established first, and who was the most recent recipient in that category?",
+    "reference_answer": "The Nobel Prize in Physics was one of the first established (1901), and the most recent recipient varies yearly, with 2025 awarded to the latest laureates announced by the Royal Swedish Academy of Sciences.",
+    "reference_contexts": [
+      {
+        "source": "NobelPrize.org – History",
+        "content": "The Nobel Prizes in Physics, Chemistry, Medicine, Literature, and Peace were first awarded in 1901."
+      },
+      {
+        "source": "Royal Swedish Academy of Sciences",
+        "content": "The Nobel Prize in Physics is awarded annually to individuals who have made outstanding contributions to physics."
+      },
+      {
+        "source": "Nobel Prize Announcements Archive",
+        "content": "Each year’s most recent laureates are published in October by the Nobel Committee."
+      }
+    ],
+    "metadata": {
+      "category": "historical_and_current_reasoning",
+      "difficulty": "hard",
+      "domain": "awards",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which is a better value right now: the iPhone 17 or the Samsung Galaxy S26 for everyday use and photography?",
+    "reference_answer": "As of now, the Samsung Galaxy S26 generally offers better value for photography flexibility and hardware variety, while the iPhone 17 typically provides stronger video consistency and longer software support.",
+    "reference_contexts": [
+      {
+        "source": "Apple Official Specifications (apple.com)",
+        "content": "Apple emphasizes long-term iOS support and optimized camera video processing for consistent results across lighting conditions."
+      },
+      {
+        "source": "Samsung Galaxy S Series Product Page (samsung.com)",
+        "content": "Samsung highlights multi-lens versatility, high zoom capabilities, and AI-enhanced photo processing features."
+      },
+      {
+        "source": "DXOMARK Smartphone Camera Rankings",
+        "content": "Different flagships lead in different categories: Apple often leads video, while Samsung often leads zoom and flexibility."
+      },
+      {
+        "source": "TechRadar Smartphone Reviews",
+        "content": "iPhone prioritizes consistency and ecosystem integration; Samsung prioritizes hardware flexibility and customization."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "consumer technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How does studying computer science in Australia compare to studying in Canada for international students?",
+    "reference_answer": "Australia and Canada both offer strong computer science programs, but Canada often has a slight advantage in post-study work opportunities, while Australia is known for structured coursework and strong industry alignment.",
+    "reference_contexts": [
+      {
+        "source": "Study in Australia (Australian Government Education)",
+        "content": "Australia offers post-study work visas and industry-focused degrees with structured learning pathways."
+      },
+      {
+        "source": "Study in Canada (Government of Canada)",
+        "content": "Canada provides Post-Graduation Work Permits (PGWP) that allow graduates to gain Canadian work experience."
+      },
+      {
+        "source": "QS World University Rankings",
+        "content": "Both countries host globally ranked universities in computer science and engineering fields."
+      },
+      {
+        "source": "Times Higher Education",
+        "content": "Canada is often preferred for immigration pathways; Australia is preferred for structured academic support."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "education",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is investing in an S&P 500 index fund generally better than buying individual tech stocks over the long term?",
+    "reference_answer": "For most investors, S&P 500 index funds are safer and more consistent long-term investments compared to individual tech stocks, which carry higher risk and volatility.",
+    "reference_contexts": [
+      {
+        "source": "Vanguard Research",
+        "content": "Index funds typically outperform most actively managed portfolios over long time horizons due to diversification and lower costs."
+      },
+      {
+        "source": "S&P Dow Jones Indices",
+        "content": "The S&P 500 represents diversified exposure to 500 large U.S. companies across sectors."
+      },
+      {
+        "source": "U.S. Securities and Exchange Commission (SEC)",
+        "content": "Individual stocks carry higher idiosyncratic risk compared to diversified funds."
+      },
+      {
+        "source": "Morningstar Investment Research",
+        "content": "Tech stocks may outperform in bull markets but show higher volatility and drawdowns."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which airline currently offers a better economy experience for long-haul flights: Qatar Airways or Singapore Airlines?",
+    "reference_answer": "Both Qatar Airways and Singapore Airlines are top-tier, but Singapore Airlines is often rated slightly higher for seat comfort and service consistency, while Qatar Airways excels in in-flight dining and hub connectivity.",
+    "reference_contexts": [
+      {
+        "source": "Skytrax World Airline Awards",
+        "content": "Singapore Airlines and Qatar Airways frequently rank among the top global airlines for economy class service."
+      },
+      {
+        "source": "Singapore Airlines Official Site",
+        "content": "Emphasizes ergonomic seating and high service standards across long-haul economy cabins."
+      },
+      {
+        "source": "Qatar Airways Official Site",
+        "content": "Highlights award-winning cuisine and Hamad International Airport connectivity."
+      },
+      {
+        "source": "AirlineRatings.com",
+        "content": "Both airlines are rated 5-star, with slight differences in onboard experience priorities."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "travel",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How does the NVIDIA RTX 5090 compare to the RTX 4090 for AI development and gaming?",
+    "reference_answer": "The RTX 5090 (next-generation) is expected to significantly outperform the RTX 4090 in AI workloads and ray tracing, offering higher memory bandwidth and improved efficiency, while the RTX 4090 remains a high-end performer for current workloads.",
+    "reference_contexts": [
+      {
+        "source": "NVIDIA Official Architecture Releases",
+        "content": "New GPU generations typically introduce improved CUDA cores, memory bandwidth, and AI acceleration features."
+      },
+      {
+        "source": "TechPowerUp GPU Database",
+        "content": "RTX 4090 is currently one of the most powerful consumer GPUs for AI and gaming workloads."
+      },
+      {
+        "source": "Tom’s Hardware GPU Reviews",
+        "content": "Each generational leap in NVIDIA GPUs brings significant gains in ray tracing and machine learning performance."
+      },
+      {
+        "source": "NVIDIA Developer Blog",
+        "content": "CUDA and Tensor Core improvements directly impact AI model training and inference speed."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "computer hardware",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which streaming service has the strongest overall library right now: Netflix, Disney+, or Amazon Prime Video?",
+    "reference_answer": "Netflix generally has the broadest overall content library and original productions, while Disney+ is strongest for franchise content, and Amazon Prime Video offers a large but less consistently curated catalog.",
+    "reference_contexts": [
+      {
+        "source": "Netflix Investor Relations",
+        "content": "Netflix focuses heavily on original content production and global content distribution across genres."
+      },
+      {
+        "source": "Disney+ Official Content Overview",
+        "content": "Disney+ centers its catalog around Disney, Marvel, Star Wars, and Pixar franchises."
+      },
+      {
+        "source": "Amazon Prime Video Help Center",
+        "content": "Prime Video includes a mix of licensed content, originals, and third-party add-on channels."
+      },
+      {
+        "source": "Statista Streaming Market Reports",
+        "content": "Netflix consistently leads in global subscriber base and content output volume compared to competitors."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "easy",
+      "domain": "entertainment",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How does Tesla's Full Self-Driving system compare with Waymo's autonomous driving technology?",
+    "reference_answer": "Waymo’s system is more focused on fully autonomous, geofenced robotaxi operations with higher reliability in defined areas, while Tesla’s Full Self-Driving is more widely available but still requires driver supervision.",
+    "reference_contexts": [
+      {
+        "source": "Waymo Official Website",
+        "content": "Waymo operates fully driverless ride-hailing services in select cities using geofenced autonomous technology."
+      },
+      {
+        "source": "Tesla Autopilot Documentation",
+        "content": "Tesla Full Self-Driving is a driver-assist system that requires active driver supervision at all times."
+      },
+      {
+        "source": "U.S. National Highway Traffic Safety Administration (NHTSA)",
+        "content": "Driver assistance systems vary in automation levels, with most requiring human oversight."
+      },
+      {
+        "source": "MIT Technology Review",
+        "content": "Waymo emphasizes safety in limited operational domains, while Tesla emphasizes scalability through consumer vehicles."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "automotive technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which is currently a better destination for digital nomads: Lisbon or Bali?",
+    "reference_answer": "Lisbon is generally better for access to Europe, infrastructure, and safety, while Bali is preferred for lower cost of living and a strong remote-work community.",
+    "reference_contexts": [
+      {
+        "source": "Nomad List",
+        "content": "Lisbon ranks highly for safety, internet speed, and quality of life for remote workers."
+      },
+      {
+        "source": "Indonesia Tourism Board",
+        "content": "Bali is a major global hub for digital nomads with low living costs and coworking spaces."
+      },
+      {
+        "source": "World Bank Urban Infrastructure Reports",
+        "content": "Portugal has higher infrastructure reliability compared to many Southeast Asian regions."
+      },
+      {
+        "source": "Remote Work Community Surveys (2024)",
+        "content": "Bali is favored for affordability; Lisbon is favored for stability and connectivity to Europe."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "lifestyle and travel",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How do solar and wind energy compare in terms of cost, scalability, and reliability today?",
+    "reference_answer": "Solar energy is generally cheaper and easier to deploy at small scale, while wind energy often provides higher capacity factors but depends more on geographic conditions.",
+    "reference_contexts": [
+      {
+        "source": "International Energy Agency (IEA)",
+        "content": "Solar PV costs have declined significantly and are among the cheapest sources of electricity in many regions."
+      },
+      {
+        "source": "U.S. Department of Energy",
+        "content": "Wind power has a higher capacity factor compared to solar in many suitable locations."
+      },
+      {
+        "source": "Lazard Levelized Cost of Energy Report",
+        "content": "Utility-scale solar and wind are both competitive, with costs varying by region and project type."
+      },
+      {
+        "source": "National Renewable Energy Laboratory (NREL)",
+        "content": "Energy output variability differs: solar depends on daylight cycles, wind depends on weather patterns."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "energy",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What's the difference between GPT-5 and Claude for coding and research tasks?",
+    "reference_answer": "GPT-5 is generally optimized for broader multimodal reasoning and integration, while Claude is often praised for long-context reasoning and safer, structured responses in research tasks.",
+    "reference_contexts": [
+      {
+        "source": "OpenAI Technical Documentation",
+        "content": "GPT models are designed for general-purpose reasoning, coding, and multimodal understanding."
+      },
+      {
+        "source": "Anthropic Claude Documentation",
+        "content": "Claude emphasizes long context windows and safe, interpretable outputs."
+      },
+      {
+        "source": "ArXiv AI Benchmark Studies",
+        "content": "Different LLMs show varying strengths in coding accuracy, reasoning depth, and context retention."
+      },
+      {
+        "source": "Stanford HELM Benchmark",
+        "content": "Model performance varies by task type, including code generation and factual reasoning."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "artificial intelligence",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which is healthier overall: a Mediterranean diet or a low-carb diet?",
+    "reference_answer": "The Mediterranean diet is generally considered healthier for long-term cardiovascular and metabolic health, while low-carb diets can be effective for short-term weight loss and blood sugar control depending on individual needs.",
+    "reference_contexts": [
+      {
+        "source": "Harvard T.H. Chan School of Public Health",
+        "content": "The Mediterranean diet is associated with reduced risk of heart disease and improved longevity due to emphasis on plant-based foods and healthy fats."
+      },
+      {
+        "source": "Mayo Clinic",
+        "content": "Low-carbohydrate diets can lead to weight loss and improved blood glucose control in the short term."
+      },
+      {
+        "source": "World Health Organization (WHO) Nutrition Guidance",
+        "content": "Balanced diets rich in fruits, vegetables, and whole grains are recommended for long-term health outcomes."
+      },
+      {
+        "source": "The Lancet Public Health Studies",
+        "content": "Dietary patterns like Mediterranean diets show stronger evidence for long-term cardiovascular benefits compared to restrictive diets."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "health and nutrition",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How does remote work productivity compare to in-office work based on recent research?",
+    "reference_answer": "Research shows remote work can maintain or slightly increase productivity for focused tasks, while in-office work tends to improve collaboration, communication, and team cohesion.",
+    "reference_contexts": [
+      {
+        "source": "Stanford University Work From Home Research (Bloom et al.)",
+        "content": "Remote workers showed a 13% performance increase due to fewer breaks and sick days."
+      },
+      {
+        "source": "McKinsey Global Institute",
+        "content": "Hybrid work models often balance productivity gains with improved employee satisfaction."
+      },
+      {
+        "source": "Harvard Business Review",
+        "content": "In-person work improves spontaneous collaboration and innovation opportunities."
+      },
+      {
+        "source": "OECD Remote Work Reports",
+        "content": "Productivity effects vary by job type, with knowledge work benefiting most from remote flexibility."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "workplace and management",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which cloud platform is better for startups in 2026: AWS, Google Cloud, or Azure?",
+    "reference_answer": "AWS is often preferred for startups due to its maturity and ecosystem, Google Cloud is strong in data and AI services, and Azure is advantageous for enterprises already using Microsoft products.",
+    "reference_contexts": [
+      {
+        "source": "Amazon Web Services Documentation",
+        "content": "AWS offers a broad suite of scalable cloud infrastructure services widely used by startups."
+      },
+      {
+        "source": "Google Cloud Platform Documentation",
+        "content": "Google Cloud emphasizes data analytics, machine learning, and Kubernetes-based infrastructure."
+      },
+      {
+        "source": "Microsoft Azure Documentation",
+        "content": "Azure integrates deeply with Microsoft enterprise tools and hybrid cloud environments."
+      },
+      {
+        "source": "Gartner Cloud Infrastructure Reports",
+        "content": "AWS leads in market share, while Azure and Google Cloud continue to grow in enterprise adoption."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "cloud computing",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How does the healthcare system in Germany compare to the one in the United States for quality and affordability?",
+    "reference_answer": "Germany’s healthcare system provides more universal coverage and lower costs for patients, while the U.S. offers high-quality specialized care but with significantly higher out-of-pocket expenses and insurance complexity.",
+    "reference_contexts": [
+      {
+        "source": "OECD Health Statistics",
+        "content": "Germany has universal health coverage with regulated insurance contributions, ensuring broad access."
+      },
+      {
+        "source": "Kaiser Family Foundation (KFF)",
+        "content": "The U.S. healthcare system has higher per capita costs and more variation in insurance coverage."
+      },
+      {
+        "source": "World Health Organization (WHO)",
+        "content": "Germany achieves strong health outcomes through universal insurance and preventive care systems."
+      },
+      {
+        "source": "Commonwealth Fund Healthcare Rankings",
+        "content": "The U.S. ranks lower in affordability but high in specialized medical innovation."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "public policy and healthcare",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which electric SUV is currently the best all-around option: Tesla Model Y, Hyundai Ioniq 5, or Kia EV6?",
+    "reference_answer": "The Tesla Model Y is often considered the best overall for range and charging infrastructure, while the Hyundai Ioniq 5 and Kia EV6 offer superior design, comfort, and faster charging in some configurations.",
+    "reference_contexts": [
+      {
+        "source": "EPA Vehicle Range Ratings",
+        "content": "Tesla Model Y generally offers strong driving range compared to many competitors."
+      },
+      {
+        "source": "Hyundai Motor Group Specifications",
+        "content": "Ioniq 5 and EV6 support ultra-fast 800V charging systems for rapid recharge times."
+      },
+      {
+        "source": "Car and Driver Reviews",
+        "content": "Model Y excels in software and charging network; EV6 and Ioniq 5 excel in ride comfort and interior design."
+      },
+      {
+        "source": "InsideEVs Comparative Testing",
+        "content": "All three vehicles are highly competitive, with differences mainly in charging ecosystem and driving feel."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "automotive",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What's the weather forecast for Kathmandu this weekend, and will it rain on Saturday?",
+    "reference_answer": "A precise weekend forecast requires real-time meteorological data; generally, Kathmandu’s weather can vary seasonally and should be checked via official forecasts for accurate rain prediction.",
+    "reference_contexts": [
+      {
+        "source": "Department of Hydrology and Meteorology (Nepal)",
+        "content": "Official national forecasts provide short-term precipitation and temperature predictions for Kathmandu and surrounding regions."
+      },
+      {
+        "source": "AccuWeather",
+        "content": "Provides localized hourly and weekend forecasts including probability of precipitation and storm alerts."
+      },
+      {
+        "source": "BBC Weather",
+        "content": "Weather forecasts are updated frequently and include regional rainfall predictions based on satellite data and models."
+      }
+    ],
+    "metadata": {
+      "category": "Weather Forecast",
+      "difficulty": "Easy",
+      "domain": "Meteorology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who won the NBA game between the Lakers and Warriors last night?",
+    "reference_answer": "The result of a specific NBA game depends on the most recent match data and must be verified from official sports reporting sources.",
+    "reference_contexts": [
+      {
+        "source": "ESPN NBA",
+        "content": "Provides up-to-date game results, box scores, and post-game analysis for all NBA matches."
+      },
+      {
+        "source": "NBA.com",
+        "content": "Official source for schedules, live scores, and final results of all league games."
+      },
+      {
+        "source": "Reuters Sports",
+        "content": "Reports verified sports outcomes and summaries shortly after games conclude."
+      }
+    ],
+    "metadata": {
+      "category": "Sports Results",
+      "difficulty": "Easy",
+      "domain": "Sports",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What is the current exchange rate between the Nepalese Rupee and the Australian Dollar?",
+    "reference_answer": "Exchange rates fluctuate continuously and must be checked from live financial data sources for the most accurate NPR to AUD conversion.",
+    "reference_contexts": [
+      {
+        "source": "Nepal Rastra Bank",
+        "content": "Publishes official daily foreign exchange reference rates for major currencies including AUD."
+      },
+      {
+        "source": "XE Currency Converter",
+        "content": "Provides real-time mid-market exchange rates and historical currency trends."
+      },
+      {
+        "source": "Bloomberg FX",
+        "content": "Offers live currency market data and forex rate movements influenced by global trading."
+      }
+    ],
+    "metadata": {
+      "category": "Financial Markets",
+      "difficulty": "Easy",
+      "domain": "Finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Has OpenAI released any major new models or features this month?",
+    "reference_answer": "Information on recent OpenAI releases must be verified from official announcements and reputable tech news sources as updates occur frequently.",
+    "reference_contexts": [
+      {
+        "source": "OpenAI Blog",
+        "content": "Official announcements for new models, APIs, and product updates are published here first."
+      },
+      {
+        "source": "TechCrunch",
+        "content": "Covers major AI product launches and updates from leading companies including OpenAI."
+      },
+      {
+        "source": "The Verge",
+        "content": "Reports on AI industry developments and new feature rollouts in consumer and developer tools."
+      }
+    ],
+    "metadata": {
+      "category": "Technology News",
+      "difficulty": "Medium",
+      "domain": "Artificial Intelligence",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Are there any travel advisories or visa policy changes for Nepali students planning to study in Australia right now?",
+    "reference_answer": "Current visa policies and travel advisories for Nepali students must be checked through official Australian government sources as they are updated frequently.",
+    "reference_contexts": [
+      {
+        "source": "Australian Department of Home Affairs",
+        "content": "Provides official visa requirements, student visa updates, and policy changes for international applicants."
+      },
+      {
+        "source": "Smartraveller (Australian Government)",
+        "content": "Offers travel advisories and safety information for Australians and visa-related guidance."
+      },
+      {
+        "source": "Study in Australia (Australian Government)",
+        "content": "Central portal for international students including visa eligibility and updates on study conditions."
+      }
+    ],
+    "metadata": {
+      "category": "Travel and Immigration",
+      "difficulty": "Hard",
+      "domain": "International Education",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What's the latest on the Israel\u2013Hamas ceasefire negotiations this week?",
+    "reference_answer": "Ceasefire negotiations between Israel and Hamas are highly fluid and depend on ongoing diplomatic talks mediated by multiple international actors; the latest status must be verified from current news updates.",
+    "reference_contexts": [
+      {
+        "source": "Reuters",
+        "content": "Reports on active diplomatic negotiations, mediation efforts, and updates from conflict zones are published in real time."
+      },
+      {
+        "source": "Al Jazeera",
+        "content": "Provides continuous coverage of Gaza conflict developments, including ceasefire discussions and humanitarian updates."
+      },
+      {
+        "source": "BBC News",
+        "content": "Covers verified international diplomatic developments and official statements from involved governments."
+      }
+    ],
+    "metadata": {
+      "category": "International News",
+      "difficulty": "Hard",
+      "domain": "Geopolitics",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How is Bitcoin performing today, and what's driving the price movement?",
+    "reference_answer": "Bitcoin’s price changes daily based on market demand, macroeconomic conditions, and investor sentiment; current performance must be checked on live crypto market data sources.",
+    "reference_contexts": [
+      {
+        "source": "CoinMarketCap",
+        "content": "Tracks real-time cryptocurrency prices, market capitalization, and trading volume."
+      },
+      {
+        "source": "CoinDesk",
+        "content": "Provides news and analysis explaining Bitcoin price movements and crypto market trends."
+      },
+      {
+        "source": "Bloomberg Crypto",
+        "content": "Reports institutional activity, regulatory news, and macroeconomic factors affecting Bitcoin."
+      }
+    ],
+    "metadata": {
+      "category": "Cryptocurrency",
+      "difficulty": "Medium",
+      "domain": "Finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the top headlines in global technology news today?",
+    "reference_answer": "Top global tech headlines change daily and must be sourced from current news outlets covering AI, consumer tech, and industry developments.",
+    "reference_contexts": [
+      {
+        "source": "TechCrunch",
+        "content": "Covers startup funding, product launches, and major technology industry updates."
+      },
+      {
+        "source": "The Verge",
+        "content": "Reports on consumer technology, gadgets, and major tech company announcements."
+      },
+      {
+        "source": "Reuters Technology",
+        "content": "Provides verified breaking news on global tech companies and regulatory developments."
+      }
+    ],
+    "metadata": {
+      "category": "Current Events",
+      "difficulty": "Medium",
+      "domain": "Technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Has the Federal Reserve announced any interest rate changes recently?",
+    "reference_answer": "Federal Reserve interest rate decisions are announced during scheduled meetings and must be checked from the latest official statements.",
+    "reference_contexts": [
+      {
+        "source": "Federal Reserve (federalreserve.gov)",
+        "content": "Official source for monetary policy decisions including interest rate changes."
+      },
+      {
+        "source": "Reuters Economics",
+        "content": "Reports on Fed decisions, economic forecasts, and market reactions."
+      },
+      {
+        "source": "Wall Street Journal",
+        "content": "Provides analysis of central bank policy decisions and financial market impacts."
+      }
+    ],
+    "metadata": {
+      "category": "Economic Policy",
+      "difficulty": "Medium",
+      "domain": "Macroeconomics",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which movies are leading the box office this week?",
+    "reference_answer": "Box office rankings change weekly and must be verified using current entertainment industry reporting sources.",
+    "reference_contexts": [
+      {
+        "source": "Box Office Mojo",
+        "content": "Tracks weekly domestic and global box office earnings for films."
+      },
+      {
+        "source": "The Numbers",
+        "content": "Provides detailed revenue statistics and film performance analytics."
+      },
+      {
+        "source": "Variety",
+        "content": "Reports entertainment industry rankings and box office trends."
+      }
+    ],
+    "metadata": {
+      "category": "Entertainment News",
+      "difficulty": "Easy",
+      "domain": "Film Industry",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the latest job market trends for software engineers in Australia this year?",
+    "reference_answer": "Software engineering demand in Australia remains strong, with growth driven by AI, cloud computing, and cybersecurity roles, though hiring cycles can fluctuate with broader economic conditions.",
+    "reference_contexts": [
+      {
+        "source": "Australian Bureau of Statistics (ABS)",
+        "content": "Reports employment trends across ICT occupations showing sustained demand in software and technology sectors."
+      },
+      {
+        "source": "LinkedIn Economic Graph",
+        "content": "Highlights increasing demand for AI, cloud, and backend engineering roles in Australia’s tech job market."
+      },
+      {
+        "source": "SEEK Employment Reports",
+        "content": "Indicates ongoing job postings growth in software engineering despite periodic market slowdowns."
+      }
+    ],
+    "metadata": {
+      "category": "Career and Employment",
+      "difficulty": "Hard",
+      "domain": "Labor Market",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Are there any major product recalls announced recently for electric vehicles?",
+    "reference_answer": "Recent EV recalls vary by manufacturer and are typically issued due to software, battery, or safety-related issues and must be confirmed through official regulatory announcements.",
+    "reference_contexts": [
+      {
+        "source": "U.S. National Highway Traffic Safety Administration (NHTSA)",
+        "content": "Publishes official recall notices for vehicle safety issues, including electric vehicles."
+      },
+      {
+        "source": "Reuters Automotive",
+        "content": "Reports on global EV recalls and investigates causes such as battery faults or software defects."
+      },
+      {
+        "source": "Tesla / Toyota Official Recall Pages",
+        "content": "Manufacturers publish recall notices and repair instructions directly to affected customers."
+      }
+    ],
+    "metadata": {
+      "category": "Consumer Safety",
+      "difficulty": "Hard",
+      "domain": "Automotive",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What is the current status of NASA's Artemis mission timeline?",
+    "reference_answer": "NASA’s Artemis program timeline is subject to adjustments, with Artemis II and subsequent missions planned after continued testing and development milestones.",
+    "reference_contexts": [
+      {
+        "source": "NASA Artemis Program (nasa.gov)",
+        "content": "Official source for mission updates, schedules, and technical milestones for the Artemis lunar exploration program."
+      },
+      {
+        "source": "Space.com",
+        "content": "Provides ongoing coverage of Artemis mission progress, delays, and launch preparations."
+      },
+      {
+        "source": "Reuters Science",
+        "content": "Reports on major NASA announcements and changes to space exploration timelines."
+      }
+    ],
+    "metadata": {
+      "category": "Science and Space",
+      "difficulty": "Medium",
+      "domain": "Space Exploration",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which stocks are making the biggest moves in the market today, and why?",
+    "reference_answer": "Daily stock movers are driven by earnings reports, macroeconomic data, and investor sentiment, and must be checked through live financial market updates.",
+    "reference_contexts": [
+      {
+        "source": "Bloomberg Markets",
+        "content": "Tracks real-time stock market movements and explains catalysts behind major gains or losses."
+      },
+      {
+        "source": "Reuters Finance",
+        "content": "Provides breaking updates on equities influenced by earnings, policy changes, or global events."
+      },
+      {
+        "source": "Yahoo Finance",
+        "content": "Lists daily top gainers and losers with market analysis and trading volume data."
+      }
+    ],
+    "metadata": {
+      "category": "Stock Market",
+      "difficulty": "Hard",
+      "domain": "Finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the latest public health recommendations regarding seasonal flu outbreaks in my region?",
+    "reference_answer": "Seasonal flu guidance typically includes vaccination, hygiene practices, and monitoring local health alerts, which vary by region and season.",
+    "reference_contexts": [
+      {
+        "source": "World Health Organization (WHO)",
+        "content": "Issues global influenza updates and preventive health recommendations."
+      },
+      {
+        "source": "Centers for Disease Control and Prevention (CDC)",
+        "content": "Provides flu season guidance, vaccine recommendations, and outbreak tracking (primarily U.S.-focused)."
+      },
+      {
+        "source": "Nepal Ministry of Health and Population",
+        "content": "Issues national public health advisories and seasonal disease prevention guidance."
+      }
+    ],
+    "metadata": {
+      "category": "Public Health",
+      "difficulty": "Medium",
+      "domain": "Healthcare",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is the new iPhone worth buying right now?",
+    "reference_answer": "It depends on your current phone, budget, and whether you need the latest features. For most users with recent iPhones, upgrading is optional unless specific improvements are important.",
+    "reference_contexts": [
+      {
+        "source": "Apple Official Website",
+        "content": "Apple highlights improvements in performance, camera systems, and battery life in its latest iPhone models compared to previous generations."
+      },
+      {
+        "source": "Consumer Reports",
+        "content": "Upgrades are generally most valuable for users with phones older than 3–4 years, as newer models offer incremental rather than transformative changes."
+      },
+      {
+        "source": "TechRadar",
+        "content": "Buying decisions often depend on whether users prioritize camera, battery, or performance improvements introduced in the latest generation."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Medium",
+      "domain": "Consumer Technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What's the best university for AI these days?",
+    "reference_answer": "There is no single best university for AI; top institutions vary depending on specialization, research focus, and region.",
+    "reference_contexts": [
+      {
+        "source": "QS World University Rankings",
+        "content": "MIT, Stanford, and Carnegie Mellon are consistently ranked among the top institutions for computer science and AI research."
+      },
+      {
+        "source": "Times Higher Education",
+        "content": "Leading AI research output is distributed across multiple universities globally, with strong hubs in the US, UK, Canada, and China."
+      },
+      {
+        "source": "Nature Index",
+        "content": "AI-related publications and citations are highly concentrated in a small group of research-intensive universities and institutes."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Education",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Should I invest in gold or stocks at the moment?",
+    "reference_answer": "The choice depends on risk tolerance, investment horizon, and market conditions; stocks typically offer higher long-term returns, while gold is often used for stability.",
+    "reference_contexts": [
+      {
+        "source": "Investopedia",
+        "content": "Gold is commonly viewed as a safe-haven asset during economic uncertainty, while equities provide growth potential over the long term."
+      },
+      {
+        "source": "World Gold Council",
+        "content": "Gold often performs differently from stocks, providing diversification benefits in a portfolio."
+      },
+      {
+        "source": "Morningstar Research",
+        "content": "Equities historically outperform gold over long periods but carry higher short-term volatility."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Personal Finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which streaming service has the best shows right now?",
+    "reference_answer": "There is no single best streaming service; Netflix, Amazon Prime Video, Disney+, and HBO/Max each lead in different types of content.",
+    "reference_contexts": [
+      {
+        "source": "Variety",
+        "content": "Netflix leads in global content volume and original productions, while competitors focus on niche strengths."
+      },
+      {
+        "source": "Rotten Tomatoes",
+        "content": "Content quality varies by platform and genre, with HBO/Max often scoring highly for prestige TV series."
+      },
+      {
+        "source": "Statista Streaming Reports",
+        "content": "Market share and content libraries differ significantly across major streaming platforms."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Medium",
+      "domain": "Entertainment",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is it safe to travel there right now?",
+    "reference_answer": "Safety depends on the specific destination, current political situation, health risks, and local advisories.",
+    "reference_contexts": [
+      {
+        "source": "U.S. Department of State Travel Advisories",
+        "content": "Travel safety varies by country and region, with advisories updated based on security, health, and political conditions."
+      },
+      {
+        "source": "UK Foreign Travel Advice (FCDO)",
+        "content": "Some destinations may have partial restrictions or warnings depending on local risks."
+      },
+      {
+        "source": "World Health Organization (WHO)",
+        "content": "Health-related travel safety may depend on outbreaks, vaccination status, and regional health infrastructure."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Travel & Safety",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What's the cheapest way to get to Europe this summer?",
+    "reference_answer": "The cheapest way to travel to Europe in summer usually involves booking flights early, choosing flexible dates, using budget airlines, and flying into secondary airports.",
+    "reference_contexts": [
+      {
+        "source": "Skyscanner Travel Insights",
+        "content": "Booking flights several weeks to months in advance and being flexible with travel dates can significantly reduce airfare costs."
+      },
+      {
+        "source": "Google Flights Travel Data",
+        "content": "Midweek flights and alternative airports often offer lower fares compared to peak weekend routes."
+      },
+      {
+        "source": "Kayak Travel Trends",
+        "content": "Budget carriers and connecting flights are typically cheaper options for long-haul travel to Europe."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Travel",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who's leading in the election?",
+    "reference_answer": "This depends on the specific election and location; polling leaders can change frequently as new data is released.",
+    "reference_contexts": [
+      {
+        "source": "Reuters Politics Coverage",
+        "content": "Election polls are updated regularly and reflect changing voter sentiment over time."
+      },
+      {
+        "source": "BBC News Politics",
+        "content": "Leading candidates in elections can shift based on campaign events, debates, and emerging issues."
+      },
+      {
+        "source": "Gallup Polling Reports",
+        "content": "Poll results provide snapshots of voter preferences but are subject to margins of error."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Medium",
+      "domain": "Politics",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the best restaurants nearby?",
+    "reference_answer": "The best nearby restaurants depend on your exact location, cuisine preference, budget, and current reviews.",
+    "reference_contexts": [
+      {
+        "source": "Google Maps",
+        "content": "Restaurant rankings are based on user ratings, reviews, and popularity in a specific area."
+      },
+      {
+        "source": "TripAdvisor",
+        "content": "User reviews and ratings are key indicators of restaurant quality and experience."
+      },
+      {
+        "source": "Yelp",
+        "content": "Highly rated restaurants vary by neighborhood and are influenced by recent customer feedback."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Medium",
+      "domain": "Local Search / Food",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is this a good time to buy a house?",
+    "reference_answer": "The right time to buy a house depends on interest rates, housing supply, affordability, and personal financial stability.",
+    "reference_contexts": [
+      {
+        "source": "Federal Reserve Economic Data (FRED)",
+        "content": "Mortgage interest rates strongly influence housing affordability and buyer demand."
+      },
+      {
+        "source": "Zillow Research",
+        "content": "Housing market conditions vary by region, with some markets favoring buyers and others favoring sellers."
+      },
+      {
+        "source": "Reuters Real Estate Analysis",
+        "content": "Economic conditions and inflation trends affect home prices and purchasing power."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Real Estate",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which laptop should I get for college?",
+    "reference_answer": "A good college laptop depends on your field of study, but most students benefit from a lightweight device with good battery life and at least mid-range performance.",
+    "reference_contexts": [
+      {
+        "source": "PCMag Buying Guides",
+        "content": "Students often prioritize portability, battery life, and reliability over high-end performance."
+      },
+      {
+        "source": "Wirecutter (New York Times)",
+        "content": "Mid-range laptops typically offer the best balance between performance and affordability for students."
+      },
+      {
+        "source": "Consumer Reports",
+        "content": "Durability and keyboard comfort are important factors for long-term academic use."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Medium",
+      "domain": "Consumer Electronics",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What's happening with Bitcoin lately?",
+    "reference_answer": "Bitcoin’s recent performance depends on market conditions, including investor sentiment, regulatory news, and macroeconomic trends, and it tends to be highly volatile.",
+    "reference_contexts": [
+      {
+        "source": "CoinDesk",
+        "content": "Bitcoin prices are influenced by market demand, institutional adoption, and global economic uncertainty."
+      },
+      {
+        "source": "Reuters Cryptocurrency Coverage",
+        "content": "Cryptocurrency markets often react sharply to regulatory announcements and macroeconomic indicators."
+      },
+      {
+        "source": "Investopedia",
+        "content": "Bitcoin is known for high volatility and can experience rapid price changes within short periods."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Medium",
+      "domain": "Cryptocurrency",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Are there any good jobs in data science right now?",
+    "reference_answer": "Yes, data science remains in demand, but opportunities vary by region, experience level, and industry.",
+    "reference_contexts": [
+      {
+        "source": "LinkedIn Jobs Report",
+        "content": "Data science roles consistently rank among the top growing job categories in technology fields."
+      },
+      {
+        "source": "Glassdoor Economic Research",
+        "content": "Demand for data scientists is strong across industries such as finance, healthcare, and technology."
+      },
+      {
+        "source": "U.S. Bureau of Labor Statistics",
+        "content": "Employment for data-related roles is projected to grow significantly over the coming decade."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Careers",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which car is the most reliable these days?",
+    "reference_answer": "Reliability varies by model and manufacturer, but brands like Toyota, Lexus, and Honda are often ranked highly.",
+    "reference_contexts": [
+      {
+        "source": "J.D. Power Vehicle Dependability Study",
+        "content": "Certain brands consistently perform better in long-term reliability rankings based on owner feedback."
+      },
+      {
+        "source": "Consumer Reports Auto Rankings",
+        "content": "Reliability scores are based on predicted failure rates and customer satisfaction surveys."
+      },
+      {
+        "source": "Edmunds Automotive Reviews",
+        "content": "Reliability can vary significantly even within the same brand depending on the model year."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Medium",
+      "domain": "Automotive",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What's the weather going to be like for the trip?",
+    "reference_answer": "Trip weather depends on the destination and dates, and forecasts become more accurate closer to the travel time.",
+    "reference_contexts": [
+      {
+        "source": "National Weather Service (NOAA)",
+        "content": "Weather forecasts are more reliable within a 1–7 day window than long-range predictions."
+      },
+      {
+        "source": "BBC Weather",
+        "content": "Seasonal patterns and regional climate influence expected weather conditions."
+      },
+      {
+        "source": "AccuWeather",
+        "content": "Extended forecasts provide trends but have higher uncertainty compared to short-term forecasts."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Easy",
+      "domain": "Weather",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Has that new law gone into effect yet?",
+    "reference_answer": "Whether a law is in effect depends on its jurisdiction and effective date as defined in the legislation.",
+    "reference_contexts": [
+      {
+        "source": "Official Government Gazettes",
+        "content": "Laws typically specify an effective date or conditions under which they come into force."
+      },
+      {
+        "source": "Reuters Legal News",
+        "content": "New legislation may be implemented immediately or phased in over time depending on policy design."
+      },
+      {
+        "source": "Congress.gov / Parliamentary Records",
+        "content": "Bills become law only after enactment and are enforced according to stated commencement provisions."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Legal / Public Policy",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How are current AI governance frameworks in the European Union and the United States evolving, and what are the key differences in their regulatory approaches toward large language models and generative AI systems?",
+    "reference_answer": "The EU is implementing a comprehensive, risk-based regulatory framework through the AI Act, while the US is adopting a more fragmented, sectoral, and guideline-driven approach focusing on voluntary standards and agency-specific rules. The EU emphasizes legal compliance and classification of AI risk, whereas the US prioritizes innovation and flexible governance.",
+    "reference_contexts": [
+      {
+        "source": "European Union AI Act (European Commission)",
+        "content": "EU AI Act introduces risk-based categories for AI systems including unacceptable, high-risk, and limited-risk systems, with stricter obligations for high-risk applications such as foundation models and generative AI."
+      },
+      {
+        "source": "NIST AI Risk Management Framework (2023)",
+        "content": "The US approach emphasizes voluntary risk management frameworks focusing on trustworthiness, safety, and transparency rather than binding federal regulation."
+      },
+      {
+        "source": "Brookings Institution policy analysis",
+        "content": "The US regulatory landscape remains fragmented across agencies, with AI governance largely shaped by existing laws rather than a single comprehensive AI-specific statute."
+      }
+    ],
+    "metadata": {
+      "category": "policy analysis",
+      "difficulty": "hard",
+      "domain": "technology and regulation",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the most effective climate change adaptation strategies currently being implemented in coastal megacities, and how do their outcomes differ across regions such as Southeast Asia, Europe, and North America?",
+    "reference_answer": "Coastal megacities are adopting a mix of hard infrastructure (sea walls, flood barriers), nature-based solutions (mangrove restoration, wetlands), and policy-driven relocation planning. Outcomes vary: Southeast Asia relies heavily on structural defenses, Europe emphasizes integrated water management and nature-based solutions, while North America combines engineering solutions with managed retreat strategies.",
+    "reference_contexts": [
+      {
+        "source": "IPCC Sixth Assessment Report (AR6)",
+        "content": "Adaptation strategies in coastal cities include hard infrastructure, ecosystem-based adaptation, and planned relocation depending on local vulnerability and governance capacity."
+      },
+      {
+        "source": "World Bank Climate Adaptation Reports",
+        "content": "Southeast Asian cities such as Jakarta and Bangkok rely heavily on sea walls and drainage systems due to rapid urbanization and high flood risk."
+      },
+      {
+        "source": "European Environment Agency (EEA)",
+        "content": "European coastal cities increasingly adopt nature-based solutions such as wetland restoration and integrated floodplain management."
+      },
+      {
+        "source": "NOAA Climate Adaptation Guidance",
+        "content": "In the United States, adaptation includes both engineered coastal defenses and strategic relocation in highly vulnerable coastal zones."
+      }
+    ],
+    "metadata": {
+      "category": "comparative environmental study",
+      "difficulty": "medium",
+      "domain": "environmental science",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What does the latest research indicate about the effectiveness of different mental health interventions, including cognitive behavioral therapy, pharmacological treatments, and digital therapy platforms, across various age groups?",
+    "reference_answer": "Research shows cognitive behavioral therapy (CBT) is highly effective for anxiety and depression across age groups, pharmacological treatments are effective but often combined with therapy for best outcomes, and digital therapy platforms provide moderate effectiveness with strong accessibility benefits, especially for younger populations.",
+    "reference_contexts": [
+      {
+        "source": "World Health Organization (WHO) Mental Health Guidelines",
+        "content": "CBT is recommended as a first-line treatment for common mental disorders including depression and anxiety disorders."
+      },
+      {
+        "source": "American Psychiatric Association (APA) Practice Guidelines",
+        "content": "Antidepressant medications are effective for moderate to severe depression, particularly when combined with psychotherapy."
+      },
+      {
+        "source": "JAMA Psychiatry review studies",
+        "content": "Digital mental health interventions show moderate effect sizes and are particularly useful for increasing access among adolescents and young adults."
+      }
+    ],
+    "metadata": {
+      "category": "medical research synthesis",
+      "difficulty": "medium",
+      "domain": "health and psychology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How is the global semiconductor supply chain structured today, and what geopolitical and economic factors are most influencing production, distribution, and technological advancement?",
+    "reference_answer": "The semiconductor supply chain is highly globalized and specialized, with design concentrated in the US, manufacturing in Taiwan and South Korea, equipment dominated by Europe and the US, and packaging/testing in Asia. Geopolitical tensions, especially US-China trade restrictions and Taiwan’s central role, significantly influence supply stability and investment decisions.",
+    "reference_contexts": [
+      {
+        "source": "U.S. Semiconductor Industry Association (SIA)",
+        "content": "The semiconductor ecosystem is globally distributed with critical dependencies across design, fabrication, and equipment supply chains."
+      },
+      {
+        "source": "CSIS Semiconductor Supply Chain Report",
+        "content": "Taiwan and South Korea dominate advanced chip manufacturing, while the US leads in chip design and EDA software tools."
+      },
+      {
+        "source": "European Commission Chips Act documentation",
+        "content": "Geopolitical risks have prompted regions like the EU and US to invest in reshoring semiconductor manufacturing capacity."
+      },
+      {
+        "source": "Reuters technology analysis reports",
+        "content": "Export controls and trade restrictions between the US and China are reshaping global semiconductor investment and supply chain diversification."
+      }
+    ],
+    "metadata": {
+      "category": "systems analysis",
+      "difficulty": "hard",
+      "domain": "economics and technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the current breakthroughs in renewable energy storage technologies, and how do battery innovations, hydrogen storage, and grid-scale solutions compare in efficiency and scalability?",
+    "reference_answer": "Recent breakthroughs include improved lithium-ion and solid-state batteries, advancing hydrogen storage systems, and expanded grid-scale storage like pumped hydro and flow batteries. Lithium-ion remains most efficient for short-term storage, hydrogen offers long-duration storage potential, and grid-scale systems provide large-capacity stability for renewable integration.",
+    "reference_contexts": [
+      {
+        "source": "International Energy Agency (IEA) Energy Storage Report",
+        "content": "Battery storage is expanding rapidly, with lithium-ion dominating but new chemistries emerging for cost and safety improvements."
+      },
+      {
+        "source": "Nature Energy journal reviews",
+        "content": "Solid-state batteries are a promising advancement offering higher energy density and improved safety over traditional lithium-ion systems."
+      },
+      {
+        "source": "U.S. Department of Energy Hydrogen Program",
+        "content": "Hydrogen is being developed as a long-duration energy storage medium, particularly for seasonal balancing of renewable energy."
+      },
+      {
+        "source": "World Energy Council reports",
+        "content": "Grid-scale solutions such as pumped hydro and flow batteries are essential for stabilizing renewable-heavy electricity grids."
+      }
+    ],
+    "metadata": {
+      "category": "technology comparison",
+      "difficulty": "medium",
+      "domain": "energy systems",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How is artificial intelligence being integrated into modern education systems, and what measurable impacts does AI tutoring have on student performance, engagement, and equity?",
+    "reference_answer": "AI is increasingly used in education through adaptive learning platforms, automated tutoring systems, and personalized content delivery. Studies show AI tutoring can improve student performance and engagement, particularly in STEM subjects, while also raising concerns about equity due to unequal access to technology.",
+    "reference_contexts": [
+      {
+        "source": "UNESCO AI in Education Report",
+        "content": "AI-powered educational tools are being used to personalize learning pathways and provide real-time feedback to students."
+      },
+      {
+        "source": "MIT Teaching Systems Lab research",
+        "content": "Intelligent tutoring systems can improve learning outcomes, especially when used as a supplement to traditional instruction."
+      },
+      {
+        "source": "OECD Education and AI Report",
+        "content": "AI in education shows potential to improve engagement but risks widening digital divides between high- and low-income students."
+      }
+    ],
+    "metadata": {
+      "category": "impact evaluation",
+      "difficulty": "medium",
+      "domain": "education technology",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What are the long-term geopolitical and economic impacts of China\u2019s Belt and Road Initiative on participating countries, particularly in Africa and Central Asia?",
+    "reference_answer": "The Belt and Road Initiative has improved infrastructure and trade connectivity in participating countries but has also raised concerns about debt sustainability, dependency on Chinese financing, and geopolitical influence. Impacts vary widely depending on local governance and project management.",
+    "reference_contexts": [
+      {
+        "source": "World Bank Belt and Road Economics Report",
+        "content": "BRI projects have improved transport infrastructure and reduced trade costs in several developing economies."
+      },
+      {
+        "source": "IMF Debt Sustainability Analysis",
+        "content": "Some BRI-participating countries face increased debt vulnerabilities due to large-scale infrastructure borrowing."
+      },
+      {
+        "source": "Council on Foreign Relations analysis",
+        "content": "The initiative expands China’s geopolitical influence through infrastructure investment and strategic partnerships."
+      }
+    ],
+    "metadata": {
+      "category": "geopolitical analysis",
+      "difficulty": "hard",
+      "domain": "international relations",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What are the biological mechanisms behind antibiotic resistance, and how are global health systems responding to the increasing prevalence of multidrug-resistant bacteria?",
+    "reference_answer": "Antibiotic resistance occurs through genetic mutations and horizontal gene transfer that allow bacteria to survive drug exposure. Global responses include surveillance programs, antibiotic stewardship, and development of new antimicrobial drugs, though progress is challenged by slow drug development and overuse of antibiotics.",
+    "reference_contexts": [
+      {
+        "source": "World Health Organization (WHO) AMR Report",
+        "content": "Antimicrobial resistance occurs when bacteria evolve mechanisms to resist the effects of antibiotics."
+      },
+      {
+        "source": "CDC Antibiotic Resistance Threats Report",
+        "content": "Overuse and misuse of antibiotics in humans and agriculture accelerate the spread of resistant bacteria."
+      },
+      {
+        "source": "The Lancet Infectious Diseases journal",
+        "content": "Multidrug-resistant organisms are increasing globally, posing a major public health challenge."
+      }
+    ],
+    "metadata": {
+      "category": "scientific explanation and policy",
+      "difficulty": "medium",
+      "domain": "biology and medicine",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "How has rapid urbanization in South Asia affected housing, transportation infrastructure, and socioeconomic inequality in major cities such as Kathmandu, Dhaka, and Delhi?",
+    "reference_answer": "Rapid urbanization in South Asia has led to housing shortages, strained transportation systems, and increased socioeconomic inequality. Informal settlements have expanded, infrastructure has struggled to keep pace, and disparities in access to services have widened in major cities.",
+    "reference_contexts": [
+      {
+        "source": "UN-Habitat Urbanization Report",
+        "content": "South Asian cities are experiencing rapid growth in informal settlements due to housing shortages."
+      },
+      {
+        "source": "World Bank South Asia Urbanization Study",
+        "content": "Urban infrastructure in cities like Dhaka and Delhi is under significant pressure due to population growth."
+      },
+      {
+        "source": "Asian Development Bank (ADB) urban development reports",
+        "content": "Inequality in access to transportation and basic services has increased in rapidly urbanizing South Asian cities."
+      }
+    ],
+    "metadata": {
+      "category": "urban development analysis",
+      "difficulty": "medium",
+      "domain": "urban studies",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What is the current state of quantum computing development, and how realistic are projected timelines for achieving fault-tolerant quantum systems with practical applications?",
+    "reference_answer": "Quantum computing is progressing with experimental systems using superconducting and trapped-ion qubits, but large-scale fault-tolerant quantum computers remain years or decades away. Current systems are useful for research but limited in practical, error-corrected applications.",
+    "reference_contexts": [
+      {
+        "source": "IBM Quantum Roadmap",
+        "content": "IBM is developing increasingly large quantum processors with a long-term goal of achieving fault-tolerant quantum computing."
+      },
+      {
+        "source": "Nature Physics review on quantum computing",
+        "content": "Quantum error correction remains one of the major challenges for scalable quantum systems."
+      },
+      {
+        "source": "MIT Technology Review",
+        "content": "Current quantum computers are still in the noisy intermediate-scale quantum (NISQ) era with limited practical applications."
+      },
+      {
+        "source": "Google Quantum AI research publications",
+        "content": "Demonstrations of quantum advantage exist, but practical, general-purpose quantum computing remains unresolved."
+      }
+    ],
+    "metadata": {
+      "category": "technology forecasting",
+      "difficulty": "hard",
+      "domain": "quantum physics and computing",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How do social media recommendation algorithms influence the spread of misinformation, and what mitigation strategies are platforms currently implementing to reduce harmful content propagation?",
+    "reference_answer": "Social media recommendation algorithms can amplify misinformation by prioritizing engagement-driven content, which often favors emotionally charged or misleading posts. Platforms are responding with fact-checking systems, reduced ranking of questionable content, transparency measures, and AI moderation tools, though effectiveness varies.",
+    "reference_contexts": [
+      {
+        "source": "Pew Research Center social media studies",
+        "content": "Algorithmic feeds tend to prioritize highly engaging content, which can include misleading or false information."
+      },
+      {
+        "source": "Nature Human Behaviour journal",
+        "content": "Misinformation spreads faster when content is emotionally arousing and algorithmically amplified through engagement signals."
+      },
+      {
+        "source": "European Commission Digital Services Act documentation",
+        "content": "Platforms are required to increase transparency in recommender systems and mitigate systemic risks such as misinformation."
+      },
+      {
+        "source": "Meta transparency reports",
+        "content": "The company uses fact-checking partnerships and demotion of false content to reduce misinformation spread."
+      }
+    ],
+    "metadata": {
+      "category": "algorithmic impact analysis",
+      "difficulty": "hard",
+      "domain": "media and technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What economic challenges arise from aging populations in countries like Japan and several European nations, and what policy measures are being used to address labor shortages and healthcare demands?",
+    "reference_answer": "Aging populations create labor shortages, increased healthcare and pension costs, and slower economic growth. Countries respond with policies such as raising retirement ages, encouraging automation, promoting immigration, and expanding healthcare infrastructure.",
+    "reference_contexts": [
+      {
+        "source": "OECD Aging and Employment Report",
+        "content": "Aging populations reduce labor force participation and increase dependency ratios across developed economies."
+      },
+      {
+        "source": "World Bank demographic studies",
+        "content": "Countries with aging populations face rising fiscal pressure due to pension and healthcare expenditures."
+      },
+      {
+        "source": "Japan Ministry of Health, Labour and Welfare reports",
+        "content": "Japan has implemented policies such as higher retirement age and increased workforce participation of women and elderly workers."
+      },
+      {
+        "source": "European Commission Ageing Report",
+        "content": "European countries are addressing labor shortages through migration policies and automation adoption."
+      }
+    ],
+    "metadata": {
+      "category": "economic demography",
+      "difficulty": "medium",
+      "domain": "economics and public policy",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "How do current NASA and SpaceX Mars exploration programs differ in objectives, technological approach, and projected timelines for human settlement missions?",
+    "reference_answer": "NASA focuses on long-term scientific exploration and international collaboration with gradual human missions planned through Artemis and Mars architecture studies, while SpaceX aims for rapid development of reusable spacecraft like Starship to enable early human settlement of Mars. NASA emphasizes safety and incremental milestones, whereas SpaceX prioritizes speed and full colonization vision.",
+    "reference_contexts": [
+      {
+        "source": "NASA Mars Exploration Program documentation",
+        "content": "NASA’s Mars strategy emphasizes robotic exploration followed by crewed missions in the 2030s or later."
+      },
+      {
+        "source": "NASA Artemis program plans",
+        "content": "Artemis serves as a stepping stone for human deep space exploration including potential Mars missions."
+      },
+      {
+        "source": "SpaceX Starship development updates",
+        "content": "SpaceX is developing Starship as a fully reusable spacecraft intended for interplanetary travel, including Mars colonization goals."
+      },
+      {
+        "source": "NASA vs SpaceX policy analysis (Space policy journals)",
+        "content": "NASA prioritizes risk mitigation and international cooperation, while SpaceX focuses on rapid iteration and cost reduction."
+      }
+    ],
+    "metadata": {
+      "category": "comparative space exploration",
+      "difficulty": "medium",
+      "domain": "aerospace science",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the latest trends in ransomware attacks globally, and how are cybersecurity frameworks evolving to defend critical infrastructure against increasingly sophisticated threats?",
+    "reference_answer": "Ransomware attacks are becoming more targeted, often involving double extortion and attacks on critical infrastructure like healthcare and energy systems. Cybersecurity responses include zero-trust architectures, improved incident response frameworks, international cooperation, and stricter regulatory requirements.",
+    "reference_contexts": [
+      {
+        "source": "ENISA Threat Landscape Report",
+        "content": "Ransomware remains one of the most significant cyber threats, increasingly targeting essential services."
+      },
+      {
+        "source": "FBI Internet Crime Report",
+        "content": "Ransomware attacks frequently involve data encryption combined with threats of data leakage (double extortion)."
+      },
+      {
+        "source": "NIST Cybersecurity Framework updates",
+        "content": "Zero-trust architecture is being promoted as a key model for defending modern networked systems."
+      },
+      {
+        "source": "Microsoft Digital Defense Report",
+        "content": "Critical infrastructure sectors are increasingly targeted due to high disruption potential and ransom value."
+      }
+    ],
+    "metadata": {
+      "category": "security analysis",
+      "difficulty": "hard",
+      "domain": "cybersecurity",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What does current nutritional research suggest about the long-term health effects of ultra-processed foods, and how do consumption patterns vary across different populations?",
+    "reference_answer": "Research links high consumption of ultra-processed foods to increased risks of obesity, cardiovascular disease, and metabolic disorders. Consumption varies widely, with higher intake in high-income countries and urban populations, while lower-income groups often rely more on affordable processed foods.",
+    "reference_contexts": [
+      {
+        "source": "BMJ (British Medical Journal) cohort studies",
+        "content": "Higher intake of ultra-processed foods is associated with increased risk of cardiovascular disease and mortality."
+      },
+      {
+        "source": "WHO dietary guidelines and reports",
+        "content": "Dietary patterns high in processed foods are linked to negative long-term health outcomes."
+      },
+      {
+        "source": "FAO food consumption reports",
+        "content": "Ultra-processed food consumption is increasing globally, especially in urbanized regions."
+      },
+      {
+        "source": "Lancet Public Health studies",
+        "content": "Socioeconomic status influences dietary patterns, with disparities in access to fresh foods contributing to higher processed food consumption in some groups."
+      }
+    ],
+    "metadata": {
+      "category": "health research synthesis",
+      "difficulty": "medium",
+      "domain": "nutrition science",
+      "freshness_required": false
+    }
+  }
+]

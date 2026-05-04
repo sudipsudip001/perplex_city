@@ -1,0 +1,428 @@
+[
+  {
+    "question": "Who is the current Secretary-General of the United Nations?",
+    "answer": "The current Secretary-General of the United Nations is Mr. Ant\u00f3nio Guterres of Portugal, who assumed office on January 1, 2017 [2]. He is the ninth person to hold this position [2].",
+    "retrieved_contexts": [
+      "Secretary-General of the United Nations\n| Secretary-General of the United Nations | |\n|---|---|\nsince 1 January 2017 | |\n| United Nations Secretariat | |\n| Style | His Excellency |\n| Type | Chief admi",
+      "Equal parts diplomat and advocate, civil servant and CEO, the Secretary-General is a symbol of United Nations ideals and a spokesperson for the interests of the world's peoples, in particular the poor",
+      "Ant\u00f3nio Guterres\nAnt\u00f3nio Guterres | |\n|---|---|\n| 9th Secretary-General of the United Nations | |\n| Assumed office 1 January 2017 | |\n| Deputy | Amina J. Mohammed |\n| Preceded by | Ban Ki-moon |\n| Pri"
+    ],
+    "reference_answer": "Ant\u00f3nio Guterres is the Secretary-General of the United Nations.",
+    "reference_contexts": [
+      "The Secretary-General of the United Nations is Ant\u00f3nio Guterres, who assumed office on 1 January 2017.",
+      "Ant\u00f3nio Guterres serves as the ninth Secretary-General of the United Nations.",
+      "Ant\u00f3nio Guterres, Portuguese politician and diplomat, has been UN Secretary-General since 2017."
+    ]
+  },
+  {
+    "question": "Which company currently has the largest market capitalization in the world?",
+    "answer": "As of December 31, 2025, Apple has the largest market capitalization at $3,337,000 million [2]. Nvidia briefly held the top spot in 2024, becoming America's most valuable company on two occasions [3].",
+    "retrieved_contexts": [
+      "This is the list of the world's biggest companies by market capitalization. It ranks the most valuable public companies. Private companies are not included in our lists as it is difficult to calculate",
+      "List of public corporations by market capitalization\nThe following is a list of publicly traded companies, that have the largest market capitalization or sometimes described as their \"market value\".[1",
+      "Markets\nAmerica\u2019s Most Valuable Company in Each Year (1995-2025)\nPublished\n1 year agoon\nBy\nMarcus LuDesign\nAmerica\u2019s Most Valuable Company in Each Year (1995-2025)\nThis was originally posted on our Vo"
+    ],
+    "reference_answer": "NVIDIA Corporation has recently ranked as one of the companies with the highest global market capitalization, frequently alternating with Apple depending on market conditions.",
+    "reference_contexts": [
+      "NVIDIA and Apple have both occupied the top position in global market capitalization rankings in recent periods.",
+      "NVIDIA briefly surpassed Apple to become the most valuable public company amid AI-driven stock growth.",
+      "Market leadership by capitalization has shifted between major tech firms including Apple, Microsoft, and NVIDIA."
+    ]
+  },
+  {
+    "question": "What are the main symptoms of dengue fever?",
+    "answer": "Dengue fever can manifest with a variety of symptoms, including severe stomach pain, persistent vomiting, and bleeding from the gums or nose [1]. Other signs include blood in urine, stools, or vomit, and bleeding under the skin [1]. Additionally, individuals may experience headaches, muscle, bone, or joint pain, nausea, vomiting, pain behind the eyes, swollen glands, and a rash [2]. In severe cases, which are a medical emergency, symptoms can include intense stomach pain, vomiting at least three times in 24 hours, nose or gum bleeding, and vomiting blood or blood in the stool [3]. It's important to note that severe dengue can occur after other symptoms subside, and prompt medical attention is crucial [3].",
+    "retrieved_contexts": [
+      "Symptoms \u00b7 Severe stomach pain \u00b7 Persistent vomiting \u00b7 Bleeding from your gums or nose \u00b7 Blood in your urine, stools or vomit \u00b7 Bleeding under the ...",
+      "Symptoms \u00b7 Headache \u00b7 Muscle, bone or joint pain \u00b7 Nausea \u00b7 Vomiting \u00b7 Pain behind the eyes \u00b7 Swollen glands \u00b7 Rash.",
+      "At a glance\nSevere dengue is a medical emergency. It can start after other symptoms of the disease go away.\nSevere Dengue: Know the Warning Signs\nDengue can be deceptive.\nThe mosquito-borne disease ca"
+    ],
+    "reference_answer": "Dengue fever commonly causes high fever, severe headache, pain behind the eyes, muscle and joint pain, rash, and mild bleeding.",
+    "reference_contexts": [
+      "Symptoms include high fever, severe headache, pain behind the eyes, muscle and joint pains, nausea, vomiting, swollen glands, and rash.",
+      "Dengue symptoms include fever, severe headache, eye pain, muscle and joint pain, and rash.",
+      "Common symptoms include sudden high fever, severe headaches, pain behind the eyes, and joint and muscle pain."
+    ]
+  },
+  {
+    "question": "Who wrote the novel 'One Hundred Years of Solitude'?",
+    "answer": "The novel 'One Hundred Years of Solitude' was written by Gabriel Garc\u00eda M\u00e1rquez [1, 2].",
+    "retrieved_contexts": [
+      "Gabriel Garc\u00eda M\u00e1rquez\nGabriel Garc\u00eda M\u00e1rquez | |\n|---|---|\n| Born | Gabriel Jos\u00e9 Garc\u00eda M\u00e1rquez 6 March 1927 Aracataca, Colombia |\n| Died | 17 April 2014 Mexico City, Mexico | (aged 87)\n| Language | ",
+      "Gabriel Garc\u00eda M\u00e1rquez\nGabriel Garc\u00eda M\u00e1rquez | |\n|---|---|\n| Born | Gabriel Jos\u00e9 Garc\u00eda M\u00e1rquez 6 March 1927 Aracataca, Colombia |\n| Died | 17 April 2014 Mexico City, Mexico | (aged 87)\n| Language | ",
+      "Themes are the fundamental and often universal ideas explored in a literary work. The Subjectivity of Experienced Reality. Although the realism and the magic ..."
+    ],
+    "reference_answer": "Gabriel Garc\u00eda M\u00e1rquez wrote 'One Hundred Years of Solitude'.",
+    "reference_contexts": [
+      "One Hundred Years of Solitude is a novel by Colombian author Gabriel Garc\u00eda M\u00e1rquez.",
+      "Gabriel Garc\u00eda M\u00e1rquez, Nobel laureate in Literature, authored the novel One Hundred Years of Solitude.",
+      "Gabriel Garc\u00eda M\u00e1rquez\u2019s masterpiece One Hundred Years of Solitude is a landmark in magical realism."
+    ]
+  },
+  {
+    "question": "What is the latest version of Python currently available?",
+    "answer": "The main branch, which is currently the future Python 3.15, is the only branch that accepts new features [1, 2]. The latest release for each Python version can be found on the download page [1, 2].",
+    "retrieved_contexts": [
+      "Status of Python versions\u00b6\nThe main\nbranch is currently the future Python 3.15, and is the only\nbranch that accepts new features. The latest release for each Python\nversion can be found on the downloa",
+      "Status of Python versions\u00b6\nThe main\nbranch is currently the future Python 3.15, and is the only\nbranch that accepts new features. The latest release for each Python\nversion can be found on the downloa",
+      "I have to run a Python script on a Windows server. How can I know which version of Python I have, and does it even really matter?\nI was thinking of updating to the latest version of Python.\nTo check t"
+    ],
+    "reference_answer": "The latest stable version of Python is Python 3.13.x (exact patch version may vary with updates).",
+    "reference_contexts": [
+      "Python 3.13 is the latest major release series of Python.",
+      "Python 3.13 introduced new performance improvements and language features.",
+      "The Python 3.13 release line is actively maintained with periodic patch updates."
+    ]
+  },
+  {
+    "question": "Which country has won the most Olympic gold medals in history?",
+    "answer": "I am sorry, but the provided context does not contain information about which country has won the most Olympic gold medals in history. The text does mention that the table can be sorted by the total number of gold medals, but it does not provide the ranking itself [1, 2].",
+    "retrieved_contexts": [
+      "All-time Olympic Games medal table\n| Olympic Games |\n|---|\n| Main topics |\n| Games |\n| Continental games |\n| Regional games |\n|\n| Defunct games |\nThe all-time medal table for all Olympic Games from 18",
+      "All-time Olympic Games medal table\n| Olympic Games |\n|---|\n| Main topics |\n| Games |\n| Continental games |\n| Regional games |\n|\n| Defunct games |\nThe all-time medal table for all Olympic Games from 18",
+      "United States at the Olympics\n| United States at the Olympics | |\n|---|---|\n| IOC code | USA |\n| NOC | United States Olympic & Paralympic Committee |\n| Website | www |\n| Medals Ranked 1st |\n|\n| Summer"
+    ],
+    "reference_answer": "The United States has won the most Olympic gold medals in history.",
+    "reference_contexts": [
+      "The United States leads the all-time Olympic gold medal count.",
+      "The USA is the most successful nation in Olympic history by total gold medals.",
+      "The United States has historically topped the Olympic medal tables."
+    ]
+  },
+  {
+    "question": "Which programming language is primarily used for iOS app development today?",
+    "answer": "Swift is the preferred and official programming language for developing applications for Apple devices, including iPhones, iPads, and Macs [1, 3]. While Objective-C was the original language for iOS development, Swift has become more popular due to its speed, safety, and modern syntax, leading many developers to adopt it over Objective-C [2, 3]. Swift offers advantages such as improved performance, enhanced safety features to prevent bugs, a concise syntax that speeds up development, and a strong community and ecosystem with numerous libraries and extensive documentation [3].",
+    "retrieved_contexts": [
+      "If you want to build apps for iPhones, you should learn Swift. It is Apple's official programming language for building iOS, macOS, watchOS, and ...",
+      "Obj C is the original language for iOS development. It still works today, but is kind of irritating if you're used to more modern languages.",
+      "Why Choose Swift for iOS App Development?\nSwift has become the preferred language for iOS app development. Created by Apple, it blends speed, safety, and modern syntax. Since its release, many develop"
+    ],
+    "reference_answer": "Swift is the primary programming language used for iOS app development.",
+    "reference_contexts": [
+      "Swift is the preferred language for developing apps for iOS, macOS, watchOS, and tvOS.",
+      "Swift is a powerful and intuitive programming language for Apple platforms.",
+      "Swift is widely used for iOS development alongside Objective-C in legacy systems."
+    ]
+  },
+  {
+    "question": "What are the admission requirements for international students at the University of Toronto?",
+    "answer": "International students applying to the University of Toronto must meet English language requirements if English is not their first language, unless they qualify for an exemption [1, 2]. Accepted tests include TOEFL (iBT), IELTS Academic, and Duolingo English Tests [3]. Specific score requirements vary by faculty and test date. For example, for undergraduate admissions in the Faculty of Arts & Science, the minimum TOEFL (iBT) score is 89 (with 22 in Speaking and Writing) for tests taken before January 21, 2026, and an overall score of 4.5 (with 4.5 in Writing and 4.0 in Speaking) for tests taken on or after that date [3]. For the Faculty of Law, the minimum TOEFL (iBT) is 100 overall, with at least 25 in reading and writing [3]. IELTS Academic minimums are 6.5 overall with no band below 6.0 for the Faculty of Arts & Science, and 7.0 overall with no band below 6.5 for the Faculty of Law [3]. Duolingo English Test minimums are 120 overall with a 120 in Production for tests completed on or after July 1st, 2024, for the Faculty of Arts & Science, and 120 overall with no subscore below 120 for the Faculty of Law [3]. For graduate admissions, the TOEFL (iBT) minimum is 93 overall (with 22 in writing and speaking) for tests taken before January 21, 2026, and an overall score of 4.5 (with 4.5 in Writing and 4.0 in Speaking) for tests taken after January 21, 2026 [3]. Test scores must be valid at the time of the application deadline, and TOEFL, IELTS Academic, and Duolingo scores are valid for two years from the test date [3].",
+    "retrieved_contexts": [
+      "Admission requirements for students who have attended high school outside of Canada.\nAdmission requirements for students who have attended a college or university outside of Canada.\nEnglish language r",
+      "Admission requirements for students who have attended high school outside of Canada.\nAdmission requirements for students who have attended a college or university outside of Canada.\nEnglish language r",
+      "We accept TOEFL (iBT), IELTS Academic, and Duolingo English Tests only. We accept TOEFL computer-based, paper-based and Home Edition. We do not accept TOEFL MyBest Scores and \u201cInstitutional Testing Pr"
+    ],
+    "reference_answer": "International students generally need a recognized secondary/undergraduate qualification, English proficiency (e.g., IELTS/TOEFL), academic transcripts, and program-specific requirements.",
+    "reference_contexts": [
+      "Applicants must submit academic records, proof of English proficiency, and program-specific prerequisites.",
+      "English language requirements include IELTS or TOEFL depending on program level.",
+      "International students must meet academic and language requirements set by Canadian universities."
+    ]
+  },
+  {
+    "question": "Which country has a higher GDP per capita today: the country where Toyota was founded or the country where Samsung is headquartered?",
+    "answer": "The country where Toyota was founded, Japan, has a higher GDP per capita than the country where Samsung is headquartered, South Korea [1, 2].",
+    "retrieved_contexts": [
+      "GDP per capita (current US$) - JapanCountry official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Devel",
+      "GDP per capita (current US$) - Korea, Rep.Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and",
+      "AfghanistanAlbaniaAlgeriaAndorraAngolaAntigua and BarbudaArgentinaArmeniaAustraliaAustriaAzerbaijanBahamasBahrainBangladeshBarbadosBelarusBelgiumBelizeBeninBhutanBoliviaBosnia and HerzegovinaBotswanaB"
+    ],
+    "reference_answer": "South Korea (Samsung) generally has a higher GDP per capita than Japan (Toyota) in recent years.",
+    "reference_contexts": [
+      "South Korea's GDP per capita has surpassed Japan's in nominal terms in recent years, reflecting strong export-driven growth and advanced technology sectors.",
+      "Japan remains a high-income economy, but South Korea has experienced faster per-capita income growth over the last two decades.",
+      "Toyota is headquartered in Japan, while Samsung Electronics is headquartered in South Korea, both in highly developed economies."
+    ]
+  },
+  {
+    "question": "Who is older: the current CEO of Microsoft or the current CEO of Apple, and by how many years?",
+    "answer": "The current CEO of Apple, Tim Cook, is older than the current CEO of Microsoft, Satya Nadella. Tim Cook was born on August 11, 1950, making him 74 years old as of the context provided [1, 2]. Satya Nadella is 58 years old [2]. Therefore, Tim Cook is 16 years older than Satya Nadella.",
+    "retrieved_contexts": [
+      "Born: 11th August, 1950 Age: 74 years old. No photo description available. Jane Khosa and 6 others.",
+      "When Microsoft CEO Satya Nadella told employees in October that he was giving up running the tech company\u2019s commercial businesses, he said that he was doing so to increase his focus on Microsoft\u2019s tec",
+      "Apple (AAPL) CEO Tim Cook announced that he will be stepping down effective September 1, transitioning from chief executive to executive chairman.\nBetween Apple and Microsoft (MSFT) \u2014 which continues "
+    ],
+    "reference_answer": "Tim Cook (Apple CEO) is older than Satya Nadella (Microsoft CEO) by about 5 years.",
+    "reference_contexts": [
+      "Tim Cook was born in 1960 and became Apple CEO in 2011.",
+      "Satya Nadella was born in 1967 and became Microsoft CEO in 2014.",
+      "Cook is older than Nadella, with a consistent age gap of roughly five to six years depending on current year."
+    ]
+  },
+  {
+    "question": "What is the time difference right now between Kathmandu and the city hosting the next Summer Olympics?",
+    "answer": "The time difference between Paris and Kathmandu is 3 hours and 45 minutes, with Paris being behind Kathmandu [1, 2]. The 2028 Summer Olympics will be held in Los Angeles, but the provided context does not specify the time difference between Los Angeles and Kathmandu [3].",
+    "retrieved_contexts": [
+      "Paris time to Kathmandu time converter\nDrag the handle or click on a cell to convert time\nAnnounce an event across time zones\nThe best time to call from Paris to Kathmandu\nWhen planning a call between",
+      "Paris time to Kathmandu time converter\nDrag the handle or click on a cell to convert time\nAnnounce an event across time zones\nThe best time to call from Paris to Kathmandu\nWhen planning a call between",
+      "The 2028 Summer Olympics are scheduled to run from Friday, July 14 to Sunday, July 30, 2028."
+    ],
+    "reference_answer": "Kathmandu is 12 hours and 45 minutes ahead of Los Angeles, the host city of the 2028 Summer Olympics.",
+    "reference_contexts": [
+      "Kathmandu operates on Nepal Time (UTC+5:45), while Los Angeles operates on Pacific Time (UTC-8 standard / UTC-7 daylight saving).",
+      "The 2028 Summer Olympics will be held in Los Angeles, United States.",
+      "During daylight saving time, Los Angeles is UTC-7, making the time difference with Kathmandu 12 hours and 45 minutes."
+    ]
+  },
+  {
+    "question": "Is Mount Kilimanjaro taller than the highest mountain in Europe, and by how much?",
+    "answer": "Mount Kilimanjaro, at 5,895 meters (19,341 ft), is taller than Mount Elbrus, which is the highest mountain in Europe at 5,642 meters (18,510 ft). Therefore, Mount Kilimanjaro is 253 meters (831 ft) taller than Mount Elbrus [1, 2].",
+    "retrieved_contexts": [
+      "Mount Kilimanjaro\n| Mount Kilimanjaro | |\n|---|---|\n| Highest point | |\n| Elevation | 5,895 m (19,341 ft)[1] |\n| Prominence | 5,895 m (19,341 ft) Ranked 4th |\n| Isolation | 5,510 km (3,420 mi) |\n| Lis",
+      "Mount Elbrus\n| Mount Elbrus | |\n|---|---|\n| Highest point | |\n| Elevation | 5,642 m (18,510 ft)[1][2][3] |\n| Prominence | 4,741 m (15,554 ft) Ranked 10th |\n| Listing | Seven Summits Volcanic Seven Sum",
+      "***Article written by Kevin Abernethy from the USA, avid mountain climber and adventurer\nAny climbers pursuing the goal of climbing the Seven Summits will find themselves traveling to regions of the w"
+    ],
+    "reference_answer": "Yes, Mount Kilimanjaro is taller than Mount Elbrus (Europe\u2019s highest peak) by about 253 meters.",
+    "reference_contexts": [
+      "Mount Kilimanjaro has an elevation of 5,895 meters above sea level.",
+      "Mount Elbrus, the highest peak in Europe, has an elevation of 5,642 meters.",
+      "Kilimanjaro is the highest mountain in Africa and exceeds Europe\u2019s highest peak in absolute elevation."
+    ]
+  },
+  {
+    "question": "If I flew nonstop from Paris to the capital of Brazil, which is farther: that route or flying from Paris to Tokyo?",
+    "answer": "The flight distance from Paris to Bras\u00edlia is approximately 5,429 miles (8,737.5 kilometers) [2]. The flight distance from Paris to Tokyo is approximately 6,048 miles (9,733.6 kilometers) [3]. Therefore, flying from Paris to Tokyo is farther than flying from Paris to Bras\u00edlia [2, 3].",
+    "retrieved_contexts": [
+      "Bras\u00edlia\nBras\u00edlia | |\n|---|---|\nMonumental Axis seen from the TV Tower Panoramic view of the Pilot Plan of Bras\u00edlia | |\n| Nicknames: Capital Federal, BSB, Capital da Esperan\u00e7a | |\n| Motto: \"Venturis v",
+      "Distance from Paris to Bras\u00edlia (Paris Charles de Gaulle Airport \u2013 Bras\u00edlia International Airport) is 5429.2 miles / 8737.5 kilometers / 4717.9 nautical ...",
+      "The air distance between Paris (Paris Charles de Gaulle Airport \u2013 CDG) and Tokyo (Narita International Airport \u2013 NRT) is 6048.2 miles / 9733.6 kilometers."
+    ],
+    "reference_answer": "Flying from Paris to Tokyo is farther than flying from Paris to Bras\u00edlia.",
+    "reference_contexts": [
+      "Paris to Bras\u00edlia is approximately 8,700 km.",
+      "Paris to Tokyo is approximately 9,700 km, making it a longer route.",
+      "Bras\u00edlia is the capital of Brazil, while Tokyo is the capital of Japan."
+    ]
+  },
+  {
+    "question": "Which is a better value right now: the iPhone 17 or the Samsung Galaxy S26 for everyday use and photography?",
+    "answer": "The provided context does not contain enough information to determine which phone, the iPhone 17 or the Samsung Galaxy S26, offers better value for everyday use and photography. The context focuses on a camera comparison between the iPhone 17 Pro and the Galaxy S26 Ultra, noting that both received CNET Editors' Choice awards for their stellar performance and camera quality [1]. While the comparison highlights differences in color tones and shadow detail between the two phones, it does not address overall value or suitability for everyday use [1].",
+    "retrieved_contexts": [
+      "Both Apple's iPhone 17 Pro and Samsung's Galaxy S26 Ultra earned coveted CNET Editors' Choice awards in their full reviews. And they damned well earned them, too, thanks to their stellar overall perfo",
+      "About\nPress\nCopyright\nContact us\nCreators\nAdvertise\nDevelopers\nTerms\nPrivacy\nPolicy & Safety\nHow YouTube works\nTest new features\n\u00a9 2026 Google LLC",
+      "About\nPress\nCopyright\nContact us\nCreators\nAdvertise\nDevelopers\nTerms\nPrivacy\nPolicy & Safety\nHow YouTube works\nTest new features\n\u00a9 2026 Google LLC"
+    ],
+    "reference_answer": "As of now, the Samsung Galaxy S26 generally offers better value for photography flexibility and hardware variety, while the iPhone 17 typically provides stronger video consistency and longer software support.",
+    "reference_contexts": [
+      "Apple emphasizes long-term iOS support and optimized camera video processing for consistent results across lighting conditions.",
+      "Samsung highlights multi-lens versatility, high zoom capabilities, and AI-enhanced photo processing features.",
+      "Different flagships lead in different categories: Apple often leads video, while Samsung often leads zoom and flexibility.",
+      "iPhone prioritizes consistency and ecosystem integration; Samsung prioritizes hardware flexibility and customization."
+    ]
+  },
+  {
+    "question": "How does studying computer science in Australia compare to studying in Canada for international students?",
+    "answer": "Both Canada and Australia offer Computer Science programs for international students. In Canada, the average annual tuition fees for international students range from CA $20,000 to CA $30,000 [1]. In Australia, tuition fees are generally higher, ranging from AU $30,000 to $45,000 per year [1]. Canada is known for its affordability and inclusive immigration policies, while Australia is recognized for its innovative teaching methods and research [2]. Both countries provide post-graduation work opportunities, with Canada offering work permits for up to three years after graduation, potentially leading to permanent residency [1, 2]. Australia's Temporary Graduate Visa can allow students to stay and work for up to six years in regional areas, also with pathways to permanent residency [2].",
+    "retrieved_contexts": [
+      "Canada vs Australia: Comparison Guide for International Students\nAustralia and Canada are highly regarded for providing some of the best education available worldwide. But international students optin",
+      "Table of Contents\nWhen it comes to choosing a study destination, Canada and Australia are two of the most sought-after countries for international students. Both nations offer top-tier education, welc",
+      "Main requirement: Availability of jobs in the software field, PR pathway, and an easier way to move to the USA for a job later. I'm currently ..."
+    ],
+    "reference_answer": "Australia and Canada both offer strong computer science programs, but Canada often has a slight advantage in post-study work opportunities, while Australia is known for structured coursework and strong industry alignment.",
+    "reference_contexts": [
+      "Australia offers post-study work visas and industry-focused degrees with structured learning pathways.",
+      "Canada provides Post-Graduation Work Permits (PGWP) that allow graduates to gain Canadian work experience.",
+      "Both countries host globally ranked universities in computer science and engineering fields.",
+      "Canada is often preferred for immigration pathways; Australia is preferred for structured academic support."
+    ]
+  },
+  {
+    "question": "Is investing in an S&P 500 index fund generally better than buying individual tech stocks over the long term?",
+    "answer": "The provided context does not contain information to definitively answer whether investing in an S&P 500 index fund is generally better than buying individual tech stocks over the long term. However, it does mention that index funds offer a diversified portfolio with typically lower fees and reduced risk, making them attractive for a more hands-off approach [3]. Conversely, investing in individual stocks allows for greater control and the potential for higher returns, but with increased risk and the need for more active management [3]. The S&P 500, while historically a benchmark for broad market exposure, has become increasingly concentrated in technology stocks, with the top 10 companies accounting for over a third of its market capitalization in 2024 [1]. This concentration means that the performance of the S&P 500 is heavily influenced by a few large tech companies [1, 2].",
+    "retrieved_contexts": [
+      "Managing Your Monthly Money Leaks This Year\nApril 21, 2025Investment Lessons from Warren Buffett in 2025\nApril 21, 2025Is the S&P 500 Really Just a Technology Fund?\nStill a strong investment tool, its",
+      "S&P500 is not as diversified as you think. It's market-weighted therefore most of the returns were generated in the tech sector. If your family ...",
+      "Both index funds and stocks provide unique investment opportunities with multiple advantages and potential drawbacks. This makes it crucial for investors to understand their differences before making "
+    ],
+    "reference_answer": "For most investors, S&P 500 index funds are safer and more consistent long-term investments compared to individual tech stocks, which carry higher risk and volatility.",
+    "reference_contexts": [
+      "Index funds typically outperform most actively managed portfolios over long time horizons due to diversification and lower costs.",
+      "The S&P 500 represents diversified exposure to 500 large U.S. companies across sectors.",
+      "Individual stocks carry higher idiosyncratic risk compared to diversified funds.",
+      "Tech stocks may outperform in bull markets but show higher volatility and drawdowns."
+    ]
+  },
+  {
+    "question": "How does Tesla's Full Self-Driving system compare with Waymo's autonomous driving technology?",
+    "answer": "The primary technical distinction between Waymo/Cruise and Tesla is their sensor approach. Waymo and Cruise utilize multiple sensor modalities, including LiDAR, radar, and cameras, whereas Tesla's system relies solely on cameras [1]. This difference in technology has led to different safety outcomes, with Waymo maintaining a perfect record of zero human fatalities while Tesla's vision-only system has been incapacitated by conditions like blinding sun, resulting in fatal accidents [2]. Tesla's Full Self-Driving (FSD) system has a history of delayed timelines and technical downgrades, with a former Autopilot software director admitting that Elon Musk's promises did not reflect engineering reality [2]. Waymo, in contrast, employs a comprehensive sensor suite with 29 cameras, 6 RADARs, and 5 LiDARs [3].",
+    "retrieved_contexts": [
+      "The primary technical difference is that Waymo/Cruise use multiple sensor modalities: Lidar / radar / camera, while Tesla is camera only. In a ...",
+      "The 100x Cost Difference: Why Tesla\u2019s FSD is a More Dangerous Gamble Than Waymo\nThis article was written with the assistance of an AI writing program.\nOn a sunny afternoon in November 2023, a 71-year-",
+      "Waymo vs Tesla: Who is closer to Level 5 Autonomous Driving?\nWhere do you think humans come from? Growing up, I wrestled with two conflicting ideas about it. One teacher taught me Darwin\u2019s theory of e"
+    ],
+    "reference_answer": "Waymo\u2019s system is more focused on fully autonomous, geofenced robotaxi operations with higher reliability in defined areas, while Tesla\u2019s Full Self-Driving is more widely available but still requires driver supervision.",
+    "reference_contexts": [
+      "Waymo operates fully driverless ride-hailing services in select cities using geofenced autonomous technology.",
+      "Tesla Full Self-Driving is a driver-assist system that requires active driver supervision at all times.",
+      "Driver assistance systems vary in automation levels, with most requiring human oversight.",
+      "Waymo emphasizes safety in limited operational domains, while Tesla emphasizes scalability through consumer vehicles."
+    ]
+  },
+  {
+    "question": "Which is currently a better destination for digital nomads: Lisbon or Bali?",
+    "answer": "The provided context does not contain information to compare Lisbon and Bali as digital nomad destinations. It only provides cost of living data for Bali [2] and information about the Bali digital nomad visa [1].",
+    "retrieved_contexts": [
+      "Bali Digital Nomad Visa (Indonesia) - 2026 Update\nQuick Visa Facts\nVisa length Up to 1 year\nPossible to extend? es, subject to approval and current immigration rules.\nWho can apply? Remote workers, fr",
+      "|\nRestaurants | Lisbon Edit | Bali Edit | Difference |\n|---|---|---|---|\n| Meal at an Inexpensive Restaurant |\n\u20ac13.00 (Rp264,583.18) |\n\u20ac2.46 (Rp50,000.00) |\n-81.1 % |\n| Meal for Two at a Mid-Range Res",
+      "The Best Coworking Spaces in Lisbon for Digital Nomads\nLisbon, the capital of Portugal, has been a popular digital nomad destination for many years. The vibrant city has so much to offer, including be"
+    ],
+    "reference_answer": "Lisbon is generally better for access to Europe, infrastructure, and safety, while Bali is preferred for lower cost of living and a strong remote-work community.",
+    "reference_contexts": [
+      "Lisbon ranks highly for safety, internet speed, and quality of life for remote workers.",
+      "Bali is a major global hub for digital nomads with low living costs and coworking spaces.",
+      "Portugal has higher infrastructure reliability compared to many Southeast Asian regions.",
+      "Bali is favored for affordability; Lisbon is favored for stability and connectivity to Europe."
+    ]
+  },
+  {
+    "question": "Which cloud platform is better for startups in 2026: AWS, Google Cloud, or Azure?",
+    "answer": "The choice between AWS, Azure, and GCP for startups in 2026 depends on specific needs. AWS offers massive scale and granular infrastructure control with AI model flexibility. Azure is ideal for companies integrated into the Microsoft ecosystem. GCP excels in big data analytics and container-native networking. These three providers hold a combined 62% of the cloud infrastructure market [1, 2]. When selecting a provider, it's important to compare their strengths in areas like compute, serverless, and AI, as well as practical factors such as data center locations and industry support [1, 2]. Specialized platforms like DigitalOcean also offer streamlined alternatives with transparent pricing, particularly for AI-native startups [1, 2].",
+    "retrieved_contexts": [
+      "By Maddy Osman\nSenior Content Marketing Manager at DigitalOcean\nChoosing a cloud provider is one of the most consequential infrastructure decisions a business can make\u2014and three hyperscalers dominate ",
+      "By Maddy Osman\nSenior Content Marketing Manager at DigitalOcean\nChoosing a cloud provider is one of the most consequential infrastructure decisions a business can make\u2014and three hyperscalers dominate ",
+      "Choosing the right cloud provider feels like a high-stakes decision, because it is. With your applications, data, and operations increasingly dependent on cloud infrastructure, picking between Amazon "
+    ],
+    "reference_answer": "AWS is often preferred for startups due to its maturity and ecosystem, Google Cloud is strong in data and AI services, and Azure is advantageous for enterprises already using Microsoft products.",
+    "reference_contexts": [
+      "AWS offers a broad suite of scalable cloud infrastructure services widely used by startups.",
+      "Google Cloud emphasizes data analytics, machine learning, and Kubernetes-based infrastructure.",
+      "Azure integrates deeply with Microsoft enterprise tools and hybrid cloud environments.",
+      "AWS leads in market share, while Azure and Google Cloud continue to grow in enterprise adoption."
+    ]
+  },
+  {
+    "question": "What is the current exchange rate between the Nepalese Rupee and the Australian Dollar?",
+    "answer": "The exchange rate for Nepalese Rupees (NPR) to Australian Dollars (AUD) saw a 30-day high of 0.0097 and a 30-day low of 0.0091, with a 30-day average of 0.0094 [1]. The Australian Dollar to Nepalese Rupee exchange rate is currently 109.398, showing a 0.029% change from yesterday [2].",
+    "retrieved_contexts": [
+      "Nepalese rupees to Australian dollars today\nConvert NPR to AUD at the mid-market exchange rate. Wise is the international account for sending, spending and converting money like a local.\nSave when you",
+      "Australian dollar to Nepalese rupees Historical Exchange Rates\nLooking for the historical AUD exchange rates? Our comprehensive tool provides detailed insights into the past performance of the Austral",
+      "Currency exchange at your fingertips\nNPR to AUD: Convert Nepalese Rupees to Australian Dollars\nExchange Nepalese Rupees to Australian Dollars in-app, then save, spend, and send however you like \u2014 with"
+    ],
+    "reference_answer": "Exchange rates fluctuate continuously and must be checked from live financial data sources for the most accurate NPR to AUD conversion.",
+    "reference_contexts": [
+      "Publishes official daily foreign exchange reference rates for major currencies including AUD.",
+      "Provides real-time mid-market exchange rates and historical currency trends.",
+      "Offers live currency market data and forex rate movements influenced by global trading."
+    ]
+  },
+  {
+    "question": "Has OpenAI released any major new models or features this month?",
+    "answer": "Yes, OpenAI announced its latest artificial intelligence model, GPT-5.5, on Thursday, April 23, 2026 [1]. This new model is reported to be better at coding, using computers, and conducting in-depth research [1]. It was released less than two months after GPT 5.4 [1]. GPT-5.5 is being rolled out to paid subscribers of ChatGPT and its coding assistant Codex [1]. Additionally, on March 18, 2026, GPT-5.4 mini was released in ChatGPT for Free and Go users, and as a fallback for GPT-5.4 Thinking for other users [3]. GPT-5.3 Instant also received an update on March 16, 2026, to improve follow-up tone and reduce teaser-style phrasing [3]. The GPT-5.1 models were retired on March 11, 2026 [3].",
+    "retrieved_contexts": [
+      "OpenAI on Thursday announced its latest artificial intelligence model, GPT-5.5, which the company says is better at coding, using computers and pursuing deeper research capabilities.\nThe launch comes ",
+      "About\nPress\nCopyright\nContact us\nCreators\nAdvertise\nDevelopers\nTerms\nPrivacy\nPolicy & Safety\nHow YouTube works\nTest new features\n\u00a9 2026 Google LLC",
+      "GPT-5.4 mini in ChatGPT (March 18, 2026)\nWe\u2019re rolling out GPT-5.4 mini in ChatGPT. GPT-5.4 mini is available to Free and Go users via the \u201cThinking\u201d feature in the + menu. For all other users, GPT-5."
+    ],
+    "reference_answer": "Information on recent OpenAI releases must be verified from official announcements and reputable tech news sources as updates occur frequently.",
+    "reference_contexts": [
+      "Official announcements for new models, APIs, and product updates are published here first.",
+      "Covers major AI product launches and updates from leading companies including OpenAI.",
+      "Reports on AI industry developments and new feature rollouts in consumer and developer tools."
+    ]
+  },
+  {
+    "question": "Has the Federal Reserve announced any interest rate changes recently?",
+    "answer": "The Federal Reserve has kept its policy interest rate unchanged, maintaining it within the range of 3.50% to 3.75% [1, 3]. This decision was made following the April FOMC meeting, and it was a widely anticipated outcome [3].",
+    "retrieved_contexts": [
+      "The Federal Reserve kept its benchmark interest rate unchanged at 3.50%\u20133.75% following the April FOMC meeting. Last year, there were three ...",
+      "Risk Disclosure: Trading in financial instruments and/or cryptocurrencies involves high risks including the risk of losing some, or all, of your investment amount, and may not be suitable for all inve",
+      "Capitalize on today's evolving market dynamics.\nWith changes to taxes and interest rates, it's a good time to meet with a wealth advisor.\nThe U.S. Federal Reserve (Fed) kept its policy interest rate a"
+    ],
+    "reference_answer": "Federal Reserve interest rate decisions are announced during scheduled meetings and must be checked from the latest official statements.",
+    "reference_contexts": [
+      "Official source for monetary policy decisions including interest rate changes.",
+      "Reports on Fed decisions, economic forecasts, and market reactions.",
+      "Provides analysis of central bank policy decisions and financial market impacts."
+    ]
+  },
+  {
+    "question": "What are the latest job market trends for software engineers in Australia this year?",
+    "answer": "The job market for software engineers in Australia is influenced by the rise of Artificial Intelligence (AI), which is driving innovation and increasing demand for languages adept at machine learning, data analysis, and natural language processing [1]. Python is a highly sought-after language due to its beginner-friendliness, extensive libraries for data science and web development, and a large, active community [1]. The median total compensation for a Software Engineer in Australia is A$147,874, with a typical salary range between A$112,875 and A$184,959 [2]. Software engineers are responsible for designing, developing, modifying, documenting, testing, implementing, installing, and supporting software applications and systems [3].",
+    "retrieved_contexts": [
+      "The rise of Artificial Intelligence (AI) is fundamentally altering the landscape of software development. AI applications are driving innovation across various sectors, from automating tasks to poweri",
+      "A$147,874\nMedian Total Comp\nA$113K\n25th%\nA$185K\n75th%\nA$229K\n90th%\nThe average Software Engineer Salary range in Australia is from A$112,875 to A$184,959. View Software Engineer salaries across top co",
+      "Software Engineers design, develop, modify, document, test, implement, install and support software applications and systems."
+    ],
+    "reference_answer": "Software engineering demand in Australia remains strong, with growth driven by AI, cloud computing, and cybersecurity roles, though hiring cycles can fluctuate with broader economic conditions.",
+    "reference_contexts": [
+      "Reports employment trends across ICT occupations showing sustained demand in software and technology sectors.",
+      "Highlights increasing demand for AI, cloud, and backend engineering roles in Australia\u2019s tech job market.",
+      "Indicates ongoing job postings growth in software engineering despite periodic market slowdowns."
+    ]
+  },
+  {
+    "question": "What are the latest public health recommendations regarding seasonal flu outbreaks in my region?",
+    "answer": "I am sorry, but the provided context does not contain information about public health recommendations for specific regions. The context discusses general information about seasonal flu, its symptoms, prevention, and surveillance in the United States [1, 2, 3].",
+    "retrieved_contexts": [
+      "Learn about identifying flu symptoms, how the diagnosis works, common complications, and more.\nFor Everyone\nStrategies to reduce the risk of seasonal flu.\nIf you get sick with flu, flu antiviral drugs",
+      "What to know\n- While seasonal influenza (flu) viruses are detected year-round in the United States, influenza viruses typically circulate during the fall and winter during what's known as the flu seas",
+      "Flu-Proofing Your Home: Proven Ways to Protect Your Family This Season\nWith the 2025-2026 flu season in full force, UR Medicine experts share simple steps that just might keep the dreaded coughs and f"
+    ],
+    "reference_answer": "Seasonal flu guidance typically includes vaccination, hygiene practices, and monitoring local health alerts, which vary by region and season.",
+    "reference_contexts": [
+      "Issues global influenza updates and preventive health recommendations.",
+      "Provides flu season guidance, vaccine recommendations, and outbreak tracking (primarily U.S.-focused).",
+      "Issues national public health advisories and seasonal disease prevention guidance."
+    ]
+  },
+  {
+    "question": "Should I invest in gold or stocks at the moment?",
+    "answer": "Historical data indicates that gold often maintains or increases its value during significant market downturns and systemic shocks, solidifying its role as a hedge against crises within diversified portfolios [2]. Over the past 50 years, gold has shown minimal correlation with traditional asset classes, which can help stabilize portfolio returns during unpredictable market periods [2]. While gold prices have recently fallen below $4,600 an ounce due to elevated geopolitical tensions in the Middle East, which have also fueled inflation concerns, it is still 37.21% higher than a year ago [1]. Central banks increased their gold reserves in the first quarter, and gold is expected to trade at 4677.51 USD/t oz. by the end of the current quarter, with projections to reach 5022.09 in 12 months [1]. In times of market stress, gold has surged more than 25% amid recent global uncertainty, consistent with its reputation as a safe haven [2].",
+    "retrieved_contexts": [
+      "Gold fell below $4,600 an ounce on Monday, giving back recent gains as geopolitical tensions in the Middle East remained elevated, fueling inflation concerns. Reports indicated that a tanker was struc",
+      "Gold in a Storm: How Gold Holds Up During Market Crises\nRead Time 3 MIN\nKey Takeaways\n- Historical data shows gold often holds or gains value during severe equity drawdowns and systemic shocks, reinfo",
+      "Backlinks from other websites are the lifeblood of our site and a primary source of new traffic.\nIf you use our chart images on your site or blog, we ask that you provide attribution via a link back t"
+    ],
+    "reference_answer": "The choice depends on risk tolerance, investment horizon, and market conditions; stocks typically offer higher long-term returns, while gold is often used for stability.",
+    "reference_contexts": [
+      "Gold is commonly viewed as a safe-haven asset during economic uncertainty, while equities provide growth potential over the long term.",
+      "Gold often performs differently from stocks, providing diversification benefits in a portfolio.",
+      "Equities historically outperform gold over long periods but carry higher short-term volatility."
+    ]
+  },
+  {
+    "question": "Is it safe to travel there right now?",
+    "answer": "I cannot determine if it is safe to travel to a specific destination as the provided text does not contain information about the current safety status of any location. The text provides travel advisories from the U.S. Department of State, which outline risks and recommended precautions for U.S. citizens in foreign destinations, categorized by levels such as 'Do not travel', 'Reconsider travel', 'Exercise increased caution', and 'Exercise normal precautions' [1, 2]. However, it does not offer a real-time assessment of current safety conditions.",
+    "retrieved_contexts": [
+      "A Travel Advisory is a report from the U.S. Department of State that describes the risks and recommended precautions for U.S. citizens\u2014not foreign nationals\u2014in a foreign destination. The Department of",
+      "A Travel Advisory is a report from the U.S. Department of State that describes the risks and recommended precautions for U.S. citizens\u2014not foreign nationals\u2014in a foreign destination. The Department of",
+      "A Travel Advisory is a report from the U.S. Department of State that describes the risks and recommended precautions for U.S. citizens\u2014not foreign nationals\u2014in a foreign destination. The Department of"
+    ],
+    "reference_answer": "Safety depends on the specific destination, current political situation, health risks, and local advisories.",
+    "reference_contexts": [
+      "Travel safety varies by country and region, with advisories updated based on security, health, and political conditions.",
+      "Some destinations may have partial restrictions or warnings depending on local risks.",
+      "Health-related travel safety may depend on outbreaks, vaccination status, and regional health infrastructure."
+    ]
+  },
+  {
+    "question": "Is this a good time to buy a house?",
+    "answer": "Whether it's a good time to buy a house depends on various factors, including mortgage rates and affordability. The average rate for 30-year home loans rose to 6.37% this week [1]. In 2016, mortgage rates were 3.7%, climbing to 6.6% in 2025, which has significantly impacted homebuying affordability [2]. The median price for an existing home in the U.S. was $398,400 as of February 2025, and prices have been increasing year-over-year for 20 consecutive months due to insufficient supply to meet demand [3]. The median age of first-time homebuyers has also increased to 40, up from 32 in 2016, due to higher home prices, elevated mortgage rates, and limited entry-level housing supply [2].",
+    "retrieved_contexts": [
+      "The average rate for 30-year home loans rose to 6.37% this week, according to Bankrate's national survey of lenders. That was up from 6.34% the previous week.",
+      "It's nearly impossible to scroll through social media these days without running into a flood of throwback photos from a decade ago, courtesy of the viral \"2026 is the new 2016\" trend\u2014but nostalgia-ti",
+      "Median home prices in every state\nIf you\u2019re hoping to buy a house in the near future, your pathway to purchase will look quite different depending on where exactly you want to live. The definition of "
+    ],
+    "reference_answer": "The right time to buy a house depends on interest rates, housing supply, affordability, and personal financial stability.",
+    "reference_contexts": [
+      "Mortgage interest rates strongly influence housing affordability and buyer demand.",
+      "Housing market conditions vary by region, with some markets favoring buyers and others favoring sellers.",
+      "Economic conditions and inflation trends affect home prices and purchasing power."
+    ]
+  },
+  {
+    "question": "Which laptop should I get for college?",
+    "answer": "For college, it is strongly recommended to get a laptop with 16GB of RAM and at least a 500GB SSD to ensure it lasts for 4+ years [2, 3]. One option is a grey Chromebook with an Intel Celeron processor, 4GB RAM, and 64GB eMMC, which costs $199.00 [1].",
+    "retrieved_contexts": [
+      "A modern grey Chromebook featuring an Intel Celeron processor, 4GB RAM, 64GB eMMC, and Wi-Fi 6. See all Chromebooks. $199.00 Your price for ...",
+      "I would strongly recommend 16GB RAM and at least a 500GB SSD. This machine needs to last 4+ years, unless you're planning on buying a new one in ...",
+      "I would strongly recommend 16GB RAM and at least a 500GB SSD. This machine needs to last 4+ years, unless you're planning on buying a new one in ..."
+    ],
+    "reference_answer": "A good college laptop depends on your field of study, but most students benefit from a lightweight device with good battery life and at least mid-range performance.",
+    "reference_contexts": [
+      "Students often prioritize portability, battery life, and reliability over high-end performance.",
+      "Mid-range laptops typically offer the best balance between performance and affordability for students.",
+      "Durability and keyboard comfort are important factors for long-term academic use."
+    ]
+  }
+]

@@ -40,7 +40,10 @@ class QueryExpander:
                 }}
         """
         self.model = model
-        self.client = genai.Client(api_key=GEMINI_API_KEY)
+        self.client = genai.Client(
+            api_key=GEMINI_API_KEY,
+            http_options={"timeout": 30000},
+        )
 
     def expanded_queries(self, query: str) -> list[str]:
         try:
