@@ -67,3 +67,6 @@ later for passing data to Trafilatura.
     }
   }
 }
+
+Other APIs to use instead of duckduckgo:
+Serper, Exa, Tavily

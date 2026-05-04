@@ -1,0 +1,750 @@
+[
+  {
+    "question": "Who is the current Secretary-General of the United Nations?",
+    "reference_answer": "Ant\u00f3nio Guterres is the Secretary-General of the United Nations.",
+    "reference_contexts": [
+      {
+        "source": "United Nations (UN.org)",
+        "content": "The Secretary-General of the United Nations is Ant\u00f3nio Guterres, who assumed office on 1 January 2017."
+      },
+      {
+        "source": "UN Biography Page",
+        "content": "Ant\u00f3nio Guterres serves as the ninth Secretary-General of the United Nations."
+      },
+      {
+        "source": "Britannica",
+        "content": "Ant\u00f3nio Guterres, Portuguese politician and diplomat, has been UN Secretary-General since 2017."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "international affairs",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which company currently has the largest market capitalization in the world?",
+    "reference_answer": "NVIDIA Corporation has recently ranked as one of the companies with the highest global market capitalization, frequently alternating with Apple depending on market conditions.",
+    "reference_contexts": [
+      {
+        "source": "CompaniesMarketCap",
+        "content": "NVIDIA and Apple have both occupied the top position in global market capitalization rankings in recent periods."
+      },
+      {
+        "source": "Bloomberg Markets",
+        "content": "NVIDIA briefly surpassed Apple to become the most valuable public company amid AI-driven stock growth."
+      },
+      {
+        "source": "Reuters Business",
+        "content": "Market leadership by capitalization has shifted between major tech firms including Apple, Microsoft, and NVIDIA."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "business and finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the main symptoms of dengue fever?",
+    "reference_answer": "Dengue fever commonly causes high fever, severe headache, pain behind the eyes, muscle and joint pain, rash, and mild bleeding.",
+    "reference_contexts": [
+      {
+        "source": "World Health Organization (WHO)",
+        "content": "Symptoms include high fever, severe headache, pain behind the eyes, muscle and joint pains, nausea, vomiting, swollen glands, and rash."
+      },
+      {
+        "source": "Centers for Disease Control and Prevention (CDC)",
+        "content": "Dengue symptoms include fever, severe headache, eye pain, muscle and joint pain, and rash."
+      },
+      {
+        "source": "Mayo Clinic",
+        "content": "Common symptoms include sudden high fever, severe headaches, pain behind the eyes, and joint and muscle pain."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "health and medicine",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Who wrote the novel 'One Hundred Years of Solitude'?",
+    "reference_answer": "Gabriel Garc\u00eda M\u00e1rquez wrote 'One Hundred Years of Solitude'.",
+    "reference_contexts": [
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "One Hundred Years of Solitude is a novel by Colombian author Gabriel Garc\u00eda M\u00e1rquez."
+      },
+      {
+        "source": "Nobel Prize Official Site",
+        "content": "Gabriel Garc\u00eda M\u00e1rquez, Nobel laureate in Literature, authored the novel One Hundred Years of Solitude."
+      },
+      {
+        "source": "Penguin Random House",
+        "content": "Gabriel Garc\u00eda M\u00e1rquez\u2019s masterpiece One Hundred Years of Solitude is a landmark in magical realism."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "easy",
+      "domain": "literature",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What is the latest version of Python currently available?",
+    "reference_answer": "The latest stable version of Python is Python 3.13.x (exact patch version may vary with updates).",
+    "reference_contexts": [
+      {
+        "source": "Python.org",
+        "content": "Python 3.13 is the latest major release series of Python."
+      },
+      {
+        "source": "PEP Release Schedule",
+        "content": "Python 3.13 introduced new performance improvements and language features."
+      },
+      {
+        "source": "GitHub Python Releases",
+        "content": "The Python 3.13 release line is actively maintained with periodic patch updates."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which country has won the most Olympic gold medals in history?",
+    "reference_answer": "The United States has won the most Olympic gold medals in history.",
+    "reference_contexts": [
+      {
+        "source": "Olympics.com (IOC)",
+        "content": "The United States leads the all-time Olympic gold medal count."
+      },
+      {
+        "source": "BBC Sport",
+        "content": "The USA is the most successful nation in Olympic history by total gold medals."
+      },
+      {
+        "source": "Encyclopedia Britannica",
+        "content": "The United States has historically topped the Olympic medal tables."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "sports history",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which programming language is primarily used for iOS app development today?",
+    "reference_answer": "Swift is the primary programming language used for iOS app development.",
+    "reference_contexts": [
+      {
+        "source": "Apple Developer Documentation",
+        "content": "Swift is the preferred language for developing apps for iOS, macOS, watchOS, and tvOS."
+      },
+      {
+        "source": "Apple Inc.",
+        "content": "Swift is a powerful and intuitive programming language for Apple platforms."
+      },
+      {
+        "source": "Stack Overflow Developer Survey",
+        "content": "Swift is widely used for iOS development alongside Objective-C in legacy systems."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "medium",
+      "domain": "software development",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "What are the admission requirements for international students at the University of Toronto?",
+    "reference_answer": "International students generally need a recognized secondary/undergraduate qualification, English proficiency (e.g., IELTS/TOEFL), academic transcripts, and program-specific requirements.",
+    "reference_contexts": [
+      {
+        "source": "University of Toronto Admissions",
+        "content": "Applicants must submit academic records, proof of English proficiency, and program-specific prerequisites."
+      },
+      {
+        "source": "U of T International Student Guide",
+        "content": "English language requirements include IELTS or TOEFL depending on program level."
+      },
+      {
+        "source": "Study in Canada Government Portal",
+        "content": "International students must meet academic and language requirements set by Canadian universities."
+      }
+    ],
+    "metadata": {
+      "category": "factual",
+      "difficulty": "hard",
+      "domain": "education",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which country has a higher GDP per capita today: the country where Toyota was founded or the country where Samsung is headquartered?",
+    "reference_answer": "South Korea (Samsung) generally has a higher GDP per capita than Japan (Toyota) in recent years.",
+    "reference_contexts": [
+      {
+        "source": "World Bank \u2013 GDP per capita data (Japan, South Korea)",
+        "content": "South Korea's GDP per capita has surpassed Japan's in nominal terms in recent years, reflecting strong export-driven growth and advanced technology sectors."
+      },
+      {
+        "source": "IMF World Economic Outlook",
+        "content": "Japan remains a high-income economy, but South Korea has experienced faster per-capita income growth over the last two decades."
+      },
+      {
+        "source": "Encyclopedia Britannica (Toyota, Samsung company profiles)",
+        "content": "Toyota is headquartered in Japan, while Samsung Electronics is headquartered in South Korea, both in highly developed economies."
+      }
+    ],
+    "metadata": {
+      "category": "comparative_multi_hop",
+      "difficulty": "medium",
+      "domain": "economics",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Who is older: the current CEO of Microsoft or the current CEO of Apple, and by how many years?",
+    "reference_answer": "Tim Cook (Apple CEO) is older than Satya Nadella (Microsoft CEO) by about 5 years.",
+    "reference_contexts": [
+      {
+        "source": "Apple Leadership Profile",
+        "content": "Tim Cook was born in 1960 and became Apple CEO in 2011."
+      },
+      {
+        "source": "Microsoft Leadership Profile",
+        "content": "Satya Nadella was born in 1967 and became Microsoft CEO in 2014."
+      },
+      {
+        "source": "Forbes Executive Biographies",
+        "content": "Cook is older than Nadella, with a consistent age gap of roughly five to six years depending on current year."
+      }
+    ],
+    "metadata": {
+      "category": "entity_comparison",
+      "difficulty": "easy",
+      "domain": "business",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What is the time difference right now between Kathmandu and the city hosting the next Summer Olympics?",
+    "reference_answer": "Kathmandu is 12 hours and 45 minutes ahead of Los Angeles, the host city of the 2028 Summer Olympics.",
+    "reference_contexts": [
+      {
+        "source": "Timeanddate.com \u2013 Time zone converter",
+        "content": "Kathmandu operates on Nepal Time (UTC+5:45), while Los Angeles operates on Pacific Time (UTC-8 standard / UTC-7 daylight saving)."
+      },
+      {
+        "source": "IOC \u2013 Olympic Games 2028 Host City",
+        "content": "The 2028 Summer Olympics will be held in Los Angeles, United States."
+      },
+      {
+        "source": "US Naval Observatory Time Standards",
+        "content": "During daylight saving time, Los Angeles is UTC-7, making the time difference with Kathmandu 12 hours and 45 minutes."
+      }
+    ],
+    "metadata": {
+      "category": "time_and_event_reasoning",
+      "difficulty": "hard",
+      "domain": "world_events",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is Mount Kilimanjaro taller than the highest mountain in Europe, and by how much?",
+    "reference_answer": "Yes, Mount Kilimanjaro is taller than Mount Elbrus (Europe\u2019s highest peak) by about 253 meters.",
+    "reference_contexts": [
+      {
+        "source": "Encyclopedia Britannica \u2013 Mount Kilimanjaro",
+        "content": "Mount Kilimanjaro has an elevation of 5,895 meters above sea level."
+      },
+      {
+        "source": "Encyclopedia Britannica \u2013 Mount Elbrus",
+        "content": "Mount Elbrus, the highest peak in Europe, has an elevation of 5,642 meters."
+      },
+      {
+        "source": "National Geographic \u2013 World Mountain Heights",
+        "content": "Kilimanjaro is the highest mountain in Africa and exceeds Europe\u2019s highest peak in absolute elevation."
+      }
+    ],
+    "metadata": {
+      "category": "geographic_comparison",
+      "difficulty": "medium",
+      "domain": "geography",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "If I flew nonstop from Paris to the capital of Brazil, which is farther: that route or flying from Paris to Tokyo?",
+    "reference_answer": "Flying from Paris to Tokyo is farther than flying from Paris to Bras\u00edlia.",
+    "reference_contexts": [
+      {
+        "source": "Great Circle Mapper",
+        "content": "Paris to Bras\u00edlia is approximately 8,700 km."
+      },
+      {
+        "source": "Great Circle Distance Data",
+        "content": "Paris to Tokyo is approximately 9,700 km, making it a longer route."
+      },
+      {
+        "source": "Encyclopedia Britannica \u2013 Capitals",
+        "content": "Bras\u00edlia is the capital of Brazil, while Tokyo is the capital of Japan."
+      }
+    ],
+    "metadata": {
+      "category": "distance_reasoning",
+      "difficulty": "hard",
+      "domain": "travel_geography",
+      "freshness_required": false
+    }
+  },
+  {
+    "question": "Which is a better value right now: the iPhone 17 or the Samsung Galaxy S26 for everyday use and photography?",
+    "reference_answer": "As of now, the Samsung Galaxy S26 generally offers better value for photography flexibility and hardware variety, while the iPhone 17 typically provides stronger video consistency and longer software support.",
+    "reference_contexts": [
+      {
+        "source": "Apple Official Specifications (apple.com)",
+        "content": "Apple emphasizes long-term iOS support and optimized camera video processing for consistent results across lighting conditions."
+      },
+      {
+        "source": "Samsung Galaxy S Series Product Page (samsung.com)",
+        "content": "Samsung highlights multi-lens versatility, high zoom capabilities, and AI-enhanced photo processing features."
+      },
+      {
+        "source": "DXOMARK Smartphone Camera Rankings",
+        "content": "Different flagships lead in different categories: Apple often leads video, while Samsung often leads zoom and flexibility."
+      },
+      {
+        "source": "TechRadar Smartphone Reviews",
+        "content": "iPhone prioritizes consistency and ecosystem integration; Samsung prioritizes hardware flexibility and customization."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "consumer technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How does studying computer science in Australia compare to studying in Canada for international students?",
+    "reference_answer": "Australia and Canada both offer strong computer science programs, but Canada often has a slight advantage in post-study work opportunities, while Australia is known for structured coursework and strong industry alignment.",
+    "reference_contexts": [
+      {
+        "source": "Study in Australia (Australian Government Education)",
+        "content": "Australia offers post-study work visas and industry-focused degrees with structured learning pathways."
+      },
+      {
+        "source": "Study in Canada (Government of Canada)",
+        "content": "Canada provides Post-Graduation Work Permits (PGWP) that allow graduates to gain Canadian work experience."
+      },
+      {
+        "source": "QS World University Rankings",
+        "content": "Both countries host globally ranked universities in computer science and engineering fields."
+      },
+      {
+        "source": "Times Higher Education",
+        "content": "Canada is often preferred for immigration pathways; Australia is preferred for structured academic support."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "education",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is investing in an S&P 500 index fund generally better than buying individual tech stocks over the long term?",
+    "reference_answer": "For most investors, S&P 500 index funds are safer and more consistent long-term investments compared to individual tech stocks, which carry higher risk and volatility.",
+    "reference_contexts": [
+      {
+        "source": "Vanguard Research",
+        "content": "Index funds typically outperform most actively managed portfolios over long time horizons due to diversification and lower costs."
+      },
+      {
+        "source": "S&P Dow Jones Indices",
+        "content": "The S&P 500 represents diversified exposure to 500 large U.S. companies across sectors."
+      },
+      {
+        "source": "U.S. Securities and Exchange Commission (SEC)",
+        "content": "Individual stocks carry higher idiosyncratic risk compared to diversified funds."
+      },
+      {
+        "source": "Morningstar Investment Research",
+        "content": "Tech stocks may outperform in bull markets but show higher volatility and drawdowns."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How does Tesla's Full Self-Driving system compare with Waymo's autonomous driving technology?",
+    "reference_answer": "Waymo\u2019s system is more focused on fully autonomous, geofenced robotaxi operations with higher reliability in defined areas, while Tesla\u2019s Full Self-Driving is more widely available but still requires driver supervision.",
+    "reference_contexts": [
+      {
+        "source": "Waymo Official Website",
+        "content": "Waymo operates fully driverless ride-hailing services in select cities using geofenced autonomous technology."
+      },
+      {
+        "source": "Tesla Autopilot Documentation",
+        "content": "Tesla Full Self-Driving is a driver-assist system that requires active driver supervision at all times."
+      },
+      {
+        "source": "U.S. National Highway Traffic Safety Administration (NHTSA)",
+        "content": "Driver assistance systems vary in automation levels, with most requiring human oversight."
+      },
+      {
+        "source": "MIT Technology Review",
+        "content": "Waymo emphasizes safety in limited operational domains, while Tesla emphasizes scalability through consumer vehicles."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "automotive technology",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which is currently a better destination for digital nomads: Lisbon or Bali?",
+    "reference_answer": "Lisbon is generally better for access to Europe, infrastructure, and safety, while Bali is preferred for lower cost of living and a strong remote-work community.",
+    "reference_contexts": [
+      {
+        "source": "Nomad List",
+        "content": "Lisbon ranks highly for safety, internet speed, and quality of life for remote workers."
+      },
+      {
+        "source": "Indonesia Tourism Board",
+        "content": "Bali is a major global hub for digital nomads with low living costs and coworking spaces."
+      },
+      {
+        "source": "World Bank Urban Infrastructure Reports",
+        "content": "Portugal has higher infrastructure reliability compared to many Southeast Asian regions."
+      },
+      {
+        "source": "Remote Work Community Surveys (2024)",
+        "content": "Bali is favored for affordability; Lisbon is favored for stability and connectivity to Europe."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "lifestyle and travel",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What's the difference between GPT-5 and Claude for coding and research tasks?",
+    "reference_answer": "GPT-5 is generally optimized for broader multimodal reasoning and integration, while Claude is often praised for long-context reasoning and safer, structured responses in research tasks.",
+    "reference_contexts": [
+      {
+        "source": "OpenAI Technical Documentation",
+        "content": "GPT models are designed for general-purpose reasoning, coding, and multimodal understanding."
+      },
+      {
+        "source": "Anthropic Claude Documentation",
+        "content": "Claude emphasizes long context windows and safe, interpretable outputs."
+      },
+      {
+        "source": "ArXiv AI Benchmark Studies",
+        "content": "Different LLMs show varying strengths in coding accuracy, reasoning depth, and context retention."
+      },
+      {
+        "source": "Stanford HELM Benchmark",
+        "content": "Model performance varies by task type, including code generation and factual reasoning."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "medium",
+      "domain": "artificial intelligence",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which cloud platform is better for startups in 2026: AWS, Google Cloud, or Azure?",
+    "reference_answer": "AWS is often preferred for startups due to its maturity and ecosystem, Google Cloud is strong in data and AI services, and Azure is advantageous for enterprises already using Microsoft products.",
+    "reference_contexts": [
+      {
+        "source": "Amazon Web Services Documentation",
+        "content": "AWS offers a broad suite of scalable cloud infrastructure services widely used by startups."
+      },
+      {
+        "source": "Google Cloud Platform Documentation",
+        "content": "Google Cloud emphasizes data analytics, machine learning, and Kubernetes-based infrastructure."
+      },
+      {
+        "source": "Microsoft Azure Documentation",
+        "content": "Azure integrates deeply with Microsoft enterprise tools and hybrid cloud environments."
+      },
+      {
+        "source": "Gartner Cloud Infrastructure Reports",
+        "content": "AWS leads in market share, while Azure and Google Cloud continue to grow in enterprise adoption."
+      }
+    ],
+    "metadata": {
+      "category": "comparative",
+      "difficulty": "hard",
+      "domain": "cloud computing",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What is the current exchange rate between the Nepalese Rupee and the Australian Dollar?",
+    "reference_answer": "Exchange rates fluctuate continuously and must be checked from live financial data sources for the most accurate NPR to AUD conversion.",
+    "reference_contexts": [
+      {
+        "source": "Nepal Rastra Bank",
+        "content": "Publishes official daily foreign exchange reference rates for major currencies including AUD."
+      },
+      {
+        "source": "XE Currency Converter",
+        "content": "Provides real-time mid-market exchange rates and historical currency trends."
+      },
+      {
+        "source": "Bloomberg FX",
+        "content": "Offers live currency market data and forex rate movements influenced by global trading."
+      }
+    ],
+    "metadata": {
+      "category": "Financial Markets",
+      "difficulty": "Easy",
+      "domain": "Finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Has OpenAI released any major new models or features this month?",
+    "reference_answer": "Information on recent OpenAI releases must be verified from official announcements and reputable tech news sources as updates occur frequently.",
+    "reference_contexts": [
+      {
+        "source": "OpenAI Blog",
+        "content": "Official announcements for new models, APIs, and product updates are published here first."
+      },
+      {
+        "source": "TechCrunch",
+        "content": "Covers major AI product launches and updates from leading companies including OpenAI."
+      },
+      {
+        "source": "The Verge",
+        "content": "Reports on AI industry developments and new feature rollouts in consumer and developer tools."
+      }
+    ],
+    "metadata": {
+      "category": "Technology News",
+      "difficulty": "Medium",
+      "domain": "Artificial Intelligence",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "How is Bitcoin performing today, and what's driving the price movement?",
+    "reference_answer": "Bitcoin\u2019s price changes daily based on market demand, macroeconomic conditions, and investor sentiment; current performance must be checked on live crypto market data sources.",
+    "reference_contexts": [
+      {
+        "source": "CoinMarketCap",
+        "content": "Tracks real-time cryptocurrency prices, market capitalization, and trading volume."
+      },
+      {
+        "source": "CoinDesk",
+        "content": "Provides news and analysis explaining Bitcoin price movements and crypto market trends."
+      },
+      {
+        "source": "Bloomberg Crypto",
+        "content": "Reports institutional activity, regulatory news, and macroeconomic factors affecting Bitcoin."
+      }
+    ],
+    "metadata": {
+      "category": "Cryptocurrency",
+      "difficulty": "Medium",
+      "domain": "Finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Has the Federal Reserve announced any interest rate changes recently?",
+    "reference_answer": "Federal Reserve interest rate decisions are announced during scheduled meetings and must be checked from the latest official statements.",
+    "reference_contexts": [
+      {
+        "source": "Federal Reserve (federalreserve.gov)",
+        "content": "Official source for monetary policy decisions including interest rate changes."
+      },
+      {
+        "source": "Reuters Economics",
+        "content": "Reports on Fed decisions, economic forecasts, and market reactions."
+      },
+      {
+        "source": "Wall Street Journal",
+        "content": "Provides analysis of central bank policy decisions and financial market impacts."
+      }
+    ],
+    "metadata": {
+      "category": "Economic Policy",
+      "difficulty": "Medium",
+      "domain": "Macroeconomics",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the latest job market trends for software engineers in Australia this year?",
+    "reference_answer": "Software engineering demand in Australia remains strong, with growth driven by AI, cloud computing, and cybersecurity roles, though hiring cycles can fluctuate with broader economic conditions.",
+    "reference_contexts": [
+      {
+        "source": "Australian Bureau of Statistics (ABS)",
+        "content": "Reports employment trends across ICT occupations showing sustained demand in software and technology sectors."
+      },
+      {
+        "source": "LinkedIn Economic Graph",
+        "content": "Highlights increasing demand for AI, cloud, and backend engineering roles in Australia\u2019s tech job market."
+      },
+      {
+        "source": "SEEK Employment Reports",
+        "content": "Indicates ongoing job postings growth in software engineering despite periodic market slowdowns."
+      }
+    ],
+    "metadata": {
+      "category": "Career and Employment",
+      "difficulty": "Hard",
+      "domain": "Labor Market",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "What are the latest public health recommendations regarding seasonal flu outbreaks in my region?",
+    "reference_answer": "Seasonal flu guidance typically includes vaccination, hygiene practices, and monitoring local health alerts, which vary by region and season.",
+    "reference_contexts": [
+      {
+        "source": "World Health Organization (WHO)",
+        "content": "Issues global influenza updates and preventive health recommendations."
+      },
+      {
+        "source": "Centers for Disease Control and Prevention (CDC)",
+        "content": "Provides flu season guidance, vaccine recommendations, and outbreak tracking (primarily U.S.-focused)."
+      },
+      {
+        "source": "Nepal Ministry of Health and Population",
+        "content": "Issues national public health advisories and seasonal disease prevention guidance."
+      }
+    ],
+    "metadata": {
+      "category": "Public Health",
+      "difficulty": "Medium",
+      "domain": "Healthcare",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Should I invest in gold or stocks at the moment?",
+    "reference_answer": "The choice depends on risk tolerance, investment horizon, and market conditions; stocks typically offer higher long-term returns, while gold is often used for stability.",
+    "reference_contexts": [
+      {
+        "source": "Investopedia",
+        "content": "Gold is commonly viewed as a safe-haven asset during economic uncertainty, while equities provide growth potential over the long term."
+      },
+      {
+        "source": "World Gold Council",
+        "content": "Gold often performs differently from stocks, providing diversification benefits in a portfolio."
+      },
+      {
+        "source": "Morningstar Research",
+        "content": "Equities historically outperform gold over long periods but carry higher short-term volatility."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Personal Finance",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is it safe to travel there right now?",
+    "reference_answer": "Safety depends on the specific destination, current political situation, health risks, and local advisories.",
+    "reference_contexts": [
+      {
+        "source": "U.S. Department of State Travel Advisories",
+        "content": "Travel safety varies by country and region, with advisories updated based on security, health, and political conditions."
+      },
+      {
+        "source": "UK Foreign Travel Advice (FCDO)",
+        "content": "Some destinations may have partial restrictions or warnings depending on local risks."
+      },
+      {
+        "source": "World Health Organization (WHO)",
+        "content": "Health-related travel safety may depend on outbreaks, vaccination status, and regional health infrastructure."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Travel & Safety",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Is this a good time to buy a house?",
+    "reference_answer": "The right time to buy a house depends on interest rates, housing supply, affordability, and personal financial stability.",
+    "reference_contexts": [
+      {
+        "source": "Federal Reserve Economic Data (FRED)",
+        "content": "Mortgage interest rates strongly influence housing affordability and buyer demand."
+      },
+      {
+        "source": "Zillow Research",
+        "content": "Housing market conditions vary by region, with some markets favoring buyers and others favoring sellers."
+      },
+      {
+        "source": "Reuters Real Estate Analysis",
+        "content": "Economic conditions and inflation trends affect home prices and purchasing power."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Hard",
+      "domain": "Real Estate",
+      "freshness_required": true
+    }
+  },
+  {
+    "question": "Which laptop should I get for college?",
+    "reference_answer": "A good college laptop depends on your field of study, but most students benefit from a lightweight device with good battery life and at least mid-range performance.",
+    "reference_contexts": [
+      {
+        "source": "PCMag Buying Guides",
+        "content": "Students often prioritize portability, battery life, and reliability over high-end performance."
+      },
+      {
+        "source": "Wirecutter (New York Times)",
+        "content": "Mid-range laptops typically offer the best balance between performance and affordability for students."
+      },
+      {
+        "source": "Consumer Reports",
+        "content": "Durability and keyboard comfort are important factors for long-term academic use."
+      }
+    ],
+    "metadata": {
+      "category": "Ambiguous / Underspecified",
+      "difficulty": "Medium",
+      "domain": "Consumer Electronics",
+      "freshness_required": true
+    }
+  }
+]
