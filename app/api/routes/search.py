@@ -119,7 +119,7 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
 
             # SIMLIARITY SEARCH USING BM25
             matcher = SimilarMatch(chunked_docs)
-            final_results = matcher.match_similar_docs(query.question, 10)
+            final_results = matcher.match_similar_docs(query.question, 5)
             print(f"HERE'S THE FINAL RESULT AFTER MATCHING: {final_results}")
 
             # FOLLOWED BY RERANKING OF DOCUMENTS

@@ -1,7 +1,8 @@
 import torch
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from models.response import Context
 from transformers import AutoTokenizer
+
+from app.models.response import Context
 
 
 class Chunker:
@@ -17,22 +18,23 @@ class Chunker:
         self.chunk_overlap = chunk_overlap
         self._device = "cuda" if torch.cuda.is_available() else "cpu"
         self.EMBEDDING_MODEL_NAME = embedder_model
-
-    def chunk_documents(
-        self,
-        knowledge_base: list[Context],
-    ) -> list[dict[str, str]]:
-        text_splitter = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
-            AutoTokenizer.from_pretrained(self.EMBEDDING_MODEL_NAME),
+        self.tokenizer = AutoTokenizer.from_pretrained(self.EMBEDDING_MODEL_NAME)
+        self.text_splitter = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
+            self.tokenizer,
             chunk_size=self.chunk_size,
             chunk_overlap=self.chunk_overlap,
             add_start_index=True,
             strip_whitespace=True,
             separators=self.MARKDOWN_SEPARATORS,
         )
+
+    def chunk_documents(
+        self,
+        knowledge_base: list[Context],
+    ) -> list[dict[str, str]]:
         seen, chunks = set(), []
         for item in knowledge_base:
-            texts = text_splitter.split_text(item.text)
+            texts = self.text_splitter.split_text(item.text)
             for t in texts:
                 if t not in seen:
                     seen.add(t)
