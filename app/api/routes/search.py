@@ -1,6 +1,7 @@
 import asyncio
 import logging
 from typing import Any
+from urllib.parse import urlparse
 
 import httpx
 import trafilatura
@@ -38,8 +39,9 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
         # --- Query Expansion ---
         query_expander = QueryExpander(model="gemini-2.5-flash-lite")
         queries_string = query_expander.expanded_queries(query.question)
+        print(f"THE QUERIES STRING ARE: {queries_string}")
 
-        async with httpx.AsyncClient() as client:
+        async with httpx.AsyncClient() as _:
             # --- Web Search for all URLs ---
             searcher = WebSearch()
             all_work_data = await searcher.search_urls(
@@ -64,29 +66,39 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
 
             async def fetch_page(data: dict[str, Any]) -> dict[str, Any] | None:
                 url_link = data.get("link")
+                if not url_link or not isinstance(url_link, str):
+                    return None
                 try:
-                    page_res = await client.get(url_link, timeout=10)
-                    if page_res.status_code == 200:
-                        clean_text = trafilatura.extract(page_res.text)
-                        if clean_text:
-                            logger.debug(
-                                "OK extracted text from %s (%d chars)",
-                                url_link,
-                                len(clean_text),
-                            )
-                            return {
-                                "title": data.get("title", ""),
-                                "url": url_link,
-                                "text": clean_text,
-                            }
-                        else:
-                            logger.warning(
-                                "trafilatura returned no text for %s", url_link
-                            )
+                    raw_text = await searcher.fetch_url(url_link)
+                    if not raw_text:
+                        logger.warning("Empty response for %s", url_link)
+                        return None
+
+                    if isinstance(raw_text, bytes):
+                        raw_text = raw_text.decode("utf-8")
+                    parsed = urlparse(url_link)
+                    if "wikipedia.org" in parsed.netloc:
+                        clean_text = raw_text
                     else:
-                        logger.warning(
-                            "Non-200 status %d for %s", page_res.status_code, url_link
+                        clean_text = trafilatura.extract(raw_text)
+
+                    if not clean_text:
+                        clean_text = data.get("snippet") or ""
+
+                    if clean_text:
+                        logger.debug(
+                            "OK extracted text from %s (%d chars)",
+                            url_link,
+                            len(clean_text),
                         )
+                        return {
+                            "title": data.get("title", ""),
+                            "url": url_link,
+                            "text": clean_text,
+                        }
+                    else:
+                        logger.warning("No text extractable for %s", url_link)
+
                 except Exception as e:
                     logger.error("Failed to fetch %s: %s", url_link, e)
                 return None
@@ -115,7 +127,7 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
 
             # ADD CHUNKING
             chunked_docs = chunker.chunk_documents(context_list)
-            print(f"HERE'S THE FINAL PRODUCED CONTEXT_LIST: {chunked_docs}")
+            print(f"HERE'S THE FINAL PRODUCED CONTEXT_DOCS: {chunked_docs}")
 
             # SIMLIARITY SEARCH USING BM25
             matcher = SimilarMatch(chunked_docs)
@@ -135,9 +147,11 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
                 question=query.question,
                 context_list=final_docs,
             )
-            print(f"HERE'S THE FINAL PRODUCED ANSWER: {answer}")
-
-            return answer
+            return GeneratedResponse(
+                answer=answer.answer,
+                citations=answer.citations,
+                retrieved_contexts=[doc["text"] for doc in final_docs],
+            )
 
     except httpx.HTTPStatusError as exc:
         raise HTTPException(

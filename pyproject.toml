@@ -3,16 +3,30 @@ name = "perplex-city"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11, <3.12"
 dependencies = [
+    "datasets>=4.8.5",
+    "ddgs>=9.14.2",
     "faiss-cpu>=1.13.2",
     "faiss-gpu-cu12>=1.14.1.post1",
     "fastapi[standard]>=0.136.0",
+    "google>=3.0.0",
+    "google-genai>=1.75.0",
+    "google-generativeai>=0.8.6",
     "langchain>=1.2.15",
     "langchain-community>=0.4.1",
+    "langchain-groq>=1.1.2",
     "langchain-huggingface>=1.2.2",
+    "pandas>=3.0.2",
+    "pre-commit>=4.6.0",
+    "ragas>=0.4.3",
+    "rank-bm25>=0.2.2",
     "rerankers>=0.10.0",
+    "sentence-transformers>=5.4.1",
+    "torch>=2.7.0",
+    "trafilatura>=2.0.0",
     "transformers>=5.5.4",
+    "url-normalize>=3.0.0",
 ]
 
 [tool.ruff]
@@ -39,6 +53,21 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**/*" = ["ARG", "S101"]
+
+[tool.uv]
+environments = [
+    "sys_platform == 'linux'",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu118" }]
+torchvision = [{ index = "pytorch-cu118" }]
+torchaudio = [{ index = "pytorch-cu118" }]
 
 [tool.mypy]
 python_version = "3.11"
