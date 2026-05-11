@@ -39,7 +39,10 @@ class QueryExpander:
             - Output strictly a JSON object with keys "question1", "question2", "question3". No additional text.
         """
         self.model = model
-        self.client = genai.Client(api_key=GEMINI_API_KEY)
+        self.client = genai.Client(
+            api_key=GEMINI_API_KEY,
+            http_options={"timeout": 30000},
+        )
 
     def expanded_queries(self, query: str) -> list[str]:
         prompt = self._raw_prompt.format(current_date=date.today().strftime("%Y-%m-%d"))

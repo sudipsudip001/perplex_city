@@ -1,16 +1,21 @@
+# from asyncddgs import aDDGS
+# import random
 import asyncio
+import logging
 import os
-from typing import Any, cast
-from urllib.parse import urlparse
+from typing import Any
 
 import httpx
-from ddgs import DDGS
 from dotenv import load_dotenv
 from fastapi import HTTPException
 
 load_dotenv()
 
-EMAIL = os.getenv("EMAIL")
+load_dotenv()
+logger = logging.getLogger(__name__)
+
+SERPER_API_KEY = os.getenv("SERPER_API_KEY")
+SERPER_URL = "https://google.serper.dev/search"
 
 
 class WebSearch:
@@ -62,34 +67,52 @@ class WebSearch:
         self,
         queries_string: list[str],
     ) -> list[dict[str, Any]]:
+        headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
+
         try:
-            ddgs = DDGS()
-            all_work_data = []
+            async with httpx.AsyncClient() as client:
+                search_tasks = [
+                    client.post(SERPER_URL, json={"q": q}, headers=headers)
+                    for q in queries_string
+                ]
+                search_responses = await asyncio.gather(*search_tasks)
 
-            for query in queries_string:
-                results = ddgs.text(query, max_results=1)
-                all_work_data.extend(results)
-
-            # Rename 'href' -> 'link' to match the rest of your code
-            all_work_data = [
-                {("link" if k == "href" else k): v for k, v in d.items()}
-                for d in all_work_data
-            ]
-
-            # Fetch actual page content for each result (same as before)
-            fetch_tasks = [
-                self.fetch_url(result["link"])
-                for result in all_work_data
-                if "link" in result
-            ]
-            fetched_contents = await asyncio.gather(
-                *fetch_tasks, return_exceptions=True
-            )
-
-            for result, content in zip(all_work_data, fetched_contents, strict=False):
-                result["content"] = None if isinstance(content, Exception) else content
+                all_work_data = []
+                for resp in search_responses:
+                    resp.raise_for_status()
+                    results = resp.json().get("organic", [])[:1]
+                    for r in results:
+                        all_work_data.append(
+                            {
+                                "title": r.get("title", ""),
+                                "link": r.get("link", ""),
+                                "body": r.get("snippet", ""),
+                            }
+                        )
+                    logger.debug("Serper returned %d results", len(results))
 
             return all_work_data
 
+        except httpx.HTTPStatusError as exc:
+            raise HTTPException(
+                status_code=exc.response.status_code, detail="Serper API error"
+            ) from exc
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e)) from e
+
+        # try:
+        #     all_work_data = []
+
+        #     async with aDDGS() as ducky_tool:
+        #         for query in queries_string:
+        #             work_data = await ducky_tool.text(query, max_results=1)
+        #             all_work_data.extend(work_data)
+        #             await asyncio.sleep(random.uniform(1.5, 3.0))
+
+        #     mapping = {"href": "link"}
+        #     renamed_work_data = [
+        #         {mapping.get(k, k): v for k, v in d.items()} for d in all_work_data
+        #     ]
+        #     return renamed_work_data
+        # except Exception as e:
+        #     raise HTTPException(status_code=500, detail=str(e)) from e

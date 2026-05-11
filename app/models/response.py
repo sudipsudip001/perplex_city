@@ -15,4 +15,4 @@ class Detail(BaseModel):
 class GeneratedResponse(BaseModel):
     answer: str
     citations: dict[int, Detail]
-    retrieved_contexts: list[str] = []
+    retrieved_contexts: list[str]

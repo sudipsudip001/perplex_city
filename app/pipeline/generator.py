@@ -1,4 +1,8 @@
+import json
+import logging
 import os
+import re
+from typing import Any, cast
 
 from dotenv import load_dotenv
 from google import genai
@@ -7,7 +11,17 @@ from pydantic import BaseModel
 
 from app.models.response import Detail, GeneratedResponse
 
+# from models.response import Context, Detail, GeneratedResponse
+
 load_dotenv()
+
+logging.basicConfig(
+    level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(name)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
+
+MAX_CHARS_PER_DOC = 3000
+MAX_TOTAL_CHARS = 8000
 
 
 class Citation(BaseModel):
@@ -18,6 +32,7 @@ class Citation(BaseModel):
 class RAGResponse(BaseModel):
     answer: str
     citations: list[Citation]
+    actual_text: str
 
 
 class Generator:
@@ -33,17 +48,52 @@ Rules:
 
     def __init__(self, model: str = "gemini-2.5-flash-lite") -> None:
         self.model = model
-        self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        self.client = genai.Client(
+            api_key=os.getenv("GEMINI_API_KEY"),
+            http_options={"timeout": 30000},
+        )
+        self.system_prompt = """You are a helpful assistant that answers questions using only the provided context.
+
+            The JSON must have exactly this structure:
+            {
+            "answer": "your answer with inline citations like [1], [2]",
+            "citations": [
+                {"title": "source title", "url": "source url"},
+                {"title": "source title", "url": "source url"}
+            ]
+            }
 
     def _format_contexts(self, context_list: list[dict[str, str]]) -> str:
         """Format contexts into a numbered block for the prompt."""
-        blocks = [
-            f"[{i}] Title: {ctx['title']}\n"
-            f"    URL: {ctx['url']}\n"
-            f"    Content: {ctx['text']}"
-            for i, ctx in enumerate(context_list, start=1)
-        ]
+        blocks = []
+        total = 0
+        for i, ctx in enumerate(context_list, start=1):
+            text = ctx.text[:MAX_CHARS_PER_DOC]  # trim each doc
+            total += len(text)
+            if total > MAX_TOTAL_CHARS:
+                break  # stop adding more docs
+            blocks.append(
+                f"[{i}] Title: {ctx.title}\n"
+                f"    URL: {ctx.url}\n"
+                f"    Content: {text}"
+            )
         return "\n\n---\n\n".join(blocks)
+
+    def _parse_json_response(self, raw: str) -> dict[str, Any]:
+        """Robustly extract JSON from LLM response."""
+        cleaned = raw.strip()
+
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+        cleaned = cleaned.strip()
+
+        try:
+            return cast(dict[str, Any], json.loads(cleaned))
+        except json.JSONDecodeError as e:
+            match = re.search(r"\{.*\}", cleaned, re.DOTALL)
+            if match:
+                return cast(dict[str, Any], json.loads(match.group()))
+            raise ValueError(f"Could not parse JSON from response: {raw[:200]}") from e
 
     def generate_answer(
         self, question: str, context_list: list[dict[str, str]]
@@ -51,20 +101,19 @@ Rules:
         formatted_context = self._format_contexts(context_list)
         user_prompt = f"Context:\n{formatted_context}\n\nQuestion: {question}"
 
-        try:
-            response = self.client.models.generate_content(
-                model=self.model,
-                config=types.GenerateContentConfig(
-                    system_instruction=self.SYSTEM_PROMPT,
-                    temperature=0.1,
-                    response_mime_type="application/json",
-                    response_schema=RAGResponse,
-                ),
-                contents=[user_prompt],
-            )
-            rag: RAGResponse = response.parsed
-        except Exception as e:
-            raise RuntimeError(f"Generation or parsing failed: {e}") from e
+        response = self.client.models.generate_content(
+            model=self.model,
+            config=types.GenerateContentConfig(
+                system_instruction=self.system_prompt,
+                temperature=0.1,
+                response_mime_type="application/json",
+                response_schema=RAGResponse,
+            ),
+            contents=[user_prompt],
+        )
+
+        logger.debug("Raw Gemini response: %s", response.text[:500])
+        data = self._parse_json_response(response.text)
 
         return GeneratedResponse(
             answer=rag.answer,
@@ -72,4 +121,5 @@ Rules:
                 str(i + 1): Detail(title=c.title, url=c.url)
                 for i, c in enumerate(rag.citations)
             },
+            retrieved_contexts=[ctx.text for ctx in context_list],
         )
