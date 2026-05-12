@@ -12,31 +12,37 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 
-class QueryExpansion(BaseModel):
+class queries(BaseModel):
     question1: str
     question2: str
     question3: str
+    question4: str | None
+    question5: str | None
+
+
+class QueryExpansion(BaseModel):
+    question_type: str
+    questions: queries
 
 
 class QueryExpander:
-    load_dotenv()
-
     def __init__(self, model: str = "gemini-2.5-flash-lite") -> None:
         self._raw_prompt = """
             Role: You are an expert search query optimizer.
-            Task: Given a user query, generate three expanded queries that together maximise the retrieval of all pieces of information needed to fully answer the question.
+            Task: Given the user query, identify it's type and use the guidelines to reformulate questions for it.
             Today's date is {current_date}.
 
-            Guidelines for each query:
-            - question1: A direct, noun-heavy rephrase that captures the exact who/what/where/when of the request. This should look like a typical search engine query that would surface a specific sentence or fact.
-            - question2: A broader context query that explores background, definitions, or related structures, staying strictly within the topic.
-            - question3: A complementary angle (e.g., recent updates, comparisons, responsibilities) that still directly pertains to the original subject.
+            Guidelines for query types:
+            - MULTIFACETED/COMPARISON: For Multifaceted queries, produce multiple independent sub-queries relating to each topic, whose answers could then be used to generate answers
+            - FACTUAL: Inject known entities or date as per requirement.
+            - EXPLORATORY: Generate the answer to the user query first, and also generate a more general, principled version of the query to retrieve background context
+            - NAVIGATIONAL: Just search the direct answers.
 
             Constraints:
             - Do NOT drift from the original topic.
             - Use concise, keyword-rich, search-engine-friendly language. No full sentences or filler words.
-            - If the original query implies recency (e.g., "current", "latest", "2026"), include appropriate date markers.
-            - Output strictly a JSON object with keys "question1", "question2", "question3". No additional text.
+            - If the original query implies or needs a date (e.g., "current", "latest", "2026"), include appropriate date markers.
+            - Output strictly a JSON object with keys "question1", "question2", .. No additional text.
         """
         self.model = model
         self.client = genai.Client(
@@ -46,8 +52,6 @@ class QueryExpander:
 
     def expanded_queries(self, query: str) -> list[str]:
         prompt = self._raw_prompt.format(current_date=date.today().strftime("%Y-%m-%d"))
-        final_input = f"{prompt}\n\nUser Query: {query}"
-        print(final_input)
         try:
             response = self.client.models.generate_content(
                 model=self.model,
@@ -57,10 +61,12 @@ class QueryExpander:
                     response_mime_type="application/json",
                     response_schema=QueryExpansion,
                 ),
-                contents=final_input,
+                contents=f"User Query: {query}",
             )
             expanded = QueryExpansion.model_validate_json(response.text)
-            return list(expanded.model_dump().values())
+            return [
+                q for q in expanded.questions.model_dump().values() if q is not None
+            ]
         except exceptions.ResourceExhausted as e:
             raise HTTPException(
                 status_code=429,
