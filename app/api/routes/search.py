@@ -5,10 +5,19 @@ from urllib.parse import urlparse
 
 import httpx
 from fastapi import APIRouter, HTTPException
+
+from app.dependencies import (
+    chunker,
+    deduplicator,
+    generator,
+    query_expander,
+    ranker,
+    reranker,
+    searcher,
+)
 from app.models.request import UserRequest
 from app.models.response import Context, GeneratedResponse
 from app.pipeline.simlar_match import SimilarMatch
-from app.dependencies import query_expander, reranker, chunker, deduplicator, generator, ranker, searcher
 
 logging.basicConfig(
     level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(name)s - %(message)s"
@@ -35,7 +44,7 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
                 "Accept-Language": "en-US,en;q=0.9",
             },
             follow_redirects=True,
-        ) as client:
+        ) as _:
             # --- Web Search for all URLs ---
             all_work_data = await searcher.search_urls(
                 queries_string=queries_string,
@@ -61,6 +70,7 @@ async def answer_question(query: UserRequest) -> GeneratedResponse:
 
             async def fetch_page(data: dict[str, Any]) -> dict[str, Any] | None:
                 import trafilatura
+
                 url_link = data.get("link")
                 if not url_link or not isinstance(url_link, str):
                     return None

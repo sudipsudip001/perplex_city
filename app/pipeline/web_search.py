@@ -1,9 +1,8 @@
-# from asyncddgs import aDDGS
-# import random
 import asyncio
 import logging
 import os
-from typing import Any
+from typing import Any, cast
+from urllib.parse import urlparse
 
 import httpx
 from dotenv import load_dotenv
@@ -16,6 +15,7 @@ logger = logging.getLogger(__name__)
 
 SERPER_API_KEY = os.getenv("SERPER_API_KEY")
 SERPER_URL = "https://google.serper.dev/search"
+EMAIL = os.getenv("EMAIL")
 
 
 class WebSearch:
@@ -99,20 +99,3 @@ class WebSearch:
             ) from exc
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e)) from e
-
-        # try:
-        #     all_work_data = []
-
-        #     async with aDDGS() as ducky_tool:
-        #         for query in queries_string:
-        #             work_data = await ducky_tool.text(query, max_results=1)
-        #             all_work_data.extend(work_data)
-        #             await asyncio.sleep(random.uniform(1.5, 3.0))
-
-        #     mapping = {"href": "link"}
-        #     renamed_work_data = [
-        #         {mapping.get(k, k): v for k, v in d.items()} for d in all_work_data
-        #     ]
-        #     return renamed_work_data
-        # except Exception as e:
-        #     raise HTTPException(status_code=500, detail=str(e)) from e
