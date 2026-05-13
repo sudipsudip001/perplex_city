@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11, <3.12"
 dependencies = [
+    "asyncddgs>=0.1.0a1",
     "datasets>=4.8.5",
     "ddgs>=9.14.2",
+    "duckduckgo-search>=8.1.1",
     "faiss-cpu>=1.13.2",
     "faiss-gpu-cu12>=1.14.1.post1",
     "fastapi[standard]>=0.136.0",

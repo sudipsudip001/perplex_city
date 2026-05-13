@@ -36,45 +36,45 @@ class RAGResponse(BaseModel):
 
 
 class Generator:
-    SYSTEM_PROMPT = """You are a helpful assistant that answers questions using ONLY the provided context.
-Rules:
-- Cite sources inline using [1], [2], etc. after every claim.
-- Only include sources you actually cited inline.
-- Synthesize information in your own words.
-- citations must be ordered by citation number.
-- If the context lacks enough information, say so in the answer field.
-- If the answer isn't present in the context, set answer to: THE ANSWER COULDN'T BE FOUND IN THE CONTEXT.
-"""
-
     def __init__(self, model: str = "gemini-2.5-flash-lite") -> None:
         self.model = model
         self.client = genai.Client(
             api_key=os.getenv("GEMINI_API_KEY"),
             http_options={"timeout": 30000},
         )
-        self.system_prompt = """You are a helpful assistant that answers questions using only the provided context.
+        self.system_prompt = """
+            You are a helpful assistant that answers questions using only the provided context.
+
+            Rules:
+                - Cite sources inline using [1], [2], etc. after every claim.
+                - Only include sources you actually cited inline.
+                - Synthesize information in your own words.
+                - citations must be ordered by citation number.
+                - If the context lacks enough information, say so in the answer field.
+                - If the answer isn't present in the context, set answer to: THE ANSWER COULDN'T BE FOUND IN THE CONTEXT.
 
             The JSON must have exactly this structure:
             {
-            "answer": "your answer with inline citations like [1], [2]",
-            "citations": [
-                {"title": "source title", "url": "source url"},
-                {"title": "source title", "url": "source url"}
-            ]
+                "answer": "your answer with inline citations like [1], [2]",
+                "citations": [
+                    {"title": "source title", "url": "source url"},
+                    {"title": "source title", "url": "source url"}
+                ]
             }
+        """
 
     def _format_contexts(self, context_list: list[dict[str, str]]) -> str:
         """Format contexts into a numbered block for the prompt."""
         blocks = []
         total = 0
         for i, ctx in enumerate(context_list, start=1):
-            text = ctx.text[:MAX_CHARS_PER_DOC]  # trim each doc
+            text = ctx["text"][:MAX_CHARS_PER_DOC]  # trim each doc
             total += len(text)
             if total > MAX_TOTAL_CHARS:
                 break  # stop adding more docs
             blocks.append(
-                f"[{i}] Title: {ctx.title}\n"
-                f"    URL: {ctx.url}\n"
+                f"[{i}] Title: {ctx['title']}\n"
+                f"    URL: {ctx['url']}\n"
                 f"    Content: {text}"
             )
         return "\n\n---\n\n".join(blocks)
@@ -98,8 +98,11 @@ Rules:
     def generate_answer(
         self, question: str, context_list: list[dict[str, str]]
     ) -> GeneratedResponse:
+        logger.debug("Started the generate_answer function")
         formatted_context = self._format_contexts(context_list)
+        logger.debug("Formatted context: %s", formatted_context)
         user_prompt = f"Context:\n{formatted_context}\n\nQuestion: {question}"
+        logger.debug("User prompt: %s", user_prompt)
 
         response = self.client.models.generate_content(
             model=self.model,
@@ -112,14 +115,13 @@ Rules:
             contents=[user_prompt],
         )
 
-        logger.debug("Raw Gemini response: %s", response.text[:500])
-        data = self._parse_json_response(response.text)
+        parsed: RAGResponse = response.parsed
 
         return GeneratedResponse(
-            answer=rag.answer,
+            answer=parsed.answer,
             citations={
                 str(i + 1): Detail(title=c.title, url=c.url)
-                for i, c in enumerate(rag.citations)
+                for i, c in enumerate(parsed.citations)
             },
-            retrieved_contexts=[ctx.text for ctx in context_list],
+            retrieved_contexts=[ctx["text"] for ctx in context_list],
         )
